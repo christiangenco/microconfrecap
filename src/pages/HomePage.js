@@ -5,41 +5,66 @@ import AdminWell from "../components/AdminWell";
 // import PropTypes from 'prop-types';
 
 export class HomePage extends Component {
+  renderLoadingList = () => {
+    return (
+      <ul className="loading">
+        <li>
+          <Link to="/nowhere">This is a fancy title</Link> by George Washington
+        </li>
+        <li>
+          <Link to="/nowhere">I have so much</Link> fun with these
+        </li>
+        <li>
+          <Link to="/nowhere">Like, is </Link> anyone going to figure out how to
+          read them?
+        </li>
+        <li>
+          <Link to="/nowhere">I hope so</Link> if you do, I'll give you a prize
+        </li>
+        <li>
+          <Link to="/nowhere">Whisper "my dogs are barking"</Link> to me and
+          I'll give you something special ;)
+        </li>
+      </ul>
+    );
+  };
   render() {
+    const { posts } = this.props;
+    const loading = Object.keys(posts).length === 0;
+
     return (
       <div>
         <AdminWell />
 
         <h2>Growth</h2>
-        <ul>
-          <li>
-            <Link to="/fomo">Is FOMO holding you back?</Link> by Natalie Nagele
-          </li>
-          <li>Russ Henneberry, The Perfect Content Marketing Strategy</li>
-          <li>
-            James Kennedy, How to Stop Giving Demos and Build a Sales Factory
-            Instead
-          </li>
-          <li>Bridget Harris, Bootstrapping for Badasses</li>
-          <li>Attendee Talks</li>
-          <li>
-            Derrick Reimer, Transforming Customer Input into Killer Features
-          </li>
-          <li>Andy Baldacci, Profitable content marketing in 1 hour a week</li>
-          <li>
-            Brennan Dunn, Personalizing Your Marketing: Why You Should Be
-            Niching In Real-Time
-          </li>
-          <li>
-            Dave Churchville, Making Facebook Ads profitable for your SaaS
-          </li>
-          <li>
-            Rob Walling, 11 Years to Overnight Success: From Beach Towels to A
-            Successful Exit
-          </li>
-        </ul>
+
+        {!loading && (
+          <ul>
+            {Object.values(posts).map(post => (
+              <li key={post.id}>
+                <Link to={post.slug}>{post.title}</Link> by {post.author.name}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {loading && this.renderLoadingList()}
 
         <h2>Starter</h2>
+
+        {loading && this.renderLoadingList()}
+
+        <hr />
+
+        <h3>Past Microconf Recaps</h3>
+        <ul>
+          <li>
+            <a href="https://kaidavis.com/microconf-2015/">2015 by Kai Davis</a>
+          </li>
+          <li>
+            <a href="https://shai.io/microconf/">2017 by Shai</a>
+          </li>
+        </ul>
       </div>
     );
   }

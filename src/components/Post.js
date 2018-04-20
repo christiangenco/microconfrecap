@@ -8,7 +8,7 @@ export class Post extends Component {
     return (
       <div>
         <h1>{title}</h1>
-        <h2>by {author}</h2>
+        <h2>by {author.name}</h2>
         <Markdown source={body} />
       </div>
     );

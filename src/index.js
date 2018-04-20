@@ -22,15 +22,18 @@ firebase.initializeApp(config);
 
 // ohhh noooo global variables somebody call the javascript police
 window.firebase = firebase;
+const db = firebase.firestore();
 
-const FirebaseContext = React.createContext(firebase);
+// const FirebaseContext = React.createContext(firebase);
 
 ReactDOM.render(
-  <FirestoreProvider firebase={firebase}>
+  // <FirestoreProvider firebase={firebase}>
+  <HotKeys keyMap={keyMap} handlers={keyHandlers}>
     <BrowserRouter>
-      <App />
+      <App db={db} />
     </BrowserRouter>
-  </FirestoreProvider>,
+  </HotKeys>,
+  // </FirestoreProvider>,
   document.getElementById("root")
 );
 // registerServiceWorker();

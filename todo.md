@@ -1,6 +1,6 @@
 # Next
 
-* Post props: body, author: {name, twitter, picture, email}
+* edit post; command S to save
 
 ---
 
