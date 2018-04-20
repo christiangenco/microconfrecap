@@ -1,1 +1,17 @@
-html, body{margin: 0; padding: 0}
+html, body {
+  margin: 0;
+  padding: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+p, li {
+  font-family: 'Merriweather', serif;
+}
+
+h1 span {
+  transition: all 0.3s ease;
+}

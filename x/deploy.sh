@@ -1,6 +1,6 @@
 yarnpkg run build
 
-# firebase deploy
+firebase deploy
 
 # DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../build" && pwd )"
 # echo $DIR
