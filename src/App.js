@@ -57,9 +57,31 @@ class App extends Component {
     const isAdmin = user && user.email === "christian.genco@gmail.com";
 
     return (
-      <div className="container" style={{ marginTop: "50px" }}>
+      <div className="container-fluid" style={{ marginTop: "10px" }}>
         <div className="row">
-          <div className="col-md-6 offset-md-3">
+          <div
+            className="col-sm-12"
+            style={{ display: "flex", flexDirection: "row-reverse" }}
+          >
+            {!user && (
+              <Auth
+                firebase={firebase}
+                onAuthStateChanged={user => this.setState({ user })}
+              />
+            )}
+            {user && (
+              <div>
+                {user.displayName}{" "}
+                <button className="btn btn-outline-danger btn-sm">
+                  logout
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className="row justify-content-md-center">
+          <div className="col-md-6">
             <Link to="/" style={{ color: "black" }}>
               <h1>
                 <span className={location.pathname === "/" ? "" : "small"}>
@@ -100,23 +122,6 @@ class App extends Component {
                 add post
               </button>
             )}
-
-            <div style={{ position: "fixed", top: 20, right: 20 }}>
-              {!user && (
-                <Auth
-                  firebase={firebase}
-                  onAuthStateChanged={user => this.setState({ user })}
-                />
-              )}
-              {user && (
-                <div>
-                  {user.displayName}{" "}
-                  <button className="btn btn-outline-danger btn-sm">
-                    logout
-                  </button>
-                </div>
-              )}
-            </div>
           </div>
         </div>
       </div>

@@ -21,23 +21,25 @@ Bibendum imperdiet. Fusce quis orci convallis, vehicula ligula quis, imperdiet n
 
 export class PostPage extends Component {
   render() {
-    const { posts, match, location } = this.props;
+    const { posts, match, location, history, isAdmin } = this.props;
     const slug = match.params.slug;
     const qs = new URLSearchParams(location.search);
-    const edit = qs.get("edit");
+    const isEditing = !!qs.get("edit");
 
     const post = Object.values(posts).find(p => p.slug === slug);
 
+    let body;
+
     if (post) {
-      if (edit) {
-        return <EditPost post={post} db={this.props.db} />;
+      if (isEditing) {
+        body = <EditPost post={post} db={this.props.db} />;
       } else {
-        return (
+        body = (
           <Post title={post.title} body={post.body} author={post.author} />
         );
       }
     } else {
-      return (
+      body = (
         <div className="loading">
           <Post
             title="How are you even reading this"
@@ -47,6 +49,36 @@ export class PostPage extends Component {
         </div>
       );
     }
+
+    return (
+      <React.Fragment>
+        {isAdmin && (
+          <div className="btn-group" role="group" aria-label="Basic example">
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={e => {
+                history.push(`${slug}?edit=yeah`);
+              }}
+              disabled={isEditing}
+            >
+              Edit
+            </button>
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={e => {
+                history.push(`${slug}`);
+              }}
+              disabled={!isEditing}
+            >
+              View
+            </button>
+          </div>
+        )}
+        {body}
+      </React.Fragment>
+    );
   }
 }
 

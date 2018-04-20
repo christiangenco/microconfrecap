@@ -32,3 +32,8 @@ h1 span {
     opacity: 1;
   }
 }
+
+.blockquote {
+  border-left: 5px solid #eee;
+  padding-left: 10px
+}
