@@ -11,14 +11,14 @@ export class Auth extends Component {
       signInSuccessUrl: "/signedIn",
       // We will display Google and Facebook as auth providers.
       signInOptions: [
-        this.props.firebase.auth.GoogleAuthProvider.PROVIDER_ID
+        window.firebase.auth.GoogleAuthProvider.PROVIDER_ID
         // this.props.firebase.auth.FacebookAuthProvider.PROVIDER_ID
       ]
     };
   }
 
   componentDidMount() {
-    this.unregisterAuthObserver = this.props.firebase
+    this.unregisterAuthObserver = window.firebase
       .auth()
       .onAuthStateChanged(user => this.props.onAuthStateChanged(user));
   }
@@ -28,12 +28,13 @@ export class Auth extends Component {
   }
 
   render() {
-    const { firebase } = this.props;
+    // const { firebase } = this.props;
+
     return (
       <StyledFirebaseAuth
         className={""}
         uiConfig={this.uiConfig}
-        firebaseAuth={firebase.auth()}
+        firebaseAuth={window.firebase.auth()}
       />
     );
   }

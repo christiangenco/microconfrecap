@@ -4276,7 +4276,7 @@ hoist-non-react-statics@1.x.x, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
-hoist-non-react-statics@^2.3.0:
+hoist-non-react-statics@^2.3.0, hoist-non-react-statics@^2.3.1:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.0.tgz#d2ca2dfc19c5a91c5a6615ce8e564ef0347e2a40"
 
@@ -7134,6 +7134,12 @@ react-firebaseui@^1.2.3:
   dependencies:
     firebaseui "^2.7.0"
     react "^15"
+
+react-firestore@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/react-firestore/-/react-firestore-0.7.0.tgz#54e056c380f1c1c6178753571e80f36634bf9c3b"
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
 
 react-fuzzy@^0.5.2:
   version "0.5.2"
