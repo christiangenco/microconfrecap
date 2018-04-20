@@ -14,7 +14,6 @@ const docToFile = doc => {
 
   const frontmatter = `
 ---
-id: ${doc.id}
 title: ${doc.title}
 author: ${JSON.stringify(doc.author)}
 isPublic: ${doc.isPublic}
@@ -31,7 +30,7 @@ const fileToDoc = filename => {
   const content = fm(fs.readFileSync(filename, { encoding: "utf8" }));
 
   let slug = path.basename(filename, path.extname(filename));
-  const doc = { ...content.attributes, body: content.body, slug };
+  const doc = { ...content.attributes, body: content.body, slug, id: slug };
 
   return doc;
 };
@@ -42,10 +41,8 @@ const fetch = () => {
     .get()
     .then(snapshot => {
       snapshot.forEach(doc => {
-        // console.log(doc.id, "=>", doc.data());
-        const file = docToFile({ ...doc.data(), id: doc.id });
+        const file = docToFile({ ...doc.data(), slug: doc.id });
         fs.writeFileSync(file.filename, file.body);
-        // console.dir(fileToDoc(file.filename));
       });
     })
     .catch(err => {
@@ -53,11 +50,16 @@ const fetch = () => {
     });
 };
 
-fs.watch("posts", function(event, filename) {
-  console.log("event is: " + event);
-  if (filename) {
-    console.log("filename provided: " + filename);
-  } else {
-    console.log("filename not provided");
-  }
+// fetch();
+
+fs.watch("posts", (event, filename) => {
+  // filename might be null
+  const doc = fileToDoc("posts/" + filename);
+
+  db
+    .collection("posts")
+    .doc(doc.id)
+    .set(doc, { merge: true });
+
+  console.log(`updating ${filename}`);
 });

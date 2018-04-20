@@ -1,11 +1,12 @@
 ---
-id: 0jHfbZnKLAaAjb9H4msh
 title: Is FOMO holding you back?
 author: {"name":"Natalie Nagele"}
 isPublic: true
 ---
 
-this is the **body** of the summary lol!
+This is the **body** of the summary lol.
+
+Holy shit this is great. I **fucking love** this. Wow.
 
 Is this actually editing?
 
@@ -13,7 +14,7 @@ Looks like...
 
 Yes it totally is!
 
-Freakin' neat. 
+Freakin' neat.
 
 heh cool neat
 
