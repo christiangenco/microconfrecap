@@ -35,7 +35,11 @@ export class HomePage extends Component {
         {Object.values(posts).map(post => (
           <li key={post.id}>
             {!post.isPublic && "🕵️"}
-            <Link to={post.slug}>{post.title}</Link> by {post.author.name}{" "}
+            {post.isEditing && "📡"}
+            <Link to={post.slug + (post.isPublic ? "" : "?edit=true")}>
+              {post.title}
+            </Link>{" "}
+            by {post.author.name}{" "}
           </li>
         ))}
       </ul>

@@ -59,27 +59,6 @@ export class EditPost extends Component {
     return (
       <HotKeys handlers={keyHandlers}>
         <form>
-          <div className="card card-body">
-            <h5 className="card-title">Author</h5>
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                className="form-control"
-                id="name"
-                value={author.name}
-                onChange={e => {
-                  const name = e.target.value;
-                  this.setState(
-                    produce(draft => {
-                      draft.post.author.name = name;
-                    })
-                  );
-                }}
-              />
-            </div>
-          </div>
-
           <div className="form-group">
             <label htmlFor="title">Title</label>
             <input
@@ -112,6 +91,30 @@ export class EditPost extends Component {
             <label className="form-check-label" htmlFor="isPublic">
               Public?
             </label>
+          </div>
+
+          <div
+            className="card card-body"
+            style={{ marginTop: 10, marginBottom: 10 }}
+          >
+            <h5 className="card-title">Author</h5>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                className="form-control"
+                id="name"
+                value={author.name}
+                onChange={e => {
+                  const name = e.target.value;
+                  this.setState(
+                    produce(draft => {
+                      draft.post.author.name = name;
+                    })
+                  );
+                }}
+              />
+            </div>
           </div>
 
           <AceEditor

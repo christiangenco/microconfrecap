@@ -3,7 +3,9 @@ import React, { Component } from "react";
 const AdminWell = props => {
   return (
     <div className="card" style={{ marginTop: 20, marginBottom: 20 }}>
-      <h5 className="card-header">Housekeeping</h5>
+      <h5 className="card-header">
+        Housekeeping <button className="btn btn-default btn-sm">edit</button>
+      </h5>
       <div className="card-body">
         <div className="card-text">
           <ul>

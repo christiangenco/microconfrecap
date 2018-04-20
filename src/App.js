@@ -19,14 +19,21 @@ class App extends Component {
       .collection("posts")
       // .where("isPublic", "==", true)
       // .select("author")
-      .onSnapshot(querySnapshot => {
+      .onSnapshot(snap => {
         const posts = {};
-        querySnapshot.forEach(doc => {
-          console.log(`updating ${doc.id}`);
+        snap.forEach(doc => {
           posts[doc.id] = { ...doc.data(), id: doc.id };
         });
         this.setState({ posts });
       });
+
+    this.props.db.collection("things").onSnapshot(snap => {
+      const things = {};
+      snap.forEach(doc => {
+        things[doc.id] = { ...doc.data(), id: doc.id };
+      });
+      this.setState({ things });
+    });
   }
 
   addPost = () => {
@@ -44,7 +51,7 @@ class App extends Component {
       })
       .then(docRef => {
         console.log("Document written with ID: ", docRef.id);
-        console.log(`redirect to /${slug}?edit=true`);
+        this.props.history.push(`/${slug}?edit=true`);
       })
       .catch(error => {
         console.error("Error adding document: ", error);
@@ -82,14 +89,18 @@ class App extends Component {
 
         <div className="row justify-content-md-center">
           <div className="col-md-6">
+            <pre>{JSON.stringify(this.state.things, null, 2)}</pre>
             <Link to="/" style={{ color: "black" }}>
               <h1>
                 <span className={location.pathname === "/" ? "" : "small"}>
-                  <img
-                    src="/logo.png"
-                    alt=""
-                    style={{ height: "1em", marginRight: 10 }}
-                  />
+                  {location.pathname !== "/" && "🔙"}
+                  {location.pathname === "/" && (
+                    <img
+                      src="/logo.png"
+                      alt=""
+                      style={{ height: "1em", marginRight: 10 }}
+                    />
+                  )}
                   Microconf Recap 2018
                 </span>
               </h1>
