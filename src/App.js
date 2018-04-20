@@ -5,7 +5,11 @@ import { Route, Link, withRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import PostPage from "./pages/PostPage";
 
+import AdminWell from "./components/AdminWell";
+
 import Auth from "./components/Auth";
+
+import get from "lodash.get";
 
 class App extends Component {
   state = {
@@ -59,9 +63,11 @@ class App extends Component {
   };
 
   render() {
-    const { firebase, location } = this.props;
-    const { user, posts } = this.state;
+    const { firebase, location, db } = this.props;
+    const { user, posts, things } = this.state;
     const isAdmin = user && user.email === "christian.genco@gmail.com";
+
+    const housekeeping = get(things, "housekeeping.body");
 
     return (
       <div className="container-fluid" style={{ marginTop: "10px" }}>
@@ -110,18 +116,37 @@ class App extends Component {
               exact
               path="/"
               component={props => (
+                <AdminWell
+                  {...props}
+                  isAdmin={isAdmin}
+                  body={housekeeping}
+                  onChange={housekeeping => {
+                    this.props.db
+                      .collection("things")
+                      .doc("housekeeping")
+                      .set(housekeeping, { merge: true })
+                      .then(() => {
+                        console.log("Document successfully written!");
+                      })
+                      .catch(error => {
+                        console.error("Error writing document: ", error);
+                      });
+                  }}
+                />
+              )}
+            />
+
+            <Route
+              exact
+              path="/"
+              component={props => (
                 <HomePage {...props} posts={posts} isAdmin={isAdmin} />
               )}
             />
             <Route
               path="/:slug"
               component={props => (
-                <PostPage
-                  {...props}
-                  posts={posts}
-                  isAdmin={isAdmin}
-                  db={this.props.db}
-                />
+                <PostPage {...props} posts={posts} isAdmin={isAdmin} db={db} />
               )}
             />
 

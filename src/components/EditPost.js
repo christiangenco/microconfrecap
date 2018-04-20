@@ -22,8 +22,6 @@ export class EditPost extends Component {
   save = () => {
     const { author, body, isPublic, title, id } = this.state.post;
 
-    console.log(`saving with isPublic=${isPublic}`);
-
     this.props.db
       .collection("posts")
       .doc(id)

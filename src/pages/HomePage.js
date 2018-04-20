@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import AdminWell from "../components/AdminWell";
 
 // import PropTypes from 'prop-types';
 
@@ -55,8 +54,6 @@ export class HomePage extends Component {
 
     return (
       <div>
-        <AdminWell />
-
         <h2>Growth</h2>
 
         {!loading && this.renderPostList(growthPosts)}

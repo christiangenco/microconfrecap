@@ -1,31 +1,96 @@
 import React, { Component } from "react";
+import Markdown from "react-markdown";
 
-const AdminWell = props => {
-  return (
-    <div className="card" style={{ marginTop: 20, marginBottom: 20 }}>
-      <h5 className="card-header">
-        Housekeeping <button className="btn btn-default btn-sm">edit</button>
-      </h5>
-      <div className="card-body">
-        <div className="card-text">
-          <ul>
-            <li>
-              <a href="http://microconf.com/growth/schedule">Schedule</a>
-            </li>
-            <li>
-              tweet{" "}
-              <a href="https://twitter.com/search?q=%23microconf">#microconf</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/intent/+/tweet?original_referer=https://shai.io/microconf/&url=https://shai.io/microconf/&text=MicroConf%202017%20Official%20Notes%20%23microconf&via=shaisc">
-                Share these notes
-              </a>
-            </li>
-          </ul>
+import { HotKeys } from "react-hotkeys";
+
+import brace from "brace";
+import AceEditor from "react-ace";
+import "brace/mode/markdown";
+import "brace/theme/textmate";
+
+export class AdminWell extends Component {
+  state = { isEditing: false, body: "" };
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    return {
+      body: nextProps.body
+    };
+  }
+
+  render() {
+    const { isAdmin, onChange } = this.props;
+    const { body, isEditing } = this.state;
+
+    const keyHandlers = {
+      save: e => {
+        e.preventDefault();
+        onChange({ body });
+      }
+    };
+
+    return (
+      <div className="card" style={{ marginTop: 20, marginBottom: 20 }}>
+        <h5 className="card-header">
+          {isAdmin && (
+            <span>
+              {!isEditing && (
+                <button
+                  className="btn btn-default btn-sm"
+                  onClick={() => this.setState({ isEditing: true })}
+                >
+                  edit
+                </button>
+              )}
+
+              {isEditing && (
+                <button
+                  className="btn btn-primary btn-sm"
+                  onClick={() => onChange({ body })}
+                >
+                  save
+                </button>
+              )}
+            </span>
+          )}
+          Housekeeping
+        </h5>
+        <div className="card-body">
+          <div className="card-text">
+            {isEditing && (
+              <AceEditor
+                mode="markdown"
+                theme="textmate"
+                name="blah2"
+                onLoad={() => {}}
+                onChange={body =>
+                  this.setState({
+                    body
+                  })
+                }
+                fontSize={14}
+                showPrintMargin={false}
+                showGutter={true}
+                highlightActiveLine={true}
+                value={body}
+                setOptions={{
+                  // enableBasicAutocompletion: false,
+                  // enableLiveAutocompletion: false,
+                  // enableSnippets: false,
+                  showLineNumbers: true,
+                  tabSize: 2
+                }}
+              />
+            )}
+
+            {!isEditing && <Markdown source={body} />}
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
+
+// https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
+// AdminWell.propTypes = {};
 
 export default AdminWell;
