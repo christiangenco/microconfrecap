@@ -68,6 +68,7 @@ class App extends Component {
     const isAdmin = user && user.email === "christian.genco@gmail.com";
 
     const housekeeping = get(things, "housekeeping.body");
+    const showHousekeeping = get(things, "settings.showHousekeeping");
 
     return (
       <div className="container-fluid" style={{ marginTop: "10px" }}>
@@ -95,7 +96,7 @@ class App extends Component {
 
         <div className="row justify-content-md-center">
           <div className="col-md-6">
-            <pre>{JSON.stringify(this.state.things, null, 2)}</pre>
+            {false && <pre>{JSON.stringify(this.state.things, null, 2)}</pre>}}
             <Link to="/" style={{ color: "black" }}>
               <h1>
                 <span className={location.pathname === "/" ? "" : "small"}>
@@ -111,31 +112,31 @@ class App extends Component {
                 </span>
               </h1>
             </Link>
-
-            <Route
-              exact
-              path="/"
-              component={props => (
-                <AdminWell
-                  {...props}
-                  isAdmin={isAdmin}
-                  body={housekeeping}
-                  onChange={housekeeping => {
-                    this.props.db
-                      .collection("things")
-                      .doc("housekeeping")
-                      .set(housekeeping, { merge: true })
-                      .then(() => {
-                        console.log("Document successfully written!");
-                      })
-                      .catch(error => {
-                        console.error("Error writing document: ", error);
-                      });
-                  }}
-                />
-              )}
-            />
-
+            {showHousekeeping && (
+              <Route
+                exact
+                path="/"
+                component={props => (
+                  <AdminWell
+                    {...props}
+                    isAdmin={isAdmin}
+                    body={housekeeping}
+                    onChange={housekeeping => {
+                      this.props.db
+                        .collection("things")
+                        .doc("housekeeping")
+                        .set(housekeeping, { merge: true })
+                        .then(() => {
+                          console.log("Document successfully written!");
+                        })
+                        .catch(error => {
+                          console.error("Error writing document: ", error);
+                        });
+                    }}
+                  />
+                )}
+              />
+            )}
             <Route
               exact
               path="/"
@@ -149,7 +150,6 @@ class App extends Component {
                 <PostPage {...props} posts={posts} isAdmin={isAdmin} db={db} />
               )}
             />
-
             {isAdmin && (
               <button
                 className="btn btn-outline-primary"

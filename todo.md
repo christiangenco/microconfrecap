@@ -1,6 +1,6 @@
 # Next
 
-* things/housekeeping, things/settings
+* things/settings
 * collect email addresses
 * post datetime; sort by date; time ago in words in list
 * conference: ["starter", "growth"] dropdown
