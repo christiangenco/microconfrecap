@@ -10,18 +10,39 @@ import "brace/theme/textmate";
 
 // import PropTypes from "prop-types";
 
-const keyMap = {
-  save: "command+s"
-};
-
 export class EditPost extends Component {
   state = {};
 
   static getDerivedStateFromProps(nextProps, prevState) {
     return {
-      post: { ...nextProps.post }
+      post: { isPublic: false, ...nextProps.post }
     };
   }
+
+  save = () => {
+    const { author, body, isPublic, title, id } = this.state.post;
+
+    console.log(`saving with isPublic=${isPublic}`);
+
+    this.props.db
+      .collection("posts")
+      .doc(id)
+      .set(
+        {
+          author,
+          body,
+          isPublic,
+          title
+        },
+        { merge: true }
+      )
+      .then(() => {
+        console.log("Document successfully written!");
+      })
+      .catch(error => {
+        console.error("Error writing document: ", error);
+      });
+  };
 
   render() {
     // return <pre>{JSON.stringify(this.state, null, 2)}</pre>;
@@ -31,13 +52,12 @@ export class EditPost extends Component {
     const keyHandlers = {
       save: e => {
         e.preventDefault();
-        console.log(e);
-        console.log("save");
+        this.save();
       }
     };
 
     return (
-      <HotKeys keyMap={keyMap} handlers={keyHandlers}>
+      <HotKeys handlers={keyHandlers}>
         <form>
           <div className="card card-body">
             <h5 className="card-title">Author</h5>
@@ -77,15 +97,19 @@ export class EditPost extends Component {
             <input
               type="checkbox"
               className="form-check-input"
-              id="public"
-              value={isPublic}
+              id="isPublic"
+              checked={isPublic}
               onChange={e => {
-                this.setState({
-                  post: { ...post, isPublic: e.target.checked }
-                });
+                console.log({ isPublic: e.target.checked });
+                this.setState(
+                  {
+                    post: { ...post, isPublic: e.target.checked }
+                  },
+                  this.save
+                );
               }}
             />
-            <label className="form-check-label" htmlFor="public">
+            <label className="form-check-label" htmlFor="isPublic">
               Public?
             </label>
           </div>
@@ -106,9 +130,9 @@ export class EditPost extends Component {
             highlightActiveLine={true}
             value={body}
             setOptions={{
-              enableBasicAutocompletion: false,
-              enableLiveAutocompletion: false,
-              enableSnippets: false,
+              // enableBasicAutocompletion: false,
+              // enableLiveAutocompletion: false,
+              // enableSnippets: false,
               showLineNumbers: true,
               tabSize: 2
             }}

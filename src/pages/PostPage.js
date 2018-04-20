@@ -30,7 +30,7 @@ export class PostPage extends Component {
 
     if (post) {
       if (edit) {
-        return <EditPost post={post} />;
+        return <EditPost post={post} db={this.props.db} />;
       } else {
         return (
           <Post title={post.title} body={post.body} author={post.author} />

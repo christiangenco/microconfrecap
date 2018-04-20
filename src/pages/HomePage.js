@@ -28,9 +28,26 @@ export class HomePage extends Component {
       </ul>
     );
   };
+
+  renderPostList = posts => {
+    return (
+      <ul>
+        {Object.values(posts).map(post => (
+          <li key={post.id}>
+            {!post.isPublic && "🕵️"}
+            <Link to={post.slug}>{post.title}</Link> by {post.author.name}{" "}
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
   render() {
     const { posts } = this.props;
     const loading = Object.keys(posts).length === 0;
+
+    const growthPosts = posts;
+    const starterPosts = posts;
 
     return (
       <div>
@@ -38,20 +55,12 @@ export class HomePage extends Component {
 
         <h2>Growth</h2>
 
-        {!loading && (
-          <ul>
-            {Object.values(posts).map(post => (
-              <li key={post.id}>
-                <Link to={post.slug}>{post.title}</Link> by {post.author.name}
-              </li>
-            ))}
-          </ul>
-        )}
-
+        {!loading && this.renderPostList(growthPosts)}
         {loading && this.renderLoadingList()}
 
         <h2>Starter</h2>
 
+        {!loading && this.renderPostList(starterPosts)}
         {loading && this.renderLoadingList()}
 
         <hr />

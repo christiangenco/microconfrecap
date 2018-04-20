@@ -17,10 +17,12 @@ class App extends Component {
   componentDidMount() {
     this.props.db
       .collection("posts")
-      // .where("public", "==", true)
+      // .where("isPublic", "==", true)
+      // .select("author")
       .onSnapshot(querySnapshot => {
         const posts = {};
         querySnapshot.forEach(doc => {
+          console.log(`updating ${doc.id}`);
           posts[doc.id] = { ...doc.data(), id: doc.id };
         });
         this.setState({ posts });
@@ -81,7 +83,12 @@ class App extends Component {
             <Route
               path="/:slug"
               component={props => (
-                <PostPage {...props} posts={posts} isAdmin={isAdmin} />
+                <PostPage
+                  {...props}
+                  posts={posts}
+                  isAdmin={isAdmin}
+                  db={this.props.db}
+                />
               )}
             />
 

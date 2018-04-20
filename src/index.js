@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { FirestoreProvider } from "react-firestore";
+import { HotKeys } from "react-hotkeys";
+
 import "./index.css";
 import App from "./App";
 // import registerServiceWorker from './registerServiceWorker';
@@ -25,6 +27,14 @@ window.firebase = firebase;
 const db = firebase.firestore();
 
 // const FirebaseContext = React.createContext(firebase);
+
+const keyMap = {
+  save: "command+s"
+};
+
+const keyHandlers = {
+  save: e => e.preventDefault()
+};
 
 ReactDOM.render(
   // <FirestoreProvider firebase={firebase}>
