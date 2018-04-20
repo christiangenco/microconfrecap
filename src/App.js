@@ -96,7 +96,7 @@ class App extends Component {
 
         <div className="row justify-content-md-center">
           <div className="col-md-6">
-            {false && <pre>{JSON.stringify(this.state.things, null, 2)}</pre>}}
+            {false && <pre>{JSON.stringify(this.state.things, null, 2)}</pre>}
             <Link to="/" style={{ color: "black" }}>
               <h1>
                 <span className={location.pathname === "/" ? "" : "small"}>
