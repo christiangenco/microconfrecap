@@ -65,7 +65,7 @@ class App extends Component {
   render() {
     const { firebase, location, db } = this.props;
     const { user, posts, things } = this.state;
-    const isAdmin = user && user.email === "christian.genco@gmail.com";
+    const isAdmin = true && user && user.email === "christian.genco@gmail.com";
 
     const housekeeping = get(things, "housekeeping.body");
     const showHousekeeping = get(things, "settings.showHousekeeping");
@@ -85,6 +85,14 @@ class App extends Component {
             )}
             {user && (
               <div>
+                {isAdmin && (
+                  <button
+                    className="btn btn-outline-primary"
+                    onClick={this.addPost}
+                  >
+                    add post
+                  </button>
+                )}
                 {user.displayName}{" "}
                 <button className="btn btn-outline-danger btn-sm">
                   logout
@@ -150,14 +158,6 @@ class App extends Component {
                 <PostPage {...props} posts={posts} isAdmin={isAdmin} db={db} />
               )}
             />
-            {isAdmin && (
-              <button
-                className="btn btn-outline-primary"
-                onClick={this.addPost}
-              >
-                add post
-              </button>
-            )}
           </div>
         </div>
       </div>

@@ -15,7 +15,8 @@ const docToFile = doc => {
   const frontmatter = `
 ---
 title: ${doc.title}
-author: ${JSON.stringify(doc.author)}
+speaker: ${JSON.stringify(doc.speaker)}
+conference: ${doc.conference}
 isPublic: ${doc.isPublic}
 ---
 
@@ -53,13 +54,13 @@ const fetch = () => {
 // fetch();
 
 fs.watch("posts", (event, filename) => {
-  // filename might be null
+  // filename might be null if file was deleted
   const doc = fileToDoc("posts/" + filename);
 
   db
     .collection("posts")
     .doc(doc.id)
-    .set(doc, { merge: true });
+    .set({ ...doc, updatedAt: new Date() }, { merge: true });
 
   console.log(`updating ${filename}`);
 });
