@@ -1,6 +1,6 @@
 ---
-title: Is FOMO holding you back?
-speaker: {"name":"Natalie Nagele"}
+title: Is FOMO holding you back? Well, is it?
+speaker: {"name":"Natalie Nagele", "twitter": "natalienagele"}
 date: 2018-04-22 14:40:56
 conference: growth
 isPublic: true
@@ -8,7 +8,16 @@ isPublic: true
 
 This is the **body** of the summary lol.
 
+> FOMO means "Fear of Missing out"
+> Isn't that _cool_?
+
+Hmmm......
+
 Holy shit this is great. I **fucking love** this. Wow.
+
+<!-- https://twitter.com/cgenco/status/986726012389134337 -->
+
+Here's a [regular link](https://gen.co)
 
 Is this actually editing?
 
@@ -26,5 +35,6 @@ And it's in **markdown**
 
 ![](https://i.imgur.com/9bhaPa8.jpg)
 
-> I love cake
-> -- Natalie Nagele
+> I love sushi
+
+Ahh, great.

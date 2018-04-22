@@ -15,7 +15,7 @@ class App extends Component {
   state = {
     user: null,
     posts: {},
-    loading: true
+    loading: true,
   };
 
   componentDidMount() {
@@ -48,10 +48,10 @@ class App extends Component {
         title: "Title",
         slug,
         speaker: {
-          name: "Speaker name"
+          name: "Speaker name",
         },
         body: "body",
-        public: false
+        public: false,
       })
       .then(docRef => {
         console.log("Document written with ID: ", docRef.id);
@@ -65,7 +65,7 @@ class App extends Component {
   render() {
     const { firebase, location, db } = this.props;
     const { user, posts, things } = this.state;
-    const isAdmin = true && user && user.email === "christian.genco@gmail.com";
+    const isAdmin = false && user && user.email === "christian.genco@gmail.com";
 
     const housekeeping = get(things, "housekeeping.body");
     const showHousekeeping = get(things, "settings.showHousekeeping");

@@ -24,7 +24,9 @@
     "react-firestore": "^0.7.0",
     "react-hotkeys": "^1.1.4",
     "react-markdown": "^3.3.0",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "react-share": "^2.1.1",
+    "react-twitter-widgets": "^1.7.1"
   },
   "scripts": {
     "start": "react-scripts start",

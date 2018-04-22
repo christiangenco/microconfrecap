@@ -35,7 +35,12 @@ export class PostPage extends Component {
         body = <EditPost post={post} db={this.props.db} />;
       } else {
         body = (
-          <Post title={post.title} body={post.body} speaker={post.speaker} />
+          <Post
+            title={post.title}
+            body={post.body}
+            speaker={post.speaker}
+            url={"https://microconf.gen.co" + location.pathname}
+          />
         );
       }
     } else {

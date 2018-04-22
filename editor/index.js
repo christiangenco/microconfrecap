@@ -5,7 +5,7 @@ const admin = require("firebase-admin");
 const serviceAccount = require("./serviceAccountKey.json");
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert(serviceAccount),
 });
 const db = admin.firestore();
 
@@ -53,6 +53,7 @@ const fetch = () => {
 
 // fetch();
 
+console.log("watching...");
 fs.watch("posts", (event, filename) => {
   // filename might be null if file was deleted
   const doc = fileToDoc("posts/" + filename);
@@ -62,5 +63,5 @@ fs.watch("posts", (event, filename) => {
     .doc(doc.id)
     .set({ ...doc, updatedAt: new Date() }, { merge: true });
 
-  console.log(`updating ${filename}`);
+  console.log(`${new Date().toISOString()} updating ${filename}`);
 });

@@ -1,9 +1,7 @@
 # Next
 
+* sort posts by date; time ago in words in list
 * "Free eBook of every Starter and Growth talk" "I'm sending out a beautiful PDF eBook of notes from every MicroConf 2017 Starter and Growth talk – both Speaker and Attendee. Want a copy?" CTA => mailtrain
-* post datetime; sort by date; time ago in words in list
-* conference: ["starter", "growth"] dropdown
-* speaker twitter link; rendered as twitter icon
 * secure edits to just my user
 * live edit from Atom
 
