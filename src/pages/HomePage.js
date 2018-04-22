@@ -38,7 +38,7 @@ export class HomePage extends Component {
             <Link to={post.slug + (post.isPublic ? "" : "?edit=true")}>
               {post.title}
             </Link>{" "}
-            by {post.author.name}{" "}
+            by {post.speaker.name}{" "}
           </li>
         ))}
       </ul>
@@ -49,8 +49,12 @@ export class HomePage extends Component {
     const { posts } = this.props;
     const loading = Object.keys(posts).length === 0;
 
-    const growthPosts = posts;
-    const starterPosts = posts;
+    const growthPosts = Object.values(posts).filter(
+      post => post.conference === "growth"
+    );
+    const starterPosts = Object.values(posts).filter(
+      post => post.conference === "starter"
+    );
 
     return (
       <div>
@@ -72,7 +76,12 @@ export class HomePage extends Component {
             <a href="https://kaidavis.com/microconf-2015/">2015 by Kai Davis</a>
           </li>
           <li>
-            <a href="https://shai.io/microconf/">2017 by Shai</a>
+            <a href="https://docs.google.com/document/d/1EefLjujm3TW0oL21XvstCx7OuUfwmcJsASvakyhZ2LI/edit#">
+              2016 by remarq.io
+            </a>
+          </li>
+          <li>
+            <a href="https://shai.io/microconf/">2017 by Shai Schechter</a>
           </li>
         </ul>
       </div>

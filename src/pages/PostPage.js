@@ -35,7 +35,7 @@ export class PostPage extends Component {
         body = <EditPost post={post} db={this.props.db} />;
       } else {
         body = (
-          <Post title={post.title} body={post.body} author={post.author} />
+          <Post title={post.title} body={post.body} speaker={post.speaker} />
         );
       }
     } else {
@@ -44,7 +44,7 @@ export class PostPage extends Component {
           <Post
             title="How are you even reading this"
             body={dummyBody}
-            author={{ name: "Christian Genco" }}
+            speaker={{ name: "Christian Genco" }}
           />
         </div>
       );

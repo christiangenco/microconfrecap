@@ -19,11 +19,11 @@ const renderers = {
 
 export class Post extends Component {
   render() {
-    const { title, body, author, slug } = this.props;
+    const { title, body, speaker, slug } = this.props;
     return (
       <div>
         <h1>{title}</h1>
-        <h2>by {author.name}</h2>
+        <h2>by {speaker.name}</h2>
         <Markdown source={body} renderers={renderers} />
       </div>
     );

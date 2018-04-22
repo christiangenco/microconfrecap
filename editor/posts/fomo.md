@@ -1,6 +1,8 @@
 ---
 title: Is FOMO holding you back?
-author: {"name":"Natalie Nagele"}
+speaker: {"name":"Natalie Nagele"}
+date: 2018-04-22 14:40:56
+conference: growth
 isPublic: true
 ---
 

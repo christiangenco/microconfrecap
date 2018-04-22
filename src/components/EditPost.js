@@ -20,14 +20,14 @@ export class EditPost extends Component {
   }
 
   save = () => {
-    const { author, body, isPublic, title, id } = this.state.post;
+    const { speaker, body, isPublic, title, id } = this.state.post;
 
     this.props.db
       .collection("posts")
       .doc(id)
       .set(
         {
-          author,
+          speaker,
           body,
           isPublic,
           title
@@ -45,7 +45,7 @@ export class EditPost extends Component {
   render() {
     // return <pre>{JSON.stringify(this.state, null, 2)}</pre>;
     const { post } = this.state;
-    const { author, title, body, isPublic } = post;
+    const { speaker, title, body, isPublic } = post;
 
     const keyHandlers = {
       save: e => {
@@ -95,19 +95,19 @@ export class EditPost extends Component {
             className="card card-body"
             style={{ marginTop: 10, marginBottom: 10 }}
           >
-            <h5 className="card-title">Author</h5>
+            <h5 className="card-title">Speaker</h5>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
                 type="text"
                 className="form-control"
                 id="name"
-                value={author.name}
+                value={speaker.name}
                 onChange={e => {
                   const name = e.target.value;
                   this.setState(
                     produce(draft => {
-                      draft.post.author.name = name;
+                      draft.post.speaker.name = name;
                     })
                   );
                 }}

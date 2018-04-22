@@ -22,7 +22,7 @@ class App extends Component {
     this.props.db
       .collection("posts")
       // .where("isPublic", "==", true)
-      // .select("author")
+      // .select("speaker")
       .onSnapshot(snap => {
         const posts = {};
         snap.forEach(doc => {
@@ -47,8 +47,8 @@ class App extends Component {
       .add({
         title: "Title",
         slug,
-        author: {
-          name: "Author name"
+        speaker: {
+          name: "Speaker name"
         },
         body: "body",
         public: false
