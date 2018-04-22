@@ -23,6 +23,7 @@ class App extends Component {
       .collection("posts")
       // .where("isPublic", "==", true)
       // .select("speaker")
+      .orderBy("date")
       .onSnapshot(snap => {
         const posts = {};
         snap.forEach(doc => {

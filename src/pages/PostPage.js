@@ -39,6 +39,7 @@ export class PostPage extends Component {
             title={post.title}
             body={post.body}
             speaker={post.speaker}
+            updatedAt={post.updatedAt}
             url={"https://microconf.gen.co" + location.pathname}
           />
         );

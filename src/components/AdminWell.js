@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Markdown from "react-markdown";
 
+import { Share, Follow, Tweet, Hashtag } from "react-twitter-widgets";
+
 import { HotKeys } from "react-hotkeys";
 
 import brace from "brace";
@@ -13,7 +15,7 @@ export class AdminWell extends Component {
 
   static getDerivedStateFromProps(nextProps, prevState) {
     return {
-      body: nextProps.body
+      body: nextProps.body,
     };
   }
 
@@ -25,7 +27,7 @@ export class AdminWell extends Component {
       save: e => {
         e.preventDefault();
         onChange({ body });
-      }
+      },
     };
 
     return (
@@ -52,10 +54,16 @@ export class AdminWell extends Component {
               )}
             </span>
           )}
-          Housekeeping
+          Notes
         </h5>
         <div className="card-body">
           <div className="card-text">
+            <div style={{ float: "right" }}>
+              <Share url="https://microconf.gen.co" />
+              <Hashtag hashtag="microconf" />
+              <Follow username={"cgenco"} />
+            </div>
+
             {isEditing && (
               <AceEditor
                 mode="markdown"
@@ -64,7 +72,7 @@ export class AdminWell extends Component {
                 onLoad={() => {}}
                 onChange={body =>
                   this.setState({
-                    body
+                    body,
                   })
                 }
                 fontSize={14}
@@ -77,7 +85,7 @@ export class AdminWell extends Component {
                   // enableLiveAutocompletion: false,
                   // enableSnippets: false,
                   showLineNumbers: true,
-                  tabSize: 2
+                  tabSize: 2,
                 }}
               />
             )}

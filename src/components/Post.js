@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Markdown from "react-markdown";
 import get from "lodash.get";
+import differenceInMinutes from "date-fns/difference_in_minutes";
+import Typist from "react-typist";
+
 // import PropTypes from "prop-types";
 
 import { Share, Follow, Tweet } from "react-twitter-widgets";
@@ -12,15 +15,11 @@ const innerText = el => {
   if (el.props)
     return el.props.children.map(child => innerText(child)).join("");
   return el.map(child => innerText(child)).join("");
-
-  // const innerText = children
-  //   .map(child => child.props.children.join(" "))
-  //   .join(" ");
 };
 
 export class Post extends Component {
   render() {
-    const { title, body, speaker, slug, url } = this.props;
+    const { title, body, speaker, slug, url, updatedAt } = this.props;
 
     const renderers = {
       link: ({ href, children }) => {
@@ -70,6 +69,18 @@ export class Post extends Component {
           )}
         </h2>
         <Markdown source={body} renderers={renderers} />
+
+        {differenceInMinutes(new Date(), updatedAt) < 5 && (
+          <Typist>
+            <div className="loading">
+              Lorem ipsum dolor sit amet,
+              <Typist.Backspace count={8} delay={200} />consectetur adipiscing
+              elit. <Typist.Backspace count={8} delay={200} />Nullam ut sapien
+              dictum, convallis orci eget, tincidunt lacus.
+              <Typist.Backspace count={8} delay={200} />
+            </div>
+          </Typist>
+        )}
       </div>
     );
   }

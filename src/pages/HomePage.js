@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import differenceInMinutes from "date-fns/difference_in_minutes";
+import distanceInWords from "date-fns/distance_in_words";
 
 // import PropTypes from 'prop-types';
 
@@ -34,11 +36,16 @@ export class HomePage extends Component {
         {Object.values(posts).map(post => (
           <li key={post.id}>
             {!post.isPublic && "🕵️"}
-            {post.isEditing && "📡"}
+            {differenceInMinutes(new Date(), post.updatedAt) < 5 && (
+              <span className="pulsing">📡</span>
+            )}
             <Link to={post.slug + (post.isPublic ? "" : "?edit=true")}>
               {post.title}
             </Link>{" "}
             by {post.speaker.name}{" "}
+            <small className="text-muted">
+              {distanceInWords(post.date, new Date())} ago
+            </small>
           </li>
         ))}
       </ul>

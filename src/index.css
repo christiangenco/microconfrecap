@@ -21,6 +21,10 @@ h1 span {
   font-family: "BLOKK";
 }
 
+.pulsing {
+  animation: pulse 1.8s infinite;
+}
+
 @keyframes pulse {
   0% {
     opacity: 1;
