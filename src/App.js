@@ -81,7 +81,7 @@ class App extends Component {
         </div>
 
         <div className="row justify-content-md-center">
-          <div className="col-md-6">
+          <div className="col-lg-6 col-md-8">
             {false && <pre>{JSON.stringify(this.state.things, null, 2)}</pre>}
             <Link to="/" style={{ color: "black" }}>
               <h1>
