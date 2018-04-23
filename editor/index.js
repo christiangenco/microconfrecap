@@ -59,17 +59,20 @@ fs.watch("posts", (event, filename) => {
   const doc = fileToDoc("posts/" + filename);
 
   const body = doc.body;
-  delete doc.body;
+  if (doc.id !== "_notes") delete doc.body;
 
   db
     .collection("posts")
     .doc(doc.id)
-    .set({ ...doc, updatedAt: new Date() }, { merge: true });
+    .set({ ...doc, updatedAt: new Date() }, { merge: true })
+    .catch(err => console.log(`error: ${err}`));
 
-  db
-    .collection("bodies")
-    .doc(doc.id)
-    .set({ body, updatedAt: new Date() }, { merge: true });
+  if (doc.id !== "_notes")
+    db
+      .collection("bodies")
+      .doc(doc.id)
+      .set({ body, updatedAt: new Date() }, { merge: true })
+      .catch(err => console.log(`error: ${err}`));
 
   console.log(`${new Date().toISOString()} updating ${filename}`);
 });

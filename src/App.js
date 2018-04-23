@@ -29,18 +29,11 @@ class App extends Component {
       .onSnapshot(snap => {
         const posts = {};
         snap.forEach(doc => {
+          console.log(doc.data());
           posts[doc.id] = { ...doc.data(), id: doc.id };
         });
         this.setState({ posts });
       });
-
-    this.props.db.collection("things").onSnapshot(snap => {
-      const things = {};
-      snap.forEach(doc => {
-        things[doc.id] = { ...doc.data(), id: doc.id };
-      });
-      this.setState({ things });
-    });
   }
 
   addPost = () => {
@@ -67,11 +60,11 @@ class App extends Component {
 
   render() {
     const { firebase, location, db } = this.props;
-    const { user, posts, things } = this.state;
+    const { user, posts } = this.state;
     const isAdmin = false && user && user.email === "christian.genco@gmail.com";
 
-    const housekeeping = get(things, "housekeeping.body");
-    const showHousekeeping = get(things, "settings.showHousekeeping");
+    const housekeeping = get(posts, "_notes.body");
+    const showHousekeeping = get(posts, "_notes.settings.showHousekeeping");
 
     return (
       <div className="container-fluid" style={{ marginTop: "10px" }}>
