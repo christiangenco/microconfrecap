@@ -6,6 +6,8 @@ import HomePage from "./pages/HomePage";
 import PostPage from "./pages/PostPage";
 
 import AdminWell from "./components/AdminWell";
+import Bio from "./components/Bio";
+import CTA from "./components/CTA";
 
 import Auth from "./components/Auth";
 
@@ -108,7 +110,11 @@ class App extends Component {
             {false && <pre>{JSON.stringify(this.state.things, null, 2)}</pre>}
             <Link to="/" style={{ color: "black" }}>
               <h1>
-                <span className={location.pathname === "/" ? "" : "small"}>
+                <span
+                  className={
+                    location.pathname === "/" ? "" : "small text-muted"
+                  }
+                >
                   {location.pathname !== "/" && "🔙"}
                   {location.pathname === "/" && (
                     <img
@@ -121,6 +127,7 @@ class App extends Component {
                 </span>
               </h1>
             </Link>
+
             {showHousekeeping && (
               <Route
                 exact
@@ -159,6 +166,13 @@ class App extends Component {
                 <PostPage {...props} posts={posts} isAdmin={isAdmin} db={db} />
               )}
             />
+
+            <hr />
+
+            <CTA />
+            <div style={{ width: "100%", height: 20 }} />
+            <Bio />
+            <div style={{ width: "100%", height: 20 }} />
           </div>
         </div>
       </div>

@@ -59,8 +59,16 @@ export class AdminWell extends Component {
         <div className="card-body">
           <div className="card-text">
             <div style={{ float: "right" }}>
-              <Share url="https://microconf.gen.co" />
-              <Hashtag hashtag="microconf" />
+              <Share
+                url={"https://microconf.gen.co"}
+                options={{
+                  text: "Microconf 2018 live recap",
+                  hashtags: "microconf",
+                  via: "cgenco",
+                  related: "microconf",
+                }}
+              />
+              {/* <Hashtag hashtag="microconf" /> */}
               <Follow username={"cgenco"} />
             </div>
 

@@ -35,6 +35,10 @@ export class Post extends Component {
         return <a href={href}>{children}</a>;
       },
       blockquote: ({ children }) => {
+        let text = innerText(children);
+        if (speaker.twitter) text += ` --@${speaker.twitter}`;
+        else if (speaker.name) text += ` --${speaker.name}`;
+
         return (
           <blockquote className="blockquote">
             {children}
@@ -44,7 +48,7 @@ export class Post extends Component {
                 <Share
                   url={url || "https://microconf.gen.co"}
                   options={{
-                    text: innerText(children),
+                    text,
                     hashtags: "microconf",
                     via: "cgenco",
                     related: "microconf",
