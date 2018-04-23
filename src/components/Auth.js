@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 
 export class Auth extends Component {
+  state = { user: null };
   componentWillMount() {
     this.uiConfig = {
       // Popup signin flow rather than redirect flow.
@@ -11,16 +12,19 @@ export class Auth extends Component {
       signInSuccessUrl: "/",
       // We will display Google and Facebook as auth providers.
       signInOptions: [
-        window.firebase.auth.GoogleAuthProvider.PROVIDER_ID
+        window.firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         // this.props.firebase.auth.FacebookAuthProvider.PROVIDER_ID
-      ]
+      ],
     };
   }
 
   componentDidMount() {
     this.unregisterAuthObserver = window.firebase
       .auth()
-      .onAuthStateChanged(user => this.props.onAuthStateChanged(user));
+      .onAuthStateChanged(user => {
+        this.setState({ user });
+        this.props.onAuthStateChanged(user);
+      });
   }
 
   componentWillUnmount() {
@@ -29,6 +33,20 @@ export class Auth extends Component {
 
   render() {
     // const { firebase } = this.props;
+    const { user } = this.state;
+
+    if (user)
+      return (
+        <div>
+          {user.displayName}{" "}
+          <button
+            className="btn btn-outline-danger btn-sm"
+            onClick={e => window.firebase.auth().signOut()}
+          >
+            logout
+          </button>
+        </div>
+      );
 
     return (
       <StyledFirebaseAuth

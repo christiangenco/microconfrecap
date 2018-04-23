@@ -80,28 +80,10 @@ class App extends Component {
             className="col-sm-12"
             style={{ display: "flex", flexDirection: "row-reverse" }}
           >
-            {!user && (
-              <Auth
-                firebase={firebase}
-                onAuthStateChanged={user => this.setState({ user })}
-              />
-            )}
-            {user && (
-              <div>
-                {isAdmin && (
-                  <button
-                    className="btn btn-outline-primary"
-                    onClick={this.addPost}
-                  >
-                    add post
-                  </button>
-                )}
-                {user.displayName}{" "}
-                <button className="btn btn-outline-danger btn-sm">
-                  logout
-                </button>
-              </div>
-            )}
+            <Auth
+              firebase={firebase}
+              onAuthStateChanged={user => this.setState({ user })}
+            />
           </div>
         </div>
 
