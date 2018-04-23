@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import PropTypes from "prop-types";
 
 import Post from "../components/Post";
-import EditPost from "../components/EditPost";
+// import EditPost from "../components/EditPost";
 
 const dummyBody = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -20,70 +20,63 @@ Bibendum imperdiet. Fusce quis orci convallis, vehicula ligula quis, imperdiet n
 `;
 
 export class PostPage extends Component {
+  state = { body: "" };
+
+  shouldComponentUpdate(nextProps, nextState) {
+    // console.log({ nextProps, nextState });
+    // return true;
+    // return nextState.body !== this.state.body;
+    console.log("should componentupdate?");
+    return true;
+  }
+
+  componentDidMount() {
+    console.log("PostPage mounted!");
+    const { slug, db } = this.props;
+    this.unsubscribe = db
+      .collection("bodies")
+      .doc(slug)
+      .onSnapshot(snap => {
+        // console.log(snap);
+        const data = snap.data();
+        this.setState({ body: data ? data.body : "can't find this post :(" });
+      });
+  }
+
+  componentWillMount() {
+    console.log("PostPage mounting...");
+  }
+  componentWillUnmount() {
+    console.log("PostPage unmounting...");
+    this.unsubscribe();
+  }
+
   render() {
-    const { posts, match, location, history, isAdmin } = this.props;
-    const slug = match.params.slug;
-    const qs = new URLSearchParams(location.search);
-    const isEditing = !!qs.get("edit");
+    const { post, url, isAdmin } = this.props;
+    const { body } = this.state;
 
-    const post = Object.values(posts).find(p => p.slug === slug);
+    console.log("PostPage rendering");
+    console.log(post);
 
-    let body;
-
-    if (post) {
-      if (isEditing) {
-        body = <EditPost post={post} db={this.props.db} />;
-      } else {
-        body = (
-          <Post
-            title={post.title}
-            body={post.body}
-            speaker={post.speaker}
-            updatedAt={post.updatedAt}
-            url={"https://microconf.gen.co" + location.pathname}
-          />
-        );
-      }
-    } else {
-      body = (
-        <div className="loading">
-          <Post
-            title="How are you even reading this"
-            body={dummyBody}
-            speaker={{ name: "Christian Genco" }}
-          />
-        </div>
+    if (post)
+      return (
+        <Post
+          title={post.title}
+          body={body}
+          speaker={post.speaker}
+          updatedAt={post.updatedAt}
+          url={url}
+        />
       );
-    }
 
     return (
-      <React.Fragment>
-        {isAdmin && (
-          <div className="btn-group" role="group" aria-label="Basic example">
-            <button
-              type="button"
-              className="btn btn-primary"
-              onClick={e => {
-                history.push(`${slug}?edit=yeah`);
-              }}
-              disabled={isEditing}
-            >
-              Edit
-            </button>
-            <button
-              type="button"
-              className="btn btn-primary"
-              onClick={e => {
-                history.push(`${slug}`);
-              }}
-              disabled={!isEditing}
-            >
-              View
-            </button>
-          </div>
-        )}
-        {body}
-      </React.Fragment>
+      <div className="loading">
+        <Post
+          title="How are you even reading this"
+          body={dummyBody}
+          speaker={{ name: "Christian Genco" }}
+        />
+      </div>
     );
   }
 }

@@ -162,9 +162,20 @@ class App extends Component {
             />
             <Route
               path="/:slug"
-              component={props => (
-                <PostPage {...props} posts={posts} isAdmin={isAdmin} db={db} />
-              )}
+              component={({ match, location }) => {
+                const slug = match.params.slug;
+                const url = "https://microconf.gen.co" + location.pathname;
+                const post = Object.values(posts).find(p => p.slug === slug);
+                return (
+                  <PostPage
+                    post={post}
+                    slug={slug}
+                    url={url}
+                    isAdmin={isAdmin}
+                    db={db}
+                  />
+                );
+              }}
             />
 
             <hr />

@@ -58,10 +58,18 @@ fs.watch("posts", (event, filename) => {
   // filename might be null if file was deleted
   const doc = fileToDoc("posts/" + filename);
 
+  const body = doc.body;
+  delete doc.body;
+
+  // db
+  //   .collection("posts")
+  //   .doc(doc.id)
+  //   .set({ ...doc, updatedAt: new Date() }, { merge: true });
+
   db
-    .collection("posts")
+    .collection("bodies")
     .doc(doc.id)
-    .set({ ...doc, updatedAt: new Date() }, { merge: true });
+    .set({ body, updatedAt: new Date() }, { merge: true });
 
   console.log(`${new Date().toISOString()} updating ${filename}`);
 });

@@ -1,7 +1,5 @@
 # Next
 
-* take a photo => google photos => host it on imgur => img shortcut
-
 ---
 
 ---
@@ -15,3 +13,4 @@
 * star talks
 * user summaries (like comments)
 * push settings and housekeeping from atom
+* outline of talk on the left
