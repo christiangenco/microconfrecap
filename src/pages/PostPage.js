@@ -23,16 +23,7 @@ Bibendum imperdiet. Fusce quis orci convallis, vehicula ligula quis, imperdiet n
 export class PostPage extends Component {
   state = { body: "" };
 
-  shouldComponentUpdate(nextProps, nextState) {
-    // console.log({ nextProps, nextState });
-    // return true;
-    // return nextState.body !== this.state.body;
-    console.log("should componentupdate?");
-    return true;
-  }
-
   componentDidMount() {
-    console.log("PostPage mounted!");
     const { slug, db } = this.props;
     this.unsubscribe = db
       .collection("bodies")
@@ -43,20 +34,13 @@ export class PostPage extends Component {
       });
   }
 
-  componentWillMount() {
-    console.log("PostPage mounting...");
-  }
   componentWillUnmount() {
-    console.log("PostPage unmounting...");
     this.unsubscribe();
   }
 
   render() {
     const { post, url, isAdmin } = this.props;
     const { body } = this.state;
-
-    console.log("PostPage rendering");
-    console.log(post);
 
     if (post)
       return (
