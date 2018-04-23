@@ -11,6 +11,10 @@ This is the **body** of the summary lol.
 > FOMO means "Fear of Missing out"
 > Isn't that _cool_?
 
+![alt text goes here](https://i.imgur.com/xV2H09b.jpg)
+
+![test microconf image](https://i.imgur.com/3XudTWd.jpg)
+
 Hmmm......
 
 Holy shit this is great. I **fucking love** this. Wow.

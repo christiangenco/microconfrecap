@@ -9,7 +9,6 @@ import Typist from "react-typist";
 import { Share, Follow, Tweet } from "react-twitter-widgets";
 
 const innerText = el => {
-  console.log(el, typeof el);
   if (typeof el === undefined) return "";
   if (typeof el === "string") return el;
   if (el.props)
@@ -33,6 +32,31 @@ export class Post extends Component {
         }
 
         return <a href={href}>{children}</a>;
+      },
+      image: ({ alt, src }) => {
+        let shareURL = src;
+        const match = src.match(/https:\/\/i\.imgur.com\/(\w+)/);
+        if (match[1]) shareURL = `https://imgur.com/${match[1]}`;
+
+        return (
+          <div className="card mb-3">
+            <img src={src} alt={alt} className="card-img-top" />
+            <div className="card-body">
+              <div class="float-right">
+                <Share
+                  url={shareURL}
+                  options={{
+                    text: alt,
+                    hashtags: "microconf",
+                    via: "cgenco",
+                    related: "microconf",
+                  }}
+                />
+              </div>
+              <p className="card-text">{alt}</p>
+            </div>
+          </div>
+        );
       },
       blockquote: ({ children }) => {
         let text = innerText(children);
