@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
+import { FirestoreContext } from "../contexts";
 
 import Post from "../components/Post";
 // import EditPost from "../components/EditPost";
@@ -37,7 +38,6 @@ export class PostPage extends Component {
       .collection("bodies")
       .doc(slug)
       .onSnapshot(snap => {
-        // console.log(snap);
         const data = snap.data();
         this.setState({ body: data ? data.body : "can't find this post :(" });
       });
@@ -83,4 +83,10 @@ export class PostPage extends Component {
 
 // https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
 // PostPage.propTypes = {};
-export default PostPage;
+// export default PostPage;
+
+export default props => (
+  <FirestoreContext.Consumer>
+    {db => <PostPage {...props} db={db} />}
+  </FirestoreContext.Consumer>
+);

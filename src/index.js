@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import { FirestoreProvider } from "react-firestore";
 import { HotKeys } from "react-hotkeys";
+
+import { FirestoreContext } from "./contexts";
 
 import "./index.css";
 import App from "./App";
@@ -18,7 +19,7 @@ const config = {
   databaseURL: "https://microconfrecap.firebaseio.com",
   projectId: "microconfrecap",
   storageBucket: "microconfrecap.appspot.com",
-  messagingSenderId: "302146528978"
+  messagingSenderId: "302146528978",
 };
 firebase.initializeApp(config);
 
@@ -29,20 +30,22 @@ const db = firebase.firestore();
 // const FirebaseContext = React.createContext(firebase);
 
 const keyMap = {
-  save: "command+s"
+  save: "command+s",
 };
 
 const keyHandlers = {
-  save: e => e.preventDefault()
+  save: e => e.preventDefault(),
 };
 
 ReactDOM.render(
   // <FirestoreProvider firebase={firebase}>
-  <HotKeys keyMap={keyMap} handlers={keyHandlers}>
-    <BrowserRouter>
-      <App db={db} />
-    </BrowserRouter>
-  </HotKeys>,
+  <FirestoreContext.Provider value={db}>
+    <HotKeys keyMap={keyMap} handlers={keyHandlers}>
+      <BrowserRouter>
+        <App db={db} />
+      </BrowserRouter>
+    </HotKeys>
+  </FirestoreContext.Provider>,
   // </FirestoreProvider>,
   document.getElementById("root")
 );

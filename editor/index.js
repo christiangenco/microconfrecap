@@ -61,10 +61,10 @@ fs.watch("posts", (event, filename) => {
   const body = doc.body;
   delete doc.body;
 
-  // db
-  //   .collection("posts")
-  //   .doc(doc.id)
-  //   .set({ ...doc, updatedAt: new Date() }, { merge: true });
+  db
+    .collection("posts")
+    .doc(doc.id)
+    .set({ ...doc, updatedAt: new Date() }, { merge: true });
 
   db
     .collection("bodies")

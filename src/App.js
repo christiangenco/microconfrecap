@@ -156,13 +156,13 @@ class App extends Component {
             <Route
               exact
               path="/"
-              component={props => (
+              render={props => (
                 <HomePage {...props} posts={posts} isAdmin={isAdmin} />
               )}
             />
             <Route
               path="/:slug"
-              component={({ match, location }) => {
+              render={({ match, location }) => {
                 const slug = match.params.slug;
                 const url = "https://microconf.gen.co" + location.pathname;
                 const post = Object.values(posts).find(p => p.slug === slug);
@@ -172,7 +172,6 @@ class App extends Component {
                     slug={slug}
                     url={url}
                     isAdmin={isAdmin}
-                    db={db}
                   />
                 );
               }}
