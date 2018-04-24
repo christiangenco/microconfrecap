@@ -90,16 +90,7 @@ export class Post extends Component {
     return (
       <div>
         <Helmet>
-          <title>{title}</title>
-          <meta property="og:description" content={"post description"} />
-          <meta property="og:title" content={title} />
-          <meta property="og:url" content={url} />
-          {/* <meta property="og:image:width" content="99" />
-          <meta property="og:image:height" content="99" />
-          <meta
-          property="og:image"
-          content="https://microconf.gen.co/logo.png"
-        /> */}
+          <title>{title} | Microconf Recap 2018</title>
         </Helmet>
         <h1>{title}</h1>
         <h2>

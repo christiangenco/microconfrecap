@@ -1,5 +1,6 @@
 yarnpkg run build
 
+cp build/index.html functions/index.html
 firebase deploy
 
 # DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../build" && pwd )"

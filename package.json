@@ -2,6 +2,7 @@
   "name": "microconfrecap",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://microconf.gen.co/",
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.2",
     "@storybook/addon-links": "^3.4.2",
