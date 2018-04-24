@@ -50,3 +50,13 @@ ReactDOM.render(
   document.getElementById("root")
 );
 // registerServiceWorker();
+
+setTimeout(() => {
+  console.log("%cHey microconf!", "font-size: 40pt");
+  console.log("%cYou're probably looking for: ", "font-size: 20pt");
+  console.log(
+    "%chttps://github.com/christiangenco/microconfrecap",
+    "font-size: 20pt"
+  );
+  console.log("%cPull requests welcome :)", "font-size: 10pt");
+}, 3000);

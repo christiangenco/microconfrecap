@@ -29,7 +29,7 @@ class App extends Component {
       .onSnapshot(snap => {
         const posts = {};
         snap.forEach(doc => {
-          console.log(doc.data());
+          // console.log(doc.data());
           posts[doc.id] = { ...doc.data(), id: doc.id };
         });
         this.setState({ posts });
