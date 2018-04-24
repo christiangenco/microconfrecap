@@ -91,7 +91,7 @@ export class Mailtrain extends Component {
               <div className="col-md-6">
                 <p>
                   I'm sending out a beautiful PDF eBook of notes from every
-                  MicroConf 2017 Starter and Growth talk – both Speaker and
+                  MicroConf 2018 Starter and Growth talk – both Speaker and
                   Attendee. Want a copy?
                 </p>
                 <div className="form-group">

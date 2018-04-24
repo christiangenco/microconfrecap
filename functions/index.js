@@ -66,7 +66,7 @@ const generateScrapablePage = path => {
 const generateScrapableBook = path => {
   let imageIndex = 1;
   const match = path.match(/book\/(\d+)/);
-  if (match && match[1]) imageIndex = +match[1];
+  if (match && match[1]) imageIndex = Number(match[1]);
   imageIndex %= 16;
 
   const image = `https://microconf.gen.co/covers/${imageIndex}.jpg`;
@@ -74,7 +74,7 @@ const generateScrapableBook = path => {
     title: "Microconf 2018 Recap Book",
     url: "https://microconf.gen.co",
     description:
-      "Free beautiful PDF eBook of notes from every MicroConf 2017 Starter and Growth talk – both Speaker and Attendee. Want a copy?",
+      "Free beautiful PDF eBook of notes from every MicroConf 2018 Starter and Growth talk – both Speaker and Attendee. Want a copy?",
     image,
     speaker: { name: "Christian Genco", twitter: "cgenco" },
     date: new Date(),
@@ -101,7 +101,7 @@ exports.host = functions.https.onRequest((req, res) => {
           return res.status(200).send(content);
         })
         .catch(err => {
-          res.status(500).send(JSON.stringify(err));
+          return res.status(500).send(JSON.stringify(err));
         });
     }
   } else {
