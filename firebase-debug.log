@@ -1,0 +1,42 @@
+[debug] [2018-04-24T16:58:08.137Z] ----------------------------------------------------------------------
+[debug] [2018-04-24T16:58:08.140Z] Command:       /Users/cgenco/.nvm/versions/node/v8.4.0/bin/node /Users/cgenco/.nvm/versions/node/v8.4.0/bin/firebase serve --only hosting,functions
+[debug] [2018-04-24T16:58:08.140Z] CLI Version:   3.18.4
+[debug] [2018-04-24T16:58:08.140Z] Platform:      darwin
+[debug] [2018-04-24T16:58:08.140Z] Node Version:  v8.4.0
+[debug] [2018-04-24T16:58:08.140Z] Time:          Tue Apr 24 2018 11:58:08 GMT-0500 (CDT)
+[debug] [2018-04-24T16:58:08.140Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-24T16:58:08.151Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-24T16:58:08.151Z] > authorizing via signed-in user
+[debug] [2018-04-24T16:58:08.153Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/microconfrecap  
+  
+ Tue Apr 24 2018 11:58:08 GMT-0500 (CDT)
+[debug] [2018-04-24T16:58:08.501Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-24T16:58:08.502Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/microconfrecap/tokens  
+  
+ Tue Apr 24 2018 11:58:08 GMT-0500 (CDT)
+[debug] [2018-04-24T16:58:09.011Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-24T16:58:09.013Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/microconfrecap  
+  
+ Tue Apr 24 2018 11:58:09 GMT-0500 (CDT)
+[debug] [2018-04-24T16:58:09.243Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/cgenco/Projects/microconfrecap'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-04-24T16:58:09.718Z] Fetching environment
+[debug] [2018-04-24T16:58:09.722Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/302146528978:getServerAppConfig  
+  
+ Tue Apr 24 2018 11:58:09 GMT-0500 (CDT)
+[debug] [2018-04-24T16:58:09.722Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/302146528978/clients/_:getWebAppConfig  
+  
+ Tue Apr 24 2018 11:58:09 GMT-0500 (CDT)
+[debug] [2018-04-24T16:58:09.903Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-04-24T16:58:09.950Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-24T16:58:09.951Z] Starting @google-cloud/functions-emulator
+[debug] [2018-04-24T16:58:11.517Z] Parsing function triggers
+[info] [hosting] Rewriting /lol to local function host
+[info] ✔  functions: host: http://localhost:5001/microconfrecap/us-central1/host

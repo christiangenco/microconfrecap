@@ -2,7 +2,7 @@
 title: Is FOMO holding you back? Well, is it?
 speaker: {"name":"Natalie Nagele", "twitter": "natalienagele"}
 date: 2018-05-22 14:40:56
-conference: growth
+conference: test
 isPublic: true
 ---
 

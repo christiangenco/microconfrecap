@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route, Link, withRouter } from "react-router-dom";
+import { Route, Link, Redirect, withRouter } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 import PostPage from "./pages/PostPage";
@@ -102,6 +102,8 @@ class App extends Component {
                 </span>
               </h1>
             </Link>
+
+            <Route path="/book" render={() => <Redirect to="/" />} />
 
             {showHousekeeping && (
               <Route

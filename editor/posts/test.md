@@ -2,7 +2,7 @@
 title: Test post!!!!!!!
 speaker: {"name":"Christian Genco"}
 date: 2018-04-22 14:40:23
-conference: growth
+conference: test
 isPublic: true
 ---
 

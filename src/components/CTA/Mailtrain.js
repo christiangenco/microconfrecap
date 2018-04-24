@@ -138,10 +138,11 @@ export class Mailtrain extends Component {
               </div>
               <div className="col-md-6">
                 <img
-                  src="/bookcover.png"
+                  // src="/bookcover.png"
+                  src="/covers/3d.png"
                   alt=""
                   style={{ flex: 1 }}
-                  className="img-fluid img-thumbnail"
+                  className="img-fluid"
                 />
               </div>
             </div>

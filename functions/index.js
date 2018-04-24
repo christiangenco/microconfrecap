@@ -20,7 +20,7 @@ const template = ({
   // <meta property="article:author" content="https://www.nytimes.com/by/ian-austen" />
 
   let fullTitle = `${title}`;
-  if (speaker && speaker.name) title += ` by ${speaker.name}`;
+  if (speaker && speaker.name) fullTitle += ` by ${speaker.name}`;
 
   let fullDescription = description || "Microconf 2018 talk recap";
 
@@ -63,22 +63,47 @@ const generateScrapablePage = path => {
     });
 };
 
+const generateScrapableBook = path => {
+  let imageIndex = 1;
+  const match = path.match(/book\/(\d+)/);
+  if (match && match[1]) imageIndex = +match[1];
+  imageIndex %= 16;
+
+  const image = `https://microconf.gen.co/covers/${imageIndex}.jpg`;
+  return template({
+    title: "Microconf 2018 Recap Book",
+    url: "https://microconf.gen.co",
+    description:
+      "Free beautiful PDF eBook of notes from every MicroConf 2017 Starter and Growth talk – both Speaker and Attendee. Want a copy?",
+    image,
+    speaker: { name: "Christian Genco", twitter: "cgenco" },
+    date: new Date(),
+    updatedAt: new Date(),
+  });
+};
+
 // curl -H "User-Agent: Facebot" https://microconf.gen.co/fomo
+// curl -H "User-Agent: Facebot" https://microconf.gen.co/book/13
 
 exports.host = functions.https.onRequest((req, res) => {
-  var userAgent = req.headers["user-agent"];
+  const userAgent = req.headers["user-agent"];
+
   if (
     userAgent.startsWith("facebookexternalhit/1.1") ||
     userAgent === "Facebot" ||
     userAgent.startsWith("Twitterbot")
   ) {
-    generateScrapablePage(req.path)
-      .then(content => {
-        return res.status(200).send(content);
-      })
-      .catch(err => {
-        res.status(500).send(JSON.stringify(err));
-      });
+    if (req.path.indexOf("/book/") === 0) {
+      return res.status(200).send(generateScrapableBook(req.path));
+    } else {
+      generateScrapablePage(req.path)
+        .then(content => {
+          return res.status(200).send(content);
+        })
+        .catch(err => {
+          res.status(500).send(JSON.stringify(err));
+        });
+    }
   } else {
     res.status(200).send(fs.readFileSync("./index.html").toString());
   }
