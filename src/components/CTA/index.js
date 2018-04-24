@@ -32,7 +32,9 @@ class CTA extends Component {
               eBook of every Starter and Growth talk when it's ready! You should
               tell your friends about this.
               <Share
-                url={"https://microconf.gen.co"}
+                url={`https://microconf.gen.co/book/${Math.floor(
+                  Math.random() * 16
+                )}`}
                 options={{
                   text:
                     "I just signed up for a free ebook summary of @microconf 2018 at ",

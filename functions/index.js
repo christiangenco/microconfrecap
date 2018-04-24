@@ -24,7 +24,7 @@ const template = ({
 
   let fullDescription = description || "Microconf 2018 talk recap";
 
-  let fullImage = image || "https://i.imgur.com/9roMi3L.jpg";
+  let fullImage = image || "https://microconf.gen.co/microconf.jpg";
 
   return `<html><head>
     <title>${fullTitle}</title>
