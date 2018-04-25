@@ -9,6 +9,41 @@ import { Helmet } from "react-helmet";
 // import PropTypes from "prop-types";
 
 import { Share, Follow, Tweet } from "react-twitter-widgets";
+import Measure from "react-measure";
+
+class PureTweet extends React.PureComponent {
+  componentDidMount() {
+    console.log("PureTweet mounted");
+  }
+  componentWillUnmount() {
+    console.log("PureTweet unmounting");
+  }
+  render() {
+    const { tweetId } = this.props;
+
+    // oh nooo I'm using global varrrriables
+    // someone call the coooode police
+    window.tweetHeights || (window.tweetHeights = {});
+
+    const defaultHeight = 300;
+    let minHeight = window.tweetHeights[tweetId] || defaultHeight;
+
+    return (
+      <Measure
+        bounds
+        onResize={({ bounds: { height } }) => {
+          if (height !== defaultHeight) window.tweetHeights[tweetId] = height;
+        }}
+      >
+        {({ measureRef }) => (
+          <div ref={measureRef} style={{ minHeight }}>
+            <Tweet {...this.props} />
+          </div>
+        )}
+      </Measure>
+    );
+  }
+}
 
 const innerText = el => {
   if (typeof el === undefined) return "";
@@ -19,6 +54,12 @@ const innerText = el => {
 };
 
 export class Post extends Component {
+  componentDidMount() {
+    console.log("Post mounted");
+  }
+  componentWillUnmount() {
+    console.log("Post unmounting");
+  }
   render() {
     const { title, body, speaker, slug, url, updatedAt } = this.props;
 
@@ -30,7 +71,7 @@ export class Post extends Component {
         const tweetId = get(res, "1");
 
         if (url.hostname === "twitter.com" && tweetId) {
-          return <Tweet tweetId={tweetId} />;
+          return <PureTweet tweetId={tweetId} />;
         }
 
         return <a href={href}>{children}</a>;
