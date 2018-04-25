@@ -52,7 +52,15 @@ ReactDOM.render(
 // registerServiceWorker();
 
 setTimeout(() => {
-  console.log("%cHey microconf!", "font-size: 40pt");
+  // let's be a little spooky ;)
+  let name = "microconf";
+  const profile = localStorage.getItem("profile");
+  if (profile) {
+    try {
+      name = JSON.parse(profile).first;
+    } catch (e) {}
+  }
+  console.log(`%cHey ${name}!`, "font-size: 40pt");
   console.log("%cYou're probably looking for: ", "font-size: 20pt");
   console.log(
     "%chttps://github.com/christiangenco/microconfrecap",

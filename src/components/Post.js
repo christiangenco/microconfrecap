@@ -12,12 +12,6 @@ import { Share, Follow, Tweet } from "react-twitter-widgets";
 import Measure from "react-measure";
 
 class PureTweet extends React.PureComponent {
-  componentDidMount() {
-    console.log("PureTweet mounted");
-  }
-  componentWillUnmount() {
-    console.log("PureTweet unmounting");
-  }
   render() {
     const { tweetId } = this.props;
 
