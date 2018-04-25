@@ -1,0 +1,128 @@
+[
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2018/02/Mojca-262x272.jpg",
+    "name": "MOJCA MARŠ",
+    "title": "Founder, Super Spicy Media",
+    "bioUrl": "http://www.microconf.com/starter/speakers/mojca-mars/"
+  },
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2018/02/Allis-face-squared-262x272.jpg",
+    "name": "ALLI BLUM",
+    "title": "SaaS Onboarding Optimization Consultant",
+    "bioUrl": "http://www.microconf.com/starter/speakers/alli-blum/"
+  },
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2018/02/headshot-square-262x272.jpg",
+    "name": "ADAM WATHAN",
+    "title": "Owner, NothingWorks Inc.",
+    "bioUrl": "http://www.microconf.com/starter/speakers/adam-wathan/"
+  },
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2018/03/courtland-allen-headshot-262x272.jpg",
+    "name": "COURTLAND ALLEN",
+    "title": "Indie Hacker, Stripe",
+    "bioUrl": "http://www.microconf.com/starter/speakers/courtland-allen/"
+  },
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2018/03/garrett_dimon-262x272.png",
+    "name": "GARRETT DIMON",
+    "title": "Head of Growth, Wildbit",
+    "bioUrl": "http://www.microconf.com/starter/speakers/garrett-dimon/"
+  },
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2018/03/Marie-Poulin-262x272.jpg",
+    "name": "MARIE POULIN",
+    "title": "Co-Founder, Digital Strategist, Oki Doki",
+    "bioUrl": "http://www.microconf.com/starter/speakers/marie-poulin/"
+  },
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2016/10/2017-color_preview-262x272.jpeg",
+    "name": "JUSTIN JACKSON",
+    "title": "Founder, Transistor.fm",
+    "bioUrl": "http://www.microconf.com/starter/speakers/justin-jackson/"
+  },
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2016/10/Mike-Headshot-303x303-262x272.jpg",
+    "name": "MIKE TABER",
+    "title": "Founder, Bluetick.io",
+    "bioUrl": "http://www.microconf.com/starter/speakers/mike-taber/"
+  },
+  {
+    "image":
+      "http://www.microconf.com/starter/wp-content/uploads/sites/5/2015/05/Patrick-e1432133599821.jpg",
+    "name": "PATRICK MCKENZIE",
+    "title": "Atlas",
+    "bioUrl": "http://www.microconf.com/starter/speakers/patrick-mckenzie/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2015/05/Dave-262x272.jpg",
+    "name": "DAVE COLLINS",
+    "title": "Founder, Software Promotions",
+    "bioUrl": "https://www.microconf.com/growth/speakers/dave-collins/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2018/03/JordanGal-262x272.jpg",
+    "name": "JORDAN GAL",
+    "title": "Co-Founder & CEO, CartHook",
+    "bioUrl": "https://www.microconf.com/growth/speakers/jordan-gal/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2018/03/Anna-Automated-2017-square-262x272.jpg",
+    "name": "ANNA JACOBSEN",
+    "title": "Head of Customer Success + Onboarding, YouCanBook.me",
+    "bioUrl": "https://www.microconf.com/growth/speakers/anna-jacobsen/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2018/01/Nadya-Khoja-262x272.jpg",
+    "name": "NADYA KHOJA",
+    "title": "Director of Marketing, Venngage",
+    "bioUrl": "https://www.microconf.com/growth/speakers/nadya-khoja/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2018/04/Justine_Mares_Headshot-262x272.png",
+    "name": "JUSTIN MARES",
+    "title": "Co-Owner, FOMO",
+    "bioUrl": "https://www.microconf.com/growth/speakers/justin-mares/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2018/04/Ankur-Nagpal-262x272.png",
+    "name": "ANKUR NAGPAL",
+    "title": "CEO, Teachable",
+    "bioUrl": "https://www.microconf.com/growth/speakers/ankur-nagpal/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2018/01/Lianna-Patch-262x272.jpeg",
+    "name": "LIANNA PATCH",
+    "title": "Owner, Punchline Conversion Copywriter",
+    "bioUrl": "https://www.microconf.com/growth/speakers/lianna-patch/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2018/01/Claire-Suellentrop-262x272.jpg",
+    "name": "CLAIRE SUELLENTROP",
+    "title": "Head of Marketing, Userlist.io",
+    "bioUrl": "https://www.microconf.com/growth/speakers/claire-suellentrop/"
+  },
+  {
+    "image":
+      "https://www.microconf.com/growth/wp-content/uploads/sites/4/2015/05/Rob_Drip-004-262x272.jpg",
+    "name": "ROB WALLING",
+    "title": "Drip",
+    "bioUrl": "https://www.microconf.com/growth/speakers/rob-walling/"
+  }
+]
