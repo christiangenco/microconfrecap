@@ -1,8 +1,7 @@
 # Next
 
-* share "/book" link that has metadata for the book, like the cover, when sharing
+* ask for full name
 * share on facebook links
-* https://cards-dev.twitter.com/validator for homepage
 
 ---
 
