@@ -48,12 +48,6 @@ const innerText = el => {
 };
 
 export class Post extends Component {
-  componentDidMount() {
-    console.log("Post mounted");
-  }
-  componentWillUnmount() {
-    console.log("Post unmounting");
-  }
   render() {
     const { title, body, speaker, slug, url, updatedAt } = this.props;
 

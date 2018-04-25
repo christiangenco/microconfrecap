@@ -35,25 +35,27 @@ export class Auth extends Component {
     // const { firebase } = this.props;
     const { user } = this.state;
 
-    if (user)
-      return (
-        <div>
-          {user.displayName}{" "}
-          <button
-            className="btn btn-outline-danger btn-sm"
-            onClick={e => window.firebase.auth().signOut()}
-          >
-            logout
-          </button>
-        </div>
-      );
-
     return (
-      <StyledFirebaseAuth
-        className={""}
-        uiConfig={this.uiConfig}
-        firebaseAuth={window.firebase.auth()}
-      />
+      <div>
+        <div style={{ display: user ? "none" : "block" }}>
+          <StyledFirebaseAuth
+            className={""}
+            uiConfig={this.uiConfig}
+            firebaseAuth={window.firebase.auth()}
+          />
+        </div>
+        {user && (
+          <div>
+            {user.displayName}{" "}
+            <button
+              className="btn btn-outline-danger btn-sm"
+              onClick={e => window.firebase.auth().signOut()}
+            >
+              logout
+            </button>
+          </div>
+        )}
+      </div>
     );
   }
 }
