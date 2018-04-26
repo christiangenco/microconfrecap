@@ -8,6 +8,8 @@ import { Helmet } from "react-helmet";
 
 // import PropTypes from "prop-types";
 
+import Speaker from "./Speaker";
+
 import { Share, Follow, Tweet } from "react-twitter-widgets";
 import Measure from "react-measure";
 
@@ -122,14 +124,8 @@ export class Post extends Component {
           <title>{title} | Microconf Recap 2018</title>
         </Helmet>
         <h1>{title}</h1>
-        <h2>
-          by {speaker.name}{" "}
-          {speaker.twitter && (
-            <div style={{ float: "right" }}>
-              <Follow username={speaker.twitter} options={{ size: "large" }} />
-            </div>
-          )}
-        </h2>
+        <Speaker speaker={speaker} />
+
         <div className="clearfix" />
 
         <Markdown source={body} renderers={renderers} />
