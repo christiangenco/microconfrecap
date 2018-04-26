@@ -126,7 +126,7 @@ export class Post extends Component {
         <h1>{title}</h1>
         <Speaker speaker={speaker} />
 
-        <div className="clearfix" />
+        <div style={{ height: 10 }} />
 
         <Markdown source={body} renderers={renderers} />
 

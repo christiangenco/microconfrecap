@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import PropTypes from "prop-types";
 import axios from "axios";
 import get from "lodash.get";
+import { Follow } from "react-twitter-widgets";
 
 export class Speaker extends Component {
   state = {
@@ -25,7 +26,7 @@ export class Speaker extends Component {
 
   render() {
     const { speaker } = this.props;
-    const { name } = speaker;
+    const { name, title, bioUrl } = speaker;
     const { twitter } = this.state;
 
     const image =
@@ -36,13 +37,24 @@ export class Speaker extends Component {
     const location = speaker.location || get(twitter, "location");
     const verified = get(twitter, "verified");
 
+    // TODO: urls
+
     return (
-      <div className="">
-        <div className="row">
+      <div className="card">
+        <div className="row card-body">
           <div className="col-md-8">
             <div className="card-block">
-              <h4 className="card-title">by {name}</h4>
+              <h3 className="card-title" style={{ marginBottom: 0 }}>
+                About {name}
+              </h3>
+              {title && <h5 className="text-muted">{title}</h5>}
               <p className="card-text">{description}</p>
+              <div className="card-text" style={{ marginTop: 10 }}>
+                {location}{" "}
+                {screen_name && (
+                  <Follow username={screen_name} options={{ size: "large" }} />
+                )}
+              </div>
             </div>
           </div>
           {image && (
@@ -51,9 +63,11 @@ export class Speaker extends Component {
             </div>
           )}
         </div>
-        <pre>
-          {JSON.stringify({ props: this.props, state: this.state }, null, 2)}
-        </pre>
+        {false && (
+          <pre>
+            {JSON.stringify({ props: this.props, state: this.state }, null, 2)}
+          </pre>
+        )}
       </div>
     );
   }
