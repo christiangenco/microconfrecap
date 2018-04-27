@@ -3,5 +3,9 @@ service cloud.firestore {
     match /{document=**} {
       allow read;
     }
+    match /posts/{slug}/summaries/{user_id} {
+      allow read;
+      allow create, update, delete: if request.auth.uid == user_id;
+    }
   }
 }

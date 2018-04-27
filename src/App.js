@@ -145,6 +145,7 @@ class App extends Component {
                 const post = Object.values(posts).find(p => p.slug === slug);
                 return (
                   <PostPage
+                    user={user}
                     post={post}
                     slug={slug}
                     url={url}

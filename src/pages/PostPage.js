@@ -2,6 +2,9 @@ import React, { Component } from "react";
 // import PropTypes from "prop-types";
 import { FirestoreContext } from "../contexts";
 
+import SummariesPage from "./SummariesPage";
+import CTA from "../components/CTA";
+
 import Post from "../components/Post";
 // import EditPost from "../components/EditPost";
 
@@ -40,17 +43,28 @@ export class PostPage extends Component {
 
   render() {
     const { post, url, isAdmin } = this.props;
+    const { user, db } = this.props;
     const { body } = this.state;
 
     if (post)
       return (
-        <Post
-          title={post.title}
-          body={body}
-          speaker={post.speaker}
-          updatedAt={post.updatedAt}
-          url={url}
-        />
+        <div>
+          <Post
+            title={post.title}
+            body={body}
+            speaker={post.speaker}
+            updatedAt={post.updatedAt}
+            url={url}
+          />
+
+          <hr />
+
+          <CTA />
+
+          <hr />
+
+          <SummariesPage db={db} user={user} slug={post.slug} />
+        </div>
       );
 
     return (
