@@ -11,7 +11,7 @@ export class Speaker extends Component {
 
   componentDidMount() {
     const { speaker } = this.props;
-    if (speaker && speaker.twitter) {
+    if (false && speaker && speaker.twitter) {
       axios
         .get(
           `https://wt-christian-gen-co-0.run.webtask.io/twitterwebtask?screen_name=${
