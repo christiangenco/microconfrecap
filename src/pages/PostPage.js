@@ -59,9 +59,9 @@ export class PostPage extends Component {
 
           <hr />
 
-          <CTA />
+          {false && <CTA />}
 
-          <hr />
+          {false && <hr />}
 
           <SummariesPage db={db} user={user} slug={post.slug} />
         </div>

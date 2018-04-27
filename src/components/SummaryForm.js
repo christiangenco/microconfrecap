@@ -50,7 +50,7 @@ export class SummaryForm extends Component {
             e.preventDefault();
             if (!user) {
               alert(
-                "Sign in (button in the top right) to save and share your summary."
+                "Sign in with the button in the top right of this page to save and share your summary."
               );
               return;
             }
