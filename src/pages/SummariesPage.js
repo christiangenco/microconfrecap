@@ -32,8 +32,7 @@ export class SummariesPage extends Component {
     const { user, slug, db } = this.props;
     const { summaries } = this.state;
 
-    const userSummary = summaries[user.uid];
-    console.dir({ summaries, userSummary });
+    const userSummary = user ? summaries[user.uid] : null;
 
     return (
       <div>
@@ -46,7 +45,7 @@ export class SummariesPage extends Component {
               .collection("posts")
               .doc(slug)
               .collection("summaries")
-              .doc(user.uid)
+              .doc(user && user.uid)
               .set(
                 { ...summary, name: user.displayName, updatedAt: new Date() },
                 { merge: true }

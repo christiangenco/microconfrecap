@@ -4,6 +4,8 @@ import Textarea from "react-textarea-autosize";
 import debounce from "lodash.debounce";
 import get from "lodash.get";
 
+import Auth from "./Auth";
+
 export class SummaryForm extends Component {
   state = {};
 
@@ -12,6 +14,7 @@ export class SummaryForm extends Component {
     try {
       const summary = JSON.parse(localStorage.getItem(key));
 
+      // this overrides summaries saved in firebase but ¯\_(ツ)_/¯
       if (summary) return { summary };
     } catch (e) {
       console.error(e);
@@ -32,6 +35,10 @@ export class SummaryForm extends Component {
     const { summary } = this.state;
     const { body, isPublic } = summary;
 
+    // if (!user) {
+    //   return <p>Log in (top right) to add your own summary.</p>;
+    // }
+
     const isDirty =
       body !== get(this.props.value, "body") ||
       isPublic !== get(this.props.value, "isPublic");
@@ -41,17 +48,25 @@ export class SummaryForm extends Component {
         <form
           onSubmit={e => {
             e.preventDefault();
+            if (!user) {
+              alert(
+                "Sign in (button in the top right) to save and share your summary."
+              );
+              return;
+            }
             onChange(summary);
           }}
         >
           <div className="form-group">
-            <label for="">
-              {user ? `${user.displayName}'s` : "Your"} Summary
+            <label for="body">
+              <h3>{user ? `${user.displayName}'s` : "Your"} Summary</h3>
             </label>
             <Textarea
+              id="body"
               minRows={3}
               className="form-control"
               value={body}
+              placeholder={"The key points of this talk are..."}
               onChange={e =>
                 this.setState(
                   { summary: { ...summary, body: e.target.value } },
@@ -64,25 +79,29 @@ export class SummaryForm extends Component {
             </small>
           </div>
 
-          <div className="form-group form-check">
-            <input
-              type="checkbox"
-              className="form-check-input"
-              id="isPublic"
-              checked={isPublic}
-              onChange={e =>
-                this.setState(
-                  {
-                    summary: { ...summary, isPublic: e.target.checked },
-                  },
-                  this.save
-                )
-              }
-            />
-            <label className="form-check-label" for="isPublic">
-              Public?
-            </label>
-          </div>
+          {user && (
+            <div className="form-group form-check">
+              <input
+                type="checkbox"
+                className="form-check-input"
+                id="isPublic"
+                checked={isPublic}
+                disabled={!user}
+                onChange={e =>
+                  this.setState(
+                    {
+                      summary: { ...summary, isPublic: e.target.checked },
+                    },
+                    this.save
+                  )
+                }
+              />
+              <label className="form-check-label" for="isPublic">
+                Public?
+              </label>
+            </div>
+          )}
+
           <button
             type="submit"
             className={`btn btn-block ${

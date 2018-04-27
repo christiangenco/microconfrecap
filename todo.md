@@ -1,7 +1,5 @@
 # Next
 
-* render user summaries in markdown
-* cache twitter bios
 * check summary UI when user isn't logged in; should prompt to log in
 * check that localStorage saving doesn't overwrite between pages
 * bigger CTA for tweeting with the photo they would tweet
