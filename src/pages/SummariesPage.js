@@ -17,8 +17,8 @@ export class SummariesPage extends Component {
       .onSnapshot(snap => {
         const summaries = {};
         snap.forEach(doc => {
-          console.log(doc.data());
-          summaries[doc.id] = { ...doc.data(), id: doc.id };
+          const data = doc.data();
+          if (data.isPublic) summaries[doc.id] = { ...data, id: doc.id };
         });
         this.setState({ summaries });
       });
@@ -46,9 +46,11 @@ export class SummariesPage extends Component {
               .collection("posts")
               .doc(slug)
               .collection("summaries")
-              // .doc(user.uid)
-              .doc("lol")
-              .set(summary, { merge: true });
+              .doc(user.uid)
+              .set(
+                { ...summary, name: user.displayName, updatedAt: new Date() },
+                { merge: true }
+              );
           }}
         />
 
