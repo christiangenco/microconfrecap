@@ -24,22 +24,22 @@ def get_bio(screen_name)
   }
 end
 
-# puts get_bio(ARGV.first).to_json
+puts get_bio(ARGV.first).to_json
 
-Dir.glob('./drafts/*').each do |path|
-  draft = File.read(path)
-  draft =~ /\nspeaker\: (.+)$/
-  speaker_line = Regexp.last_match(1)
-  speaker_json = speaker_line.gsub('=>', ':')
-  speaker = JSON.parse(speaker_json)
-  screen_name = speaker['twitter']
-  twitter_bio = get_bio(screen_name)
-
-  new_bio = speaker.merge(twitter_bio)
-
-  new_draft = draft.sub(speaker_line, new_bio.to_json)
-
-  File.open(path, 'w') { |f| f.puts new_draft }
-
-  # exit
-end
+# Dir.glob('./drafts/*').each do |path|
+#   draft = File.read(path)
+#   draft =~ /\nspeaker\: (.+)$/
+#   speaker_line = Regexp.last_match(1)
+#   speaker_json = speaker_line.gsub('=>', ':')
+#   speaker = JSON.parse(speaker_json)
+#   screen_name = speaker['twitter']
+#   twitter_bio = get_bio(screen_name)
+#
+#   new_bio = speaker.merge(twitter_bio)
+#
+#   new_draft = draft.sub(speaker_line, new_bio.to_json)
+#
+#   File.open(path, 'w') { |f| f.puts new_draft }
+#
+#   # exit
+# end
