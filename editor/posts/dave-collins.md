@@ -1,6 +1,6 @@
 ---
 title: SEO Tasks That Produce Results
-speaker: {"image": "https://www.microconf.com/growth/wp-content/uploads/sites/4/2015/05/Dave-262x272.jpg", "name": "Dave Collins", "title": "Founder, Software Promotions", "bioUrl": "https://www.microconf.com/growth/speakers/dave-collins/", "twitter": "", "website": ""}
+speaker: {"image": "https://www.microconf.com/growth/wp-content/uploads/sites/4/2015/05/Dave-262x272.jpg", "name": "Dave Collins", "title": "Founder, Software Promotions", "bioUrl": "https://www.microconf.com/growth/speakers/dave-collins/", "twitter": "TheDaveCollins", "website": ""}
 date: 2018-04-30 11:26:27
 conference: growth
 description: "SEO isn't dead! The usual SEO formula is just boring and unlikely to work. Learn the 6 key rules to cheat at SEO."
