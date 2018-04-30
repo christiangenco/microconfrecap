@@ -2,7 +2,7 @@
 title: Test Recap
 speaker: {"name":"Christian Genco","twitter":"cgenco","location":"Dallas, Texas","description":"Internet micropreneur. Creator of dbinbox, textbooks please, and other stuff at https://t.co/i717jv5PIr. Aspiring rock climber 🧗🏻‍♂️, improv actor 🎭, and vlogger 🤳🏻.","verified":false,"image":"https://pbs.twimg.com/profile_images/967988126810497024/FfWSKiD_.jpg"}
 date: 2018-04-22 14:40:23
-conference: growth
+conference: test
 isPublic: true
 ---
 
