@@ -8,7 +8,7 @@ image: https://i.imgur.com/L79ZWF7.png
 isPublic: true
 ---
 
-Check out [Dave's summary of this talk](https://www.softwarepromotions.com/microconf-2018-resources-dave-collins/) - you can also schedule a call with him!
+Check out [Dave's summary of his talk](https://www.softwarepromotions.com/microconf-2018-resources-dave-collins/) - you can also schedule a call with him!
 
 ---
 
