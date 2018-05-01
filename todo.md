@@ -1,14 +1,15 @@
 # Next
 
-* check summary UI when user isn't logged in; should prompt to log in
-* check that localStorage saving doesn't overwrite between pages
-* bigger CTA for tweeting with the photo they would tweet
+* add images to today's talks
+* add "share" button on talk
 * CTA after tweeting with checklist to follow me and post a summary of a talk
 
 ---
 
 https://developers.facebook.com/tools/debug/
 https://cards-dev.twitter.com/validator
+
+* https://www.princexml.com/ (Josh Kaufman)
 
 ---
 

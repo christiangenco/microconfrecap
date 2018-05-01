@@ -67,9 +67,9 @@ export class Post extends Component {
         return <a href={href}>{children}</a>;
       },
       image: ({ alt, src }) => {
-        let shareURL = src;
-        const match = src.match(/https:\/\/i\.imgur.com\/(\w+)/);
-        if (match[1]) shareURL = `https://imgur.com/${match[1]}`;
+        let shareURL = `${url}?img=${encodeURIComponent(src)}`;
+        // const match = src.match(/https:\/\/i\.imgur.com\/(\w+)/);
+        // if (match[1]) shareURL = `https://imgur.com/${match[1]}`;
 
         return (
           <div className="card mb-3">
