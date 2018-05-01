@@ -17,9 +17,6 @@ export class Tracker extends Component {
     }
   }
   pageview = (pathname, search) => {
-    console.log("pageview: ");
-    console.log({ pathname, search });
-
     const page = pathname + search;
     ReactGA.set({ page });
     ReactGA.pageview(page);

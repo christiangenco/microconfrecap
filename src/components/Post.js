@@ -55,13 +55,24 @@ export class Post extends Component {
 
     const renderers = {
       link: ({ href, children }) => {
+        const nakedLink = children[0] === href;
+
         const url = new URL(href);
         const tweetRegex = /\/\w+\/status\/(\d+)/;
         const res = url.pathname.match(tweetRegex);
-        const tweetId = get(res, "1");
+        const tweetId = get(res, 1);
 
-        if (url.hostname === "twitter.com" && tweetId) {
+        if (nakedLink && url.hostname === "twitter.com") {
           return <PureTweet tweetId={tweetId} />;
+        }
+
+        if (nakedLink && href.match(/\.mp3$/)) {
+          return (
+            <audio controls style={{ width: "100%" }}>
+              <source src={href} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          );
         }
 
         return <a href={href}>{children}</a>;
