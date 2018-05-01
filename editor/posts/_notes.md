@@ -7,8 +7,6 @@ date: 2018-04-23 16:46:06
 
 Up next:
 
-* _lunch_
-* Ankur Nagpal
 * Anna Jacobsen
 * Claire Suellentrop
 * Jordan Gal
