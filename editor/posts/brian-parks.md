@@ -6,6 +6,7 @@ conference: growth
 description: Microconf 2018 talk recap
 image: https://i.imgur.com/9s2LyHS.jpg
 isPublic: true
+facebookStream: https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamlanio%2Fvideos%2F1676996419015648%2F&show_text=0&width=560
 ---
 
 Check out [Bigfoot Capital's Growth Edition Giveaways](https://www.bigfootcap.com/microconf-growth-edition-giveaways/)

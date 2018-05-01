@@ -6,6 +6,7 @@ conference: growth
 description: Hiring can easily be a trap to fall into. Get these three things right and you won't fall on your face.
 image: https://i.imgur.com/GQQFyKy.png
 isPublic: true
+facebookStream: https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamlanio%2Fvideos%2F1676996419015648%2F&show_text=0&width=560
 ---
 
 Matthew founded Agency360, but screwed up in hiring his team.

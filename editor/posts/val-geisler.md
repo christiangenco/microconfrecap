@@ -6,6 +6,7 @@ conference: growth
 description: "Do you feel completely overwhelmed by the idea of segmenting your list? Aren’t sure what kinds of emails to send besides links to your latest blog posts? Val is a marketing conversion copywriter + strategist that can help."
 image: https://i.imgur.com/uE2sqkw.png
 isPublic: true
+facebookStream: https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamlanio%2Fvideos%2F1676996419015648%2F&show_text=0&width=560
 ---
 
 Here's an email onboarding strategy made to stick in your brain.

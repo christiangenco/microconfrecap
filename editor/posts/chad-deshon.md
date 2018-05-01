@@ -6,6 +6,7 @@ conference: growth
 description: Microconf 2018 talk recap
 image: https://i.imgur.com/9dCVBPj.jpg
 isPublic: true
+facebookStream: https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamlanio%2Fvideos%2F1676996419015648%2F&show_text=0&width=560
 ---
 
 Chad did the Microconf thing - B2B SaaS, charging more, taking sales calls with Fortune 500 companies - and it totally worked.
