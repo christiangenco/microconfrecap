@@ -1,7 +1,7 @@
 ---
 title: "How We've Taken Fomo 20 -> 80K MRR in 18 Months"
 speaker: {"name":"Justin Mares","twitter":"jwmares","location":"San Francisco","description":"Founder, @kettleandfire. Builder, @usefomo. Co-author, @tractionbook.","verified":true,"image":"https://pbs.twimg.com/profile_images/702974311611518976/6hfJSIFI.jpg","website":"http://justinmares.com","title": "Co-Owner, FOMO", "bioUrl": "https://www.microconf.com/growth/speakers/justin-mares/"}
-date: 2018-04-30 10:18:07
+date: 2018-04-30 10:18:07 UTC-07:00
 conference: growth
 description: Justin Mares grew Fomo 4x in 18 months. He did this with four simple changes that could apply to any product.
 image: https://i.imgur.com/xtKGQNO.png

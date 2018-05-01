@@ -1,7 +1,7 @@
 ---
 title: How My Weekly Podcast Runs Itself
 speaker: {"name":"Brian Casel","twitter":"CasJam","location":"Orange, CT","description":"I write and teach at https://productizeandscale.com/ // I run https://audienceops.com/ // I co-host the http://bootstrappedweb.com/ podcast.","verified":false,"image":"https://pbs.twimg.com/profile_images/964162706839187457/7Kxj-6V6.jpg","website":"http://productizeandscale.com"}
-date: 2018-04-30 16:17:34
+date: 2018-04-30 16:17:34 UTC-07:00
 conference: growth
 description: With every project Brian starts, he asks how can I sustain this after I stop working on it?
 image: https://i.imgur.com/bKY95Ta.jpg

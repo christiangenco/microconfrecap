@@ -1,7 +1,7 @@
 ---
 title: Lessons From Over 100 Million Dollars in Deals
 speaker: {"name":"Thomas Smale","twitter":"ThomasSmale","location":"Boston and London","description":"Founder of FE International. We help sell online businesses. Speaker. Columnist at https://t.co/AZs6NVl3tI","verified":false,"image":"https://pbs.twimg.com/profile_images/560388726820323328/y6DXcyiD.jpeg","website":"http://feinternational.com"}
-date: 2018-04-30 16:32:09
+date: 2018-04-30 16:32:09 UTC-07:00
 conference: growth
 description: "Since founding FE International in 2006, Thomas has done several hundred million dollars in deals. They invest loads of time with each business to increase the selling success rate. Here's how."
 image: https://i.imgur.com/2ilWoIF.png

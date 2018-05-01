@@ -1,7 +1,7 @@
 ---
 title: 12 Lessons I learned Moving from Bootstrapped to Venture Backed
-speaker: {"name":"Rob Walling","twitter":"robwalling","location":"Minneapolis, MN","description":"Serial Entrepreneur. Co-founder of https://t.co/vJQZvjlof1 and https://t.co/GlDeqm8W3U. I'm rarely on Twitter.","verified":false,"image":"https://pbs.twimg.com/profile_images/537394665775833088/N1JHDvju.png","website":"http://www.robwalling.com","title":"Drip", "bioUrl":"https://www.microconf.com/growth/speakers/rob-walling/"}
-date: 2018-04-30 17:12:38
+speaker: {"image":"https://pbs.twimg.com/profile_images/537394665775833088/N1JHDvju.png","name":"Rob Walling","title":"Drip","bioUrl":"https://www.microconf.com/growth/speakers/rob-walling/","twitter":"robwalling","website":"http://www.robwalling.com","location":"Minneapolis, MN","description":"Serial Entrepreneur. Co-founder of https://www.drip.com/ and http://www.microconf.com/. I'm rarely on Twitter.","verified":false}
+date: 2018-04-30 17:12:38 UTC-07:00
 conference: growth
 description: "I am not anti-venture capital. I am anti-everyone-thinking-venture-capital-is-the-only-way-to-start-a-tech-company. If you’re self-funded with one or two founders, you can support your entire business from a tiny niche that provides $20k/month in revenue."
 image: https://i.imgur.com/M3tcMmj.png

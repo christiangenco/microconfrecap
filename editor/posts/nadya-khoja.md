@@ -1,7 +1,7 @@
 ---
 title: 12 Principles Of Viral Content
 speaker: {"name":"Nadya Khoja","twitter":"NadyaKhoja","location":"Toronto, Ontario","description":"Head of Marketing at @Venngage and Creator of drinkwithnadya.com. Speaker. Feminist. As seen on @HuffingtonPost @Entrepreneur @TheNextWeb @Forbes","verified":false,"image":"https://pbs.twimg.com/profile_images/926192830103605248/FinQetz7.jpg","website":"https://www.venngage.com", "title":"Director of Marketing, Venngage"}
-date: 2018-04-30 13:45:22
+date: 2018-04-30 13:45:22 UTC-07:00
 conference: growth
 description: "When making viral content, most people focus on clickbaity titles. This will get a bunch of content generated, but it won't be quality content that actually engages users."
 image: https://i.imgur.com/2wYG6Ew.png

@@ -1,7 +1,7 @@
 ---
 title: The Case Against Growth
 speaker: {"name":"Dave Kiss","twitter":"davekiss","location":"Cleveland, OH","description":"Making stuff for the internet and sharing what I learn along the way. @vimeography @aceblocks @createinternet","verified":false,"image":"https://pbs.twimg.com/profile_images/988418664268484609/4bgbBdxj.jpg","website":"https://davekiss.com"}
-date: 2018-04-30 15:53:26
+date: 2018-04-30 15:53:26 UTC-07:00
 conference: growth
 description: The best way to build something sustainable is to maximize yourself.
 image: https://i.imgur.com/zo1DOAT.png

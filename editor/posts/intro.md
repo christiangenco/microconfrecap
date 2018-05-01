@@ -1,7 +1,7 @@
 ---
 title: Microconf Growth Intro
 speaker: {"image":"https://pbs.twimg.com/profile_images/537394665775833088/N1JHDvju.png","name":"Rob Walling","title":"Drip","bioUrl":"https://www.microconf.com/growth/speakers/rob-walling/","twitter":"robwalling","website":"http://www.robwalling.com","location":"Minneapolis, MN","description":"Serial Entrepreneur. Co-founder of https://www.drip.com/ and http://www.microconf.com/. I'm rarely on Twitter.","verified":false}
-date: 2018-04-30 10:09:47
+date: 2018-04-30 10:09:47 UTC-07:00
 conference: growth
 isPublic: true
 ---

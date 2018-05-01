@@ -1,10 +1,10 @@
 ---
 title: "Q+A With Patrick Collison, Co-Founder of Stripe"
 speaker: {"name":"Patrick Collison","title": "Co-Founder and CEO of Stripe","twitter":"patrickc","location":"patrick@stripe.com","description":"Fallibilist, optimist. Stripe CEO.","verified":true,"image":"https://pbs.twimg.com/profile_images/825622525342199809/_iAaSUQf.jpg","website":"http://patrickcollison.com"}
-date: 2018-04-30 14:39:34
+date: 2018-04-30 14:39:34 UTC-07:00
 conference: growth
 description: "Stripe is a big company - how do they fit into Microconf? They embody the bootstraper ethos - they took it a long way as two dudes in a garage with minimal funding."
-image: https://i.imgur.com/XrddjTU.jpg
+image: https://i.imgur.com/H0XrmwJ.jpg
 isPublic: true
 ---
 

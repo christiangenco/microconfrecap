@@ -1,7 +1,7 @@
 ---
 title: The Path to Parallel Entrepreneurship
 speaker: {"name":"Ryan Buckley","twitter":"rbucks","location":"Walnut Creek, CA","description":"Founder of Toofr, eNPS, Thinbox. Fmr CEO/cofounder of Scripted. Believer in bootstrapping. Resident of Contra Costa County. I do @emailpatterns.","verified":false,"image":"https://pbs.twimg.com/profile_images/878454035501637637/Xhy21BOV.jpg","website":"https://www.toofr.com"}
-date: 2018-04-30 16:06:44
+date: 2018-04-30 16:06:44 UTC-07:00
 conference: growth
 description: "Parallel entrepreneurship has a negative stigma, but there are a lot of people in this room that do it successfully."
 image: https://i.imgur.com/76IDvbD.png
