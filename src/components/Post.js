@@ -51,7 +51,15 @@ const innerText = el => {
 
 export class Post extends Component {
   render() {
-    const { title, body, speaker, slug, url, updatedAt } = this.props;
+    const {
+      title,
+      body,
+      speaker,
+      slug,
+      url,
+      updatedAt,
+      facebookStream,
+    } = this.props;
 
     const renderers = {
       link: ({ href, children }) => {
@@ -137,7 +145,22 @@ export class Post extends Component {
           <title>{title} | Microconf Recap 2018</title>
         </Helmet>
         <h1>{title}</h1>
+
         <Speaker speaker={speaker} />
+
+        {facebookStream && (
+          <iframe
+            src={facebookStream}
+            width="560"
+            height="432"
+            style={{ border: "none", overflow: "hidden" }}
+            scrolling="no"
+            frameborder="0"
+            allowTransparency="true"
+            allow="encrypted-media"
+            allowFullScreen="true"
+          />
+        )}
 
         <div style={{ height: 10 }} />
 

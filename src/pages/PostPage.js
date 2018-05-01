@@ -49,13 +49,7 @@ export class PostPage extends Component {
     if (post)
       return (
         <div>
-          <Post
-            title={post.title}
-            body={body}
-            speaker={post.speaker}
-            updatedAt={post.updatedAt}
-            url={url}
-          />
+          <Post {...post} body={body} url={url} />
 
           <hr />
 
