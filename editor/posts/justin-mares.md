@@ -8,6 +8,10 @@ image: https://i.imgur.com/xtKGQNO.png
 isPublic: true
 ---
 
+![Justin Mares at Microconf 2018](https://i.imgur.com/Qf01UyI.jpg)
+
+https://microconf2018.nyc3.digitaloceanspaces.com/Justin%20Mares%20-%20Recap.mp3
+
 ## Bio
 
 Former director of revenue, Exceptional Software (acquired by Rackspace for $10M). Currently director of [Fomo](https://usefomo.com).

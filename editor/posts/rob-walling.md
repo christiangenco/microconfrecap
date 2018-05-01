@@ -1,12 +1,16 @@
 ---
 title: 12 Lessons I learned Moving from Bootstrapped to Venture Backed
-speaker: {"image":"https://www.microconf.com/growth/wp-content/uploads/sites/4/2015/05/Rob_Drip-004-262x272.jpg", "name":"Rob Walling", "title":"Drip", "bioUrl":"https://www.microconf.com/growth/speakers/rob-walling/", "twitter":"robwalling", "website":""}
+speaker: {"name":"Rob Walling","twitter":"robwalling","location":"Minneapolis, MN","description":"Serial Entrepreneur. Co-founder of https://t.co/vJQZvjlof1 and https://t.co/GlDeqm8W3U. I'm rarely on Twitter.","verified":false,"image":"https://pbs.twimg.com/profile_images/537394665775833088/N1JHDvju.png","website":"http://www.robwalling.com","title":"Drip", "bioUrl":"https://www.microconf.com/growth/speakers/rob-walling/"}
 date: 2018-04-30 17:12:38
 conference: growth
 description: "I am not anti-venture capital. I am anti-everyone-thinking-venture-capital-is-the-only-way-to-start-a-tech-company. If you’re self-funded with one or two founders, you can support your entire business from a tiny niche that provides $20k/month in revenue."
 image: https://i.imgur.com/M3tcMmj.png
 isPublic: true
 ---
+
+![Rob Walling at Microconf Growth 2018](https://i.imgur.com/aSdxyq5.jpg)
+
+https://microconf2018.nyc3.digitaloceanspaces.com/Rob%20Walling%20-%20Recap.mp3
 
 Rob is a serial entrepreneur that most recently started [Drip](https://www.drip.com/), which was [acquired by Leadpages in 2016](https://www.leadpages.net/blog/drip-acquisition/).
 

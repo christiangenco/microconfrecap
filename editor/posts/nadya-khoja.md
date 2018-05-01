@@ -8,6 +8,10 @@ image: https://i.imgur.com/2wYG6Ew.png
 isPublic: true
 ---
 
+![Nadya Khoja at Microconf Growth 2018](https://i.imgur.com/htG4CAp.jpg)
+
+https://microconf2018.nyc3.digitaloceanspaces.com/Nadya%20Khoja%20-%20Recap.mp3
+
 # [Vengage](https://www.venngage.com)
 
 Mission: make design and data accessible for everyone

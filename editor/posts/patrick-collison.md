@@ -8,6 +8,8 @@ image: https://i.imgur.com/XrddjTU.jpg
 isPublic: true
 ---
 
+![Patrick Collison at Microconf Growth 2018](https://i.imgur.com/H0XrmwJ.jpg)
+
 Stripe is a big company - how do they fit into Microconf? They embody the bootstraper ethos - they took it a long way as two dudes in a garage with minimal funding.
 
 > For several months, John slept in the garden of our one bedroom apartment.

@@ -1,12 +1,16 @@
 ---
 title: SEO Tasks That Produce Results
-speaker: {"image": "https://www.microconf.com/growth/wp-content/uploads/sites/4/2015/05/Dave-262x272.jpg", "name": "Dave Collins", "title": "Founder, Software Promotions", "bioUrl": "https://www.microconf.com/growth/speakers/dave-collins/", "twitter": "TheDaveCollins", "website": ""}
+speaker: {"name":"Dave Collins","twitter":"TheDaveCollins","location":"New Milton, England","description":"Making the web more sarcastic since 1997. Slightly aged father of two amazing lunatics. I specialise in SEO, web-sorcery and occasional compulsive lies.","verified":false,"image":"https://pbs.twimg.com/profile_images/841929541492854784/0bxTZMfZ.jpg","website":"https://www.softwarepromotions.com/","title": "Founder, Software Promotions", "bioUrl": "https://www.microconf.com/growth/speakers/dave-collins/"}
 date: 2018-04-30 11:26:27
 conference: growth
-description: "SEO isn't dead! The usual SEO formula is just boring and unlikely to work. Learn the 6 key rules to cheat at SEO."
+description: "As a founder of a bootstrapped business, you don’t have time for SEO. I get that. Your competition would celebrate this, but they’re also too busy doing the wrong things. I'm going to show you why SEO as you know it is dead, how to use SEO signals to your advantage, and more than 20 different ways to tap into Google's traffic with minimum effort and time investment. The focus of this talk will be on practical steps that every busy business owner can and should adopt to get more new customers without spending a penny."
 image: https://i.imgur.com/L79ZWF7.png
 isPublic: true
 ---
+
+![Dave Collins at Microconf Growth 2018](https://i.imgur.com/t7y8EnE.jpg)
+
+https://microconf2018.nyc3.digitaloceanspaces.com/Dave%20Collins%20-%20Recap.mp3
 
 Check out [Dave's summary of his talk](https://www.softwarepromotions.com/microconf-2018-resources-dave-collins/) - you can also schedule a call with him!
 
