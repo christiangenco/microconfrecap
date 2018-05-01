@@ -28,7 +28,7 @@ class CTA extends Component {
       return (
         <div className="card">
           <img
-            class="card-img-top"
+            className="card-img-top"
             src={`https://microconf.gen.co/covers/${randomCoverIndex}.jpg`}
             alt="Microconf 2018 Recap Book Cover"
           />

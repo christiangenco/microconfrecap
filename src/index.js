@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+
 import { HotKeys } from "react-hotkeys";
 
 import { FirestoreContext } from "./contexts";

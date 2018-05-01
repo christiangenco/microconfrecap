@@ -10,6 +10,7 @@ import Bio from "./components/Bio";
 import CTA from "./components/CTA";
 
 import Auth from "./components/Auth";
+import Tracker from "./components/Tracker";
 
 import get from "lodash.get";
 
@@ -68,6 +69,10 @@ class App extends Component {
 
     return (
       <div className="container-fluid" style={{ marginTop: "10px" }}>
+        <Route
+          render={props => <Tracker {...props} code={"UA-118473626-1"} />}
+        />
+
         <div className="row">
           <div
             className="col-sm-12"
