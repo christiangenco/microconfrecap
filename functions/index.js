@@ -51,7 +51,7 @@ const template = ({
   </head><body>Hello robot crawler!</body></html>`;
 };
 
-const generateScrapablePage = path => {
+const generateScrapablePage = (path, query) => {
   return db
     .collection("posts")
     .doc(path)
@@ -59,6 +59,7 @@ const generateScrapablePage = path => {
     .then(doc => {
       const post = doc.data();
       post.url = `https://microconf.gen.co${path}`;
+      if (query && query.img) post.image = query.img;
       return template(post);
     });
 };
@@ -84,6 +85,7 @@ const generateScrapableBook = path => {
 
 // curl -H "User-Agent: Facebot" https://microconf.gen.co/fomo
 // curl -H "User-Agent: Facebot" https://microconf.gen.co/book/13
+// curl -H "User-Agent: Facebot" http://localhost:5000/rob-walling?img=https%3A%2F%2Fwww.microconf.com%2Fgrowth%2Fwp-content%2Fuploads%2Fsites%2F4%2F2018%2F04%2FJustine_Mares_Headshot-262x272.png
 
 exports.host = functions.https.onRequest((req, res) => {
   const userAgent = req.headers["user-agent"];
@@ -96,7 +98,7 @@ exports.host = functions.https.onRequest((req, res) => {
     if (req.path.indexOf("/book/") === 0) {
       return res.status(200).send(generateScrapableBook(req.path));
     } else {
-      generateScrapablePage(req.path)
+      generateScrapablePage(req.path, req.query)
         .then(content => {
           return res.status(200).send(content);
         })
@@ -105,6 +107,6 @@ exports.host = functions.https.onRequest((req, res) => {
         });
     }
   } else {
-    res.status(200).send(fs.readFileSync("./index.html").toString());
+    return res.status(200).send(fs.readFileSync("./index.html").toString());
   }
 });
