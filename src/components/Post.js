@@ -90,7 +90,9 @@ export class Post extends Component {
                 <Share
                   url={shareURL}
                   options={{
-                    text: alt,
+                    text: `${alt} ${
+                      speaker && speaker.twitter ? "@" + speaker.twitter : ""
+                    }`,
                     hashtags: "microconf",
                     via: "cgenco",
                     related: "microconf",
