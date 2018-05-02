@@ -6,6 +6,7 @@ conference: growth
 description: "Since founding FE International in 2006, Thomas has done several hundred million dollars in deals. They invest loads of time with each business to increase the selling success rate. Here's how."
 image: https://i.imgur.com/2ilWoIF.png
 isPublic: true
+isAttendee: true
 ---
 
 > We are all going to leave our business someday

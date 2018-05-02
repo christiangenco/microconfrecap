@@ -33,3 +33,21 @@ Check the back of your badge.
 ## Twitter
 
 Use #microconf
+
+---
+
+# Starter
+
+Audience:
+
+* 16% need an idea
+* 30% building
+* 14% have an idea
+* 10% just launched
+* 28% launched and growing
+* 2% essentially retired
+
+Speakers:
+
+* 80% Tactical
+* 20% Inspirational or Aspirational (story arc, how you can manage your teams better, etc.)

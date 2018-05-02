@@ -4,8 +4,13 @@ speaker: {"image":"https://pbs.twimg.com/profile_images/932726689485828097/n86Gs
 date:
 conference:
 description: Microconf 2018 talk recap
-image:
+image: https://i.imgur.com/8RoCyQ1.png
 isPublic: true
 ---
 
-# tl;dr
+# Justin Jackson
+
+* 10 years in SaaS
+* Wrote [Marketing for Devs](https://devmarketing.xyz/) in 2015
+* Full-time solopreneur since 2016
+* Building a [podcast startup, Transistor.fm](https://transistor.fm/) in 2018

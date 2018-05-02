@@ -6,6 +6,7 @@ conference:
 description: Microconf 2018 talk recap
 image:
 isPublic: true
+isAttendee: true
 ---
 
 # tl;dr
