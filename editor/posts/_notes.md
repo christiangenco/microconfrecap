@@ -7,8 +7,6 @@ date: 2018-04-23 16:46:06
 
 Up next:
 
-* Anna Jacobsen
-* Claire Suellentrop
 * Jordan Gal
 * _Growth + Starter Networking Mashup Sponsored by FE International + Azlo_
 

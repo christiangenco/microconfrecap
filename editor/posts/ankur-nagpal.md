@@ -8,6 +8,8 @@ image: https://i.imgur.com/jl5QfLo.png
 isPublic: true
 ---
 
+https://twitter.com/patio11/status/991425694583341056
+
 SaaS is supposed to be super exciting:
 
 ![Expectation of revenue](https://i.imgur.com/Gupffe5.png)
@@ -96,3 +98,65 @@ Pulling this crazy growth out of nowhere month after month for 24 months had sev
 * Built momentum and morale internally - everyone wants to work on a “winning team”
 * Helped us raise capital at terms we wanted because of “traction”
 * Growth begets growth - the bigger you get, the more your "mini-brand" grows
+
+If Teachable failed to hit their growth, they could analyze why:
+
+![If we failed to hit our growth goals, we'd know why](https://i.imgur.com/vOcEVZo.png)
+
+## When things come crashing down
+
+After you're at ~$500k MRR, the "found revenue" gets insane:
+
+![Where the growth model breaks down](https://i.imgur.com/z7irlfb.png)
+
+Even if you earn $50k in a summit, you're barely making a dent in finding 6 figures a month. **The strong arm method stops working.**
+
+What do you do then? Look back to the product and customer. What if you could make another 5% from each existing customer?
+
+## Effective Growth 2.0 Strategies
+
+After this $500k MRR inflection point, you have to move one of:
+
+* Organic new customers added per day
+* Decreasing churn rate
+* Average revenue per customer.
+
+This method is more about repeatable growth and leveraging existing customers.
+
+What does that look like?
+
+**1. Over hire for customer success**: During their scaling process, Teachable had as little as 1 Customer Care rep supporting every 1,000 paying customers. Today, it is 1 to 600.
+
+![Customer metrics for Teachable improved dramatically by focusing on customer success](https://i.imgur.com/xSLEnjM.png)
+
+This also reduced churn. The difference between 5% and 6% churn at $500k MRR over 2 years will cover a payroll for **20-30 customer care agents**. Investing in customer success is worth it at this scale.
+
+**2. Materially improve checkout product**: Since we make money of payment processing, increased revenue per customer without needing new customers.
+
+![Improving the checkout to this slick single page increased sales from $250k/day to $400k/day](https://i.imgur.com/GanI2QT.png)
+
+**3. Make the $99/month plan more attractive**: average customer revenue per paying customer jumped from $48/customer to $60/customer (today it's $67).
+
+![Making the $99/month plan more attractive changed the slope of Teachable's growth rate](https://i.imgur.com/WMtfnBr.png)
+
+## Don't make the same mistakes as Teachable
+
+Teachable spent ~6 months after hitting $500k MRR trying to do one off activities to make the math work, which wasn't sustainable (but worked super well up to $500k MRR).
+
+They now divide growth into **strong-armed growth** and **evergreen growth** (growth that moves organic customers added per day, churn rate, or average revenue per customer).
+
+---
+
+# Questions
+
+**This seems to go against the advice of doing one thing well. How do you reconcile your one-off growth projects with that?**
+
+We never found one strategy to grow that continued to work. There was no single channel we could focus on and still hit our numbers.
+
+**How many people did you have dedicated to growth at each stage?**
+
+It was never smaller than 4 people. Right now our growth team is like its own mini company (even with its own engineers) - about 16.
+
+**Should I focus on growth or product first?**
+
+Once you have some kind of product market fit, don't use product improvements as an excuse to not push on growth. You'll never feel ready enough.
