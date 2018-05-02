@@ -3,12 +3,18 @@ settings: {"showHousekeeping": true}
 date: 2018-04-23 16:46:06
 ---
 
-[Schedule](http://www.microconf.com/growth/schedule/)
+[Schedule](http://www.microconf.com/starter/schedule/)
 
 Up next:
 
-* Jordan Gal
-* _Growth + Starter Networking Mashup Sponsored by FE International + Azlo_
+* Justin Jackson
+* Adam Wathan
+* _Lunch_
+* Alli Blum
+* Attendee Talks:
+* _Roundtables_
+* Mike Taber
+* _8-11:30p: Networking + Cocktails_
 
 Sponsors:
 
