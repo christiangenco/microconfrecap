@@ -11,7 +11,7 @@ Up next:
 * Adam Wathan
 * _Lunch_
 * Alli Blum
-* Attendee Talks:
+* Attendee Talks: Chris Achard, Matthew Du Pont, James Tayler, Thomas Smale
 * _Roundtables_
 * Mike Taber
 * _8-11:30p: Networking + Cocktails_

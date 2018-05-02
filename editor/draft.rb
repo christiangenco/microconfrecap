@@ -1,11 +1,12 @@
 require 'json'
 
-bio = JSON.parse(`ruby generate_bio.rb #{ARGV.first}`)
+bio = JSON.parse(`ruby twitter_bio.rb #{ARGV.first}`)
 
 name = bio['name']
-last = name.split(' ').last
+# last = name.split(' ').last
+filename = name.downcase.sub(' ', '-')
 
-File.open("drafts/#{last.downcase}.md", 'w') do |f|
+File.open("drafts/#{filename}.md", 'w') do |f|
   f.puts ''"
 ---
 title:
