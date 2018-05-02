@@ -32,6 +32,11 @@ puts get_bio(ARGV.first).to_json
 #   speaker_line = Regexp.last_match(1)
 #   speaker_json = speaker_line.gsub('=>', ':')
 #   speaker = JSON.parse(speaker_json)
+#
+#   # new_filename = speaker['name'].downcase.sub(' ', '_')
+#   # new_path = "posts/#{new_filename}.md"
+#   # `mv #{path} #{new_path}`
+#
 #   screen_name = speaker['twitter']
 #   twitter_bio = get_bio(screen_name)
 #
