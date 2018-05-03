@@ -164,7 +164,7 @@ export class Post extends Component {
 
         <div style={{ height: 10 }} />
 
-        <Markdown source={body} renderers={renderers} />
+        <Markdown source={body} renderers={renderers} escapeHtml={false} />
 
         {differenceInMinutes(new Date(), updatedAt) < 5 && (
           <Typist>
