@@ -8,6 +8,9 @@ image: https://i.imgur.com/jl5QfLo.png
 isPublic: true
 ---
 
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/ankur-nagpal/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
+
 https://twitter.com/patio11/status/991425694583341056
 
 SaaS is supposed to be super exciting:

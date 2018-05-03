@@ -8,9 +8,12 @@ image: https://i.imgur.com/M3tcMmj.png
 isPublic: true
 ---
 
-![Rob Walling at Microconf Growth 2018](https://i.imgur.com/aSdxyq5.jpg)
+<!-- ![Rob Walling at Microconf Growth 2018](https://i.imgur.com/aSdxyq5.jpg) -->
 
-https://microconf2018.nyc3.digitaloceanspaces.com/Rob%20Walling%20-%20Recap.mp3
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/rob-walling/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
+
+<!-- https://microconf2018.nyc3.digitaloceanspaces.com/Rob%20Walling%20-%20Recap.mp3 -->
 
 Rob is a serial entrepreneur that most recently started [Drip](https://www.drip.com/), which was [acquired by Leadpages in 2016](https://www.leadpages.net/blog/drip-acquisition/).
 

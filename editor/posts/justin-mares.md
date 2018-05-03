@@ -8,9 +8,8 @@ image: https://i.imgur.com/xtKGQNO.png
 isPublic: true
 ---
 
-![Justin Mares at Microconf 2018](https://i.imgur.com/Qf01UyI.jpg)
-
-https://microconf2018.nyc3.digitaloceanspaces.com/Justin%20Mares%20-%20Recap.mp3
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/justin-mares/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
 
 ## Bio
 

@@ -8,6 +8,9 @@ image: https://i.imgur.com/CQeRqWO.png
 isPublic: true
 ---
 
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/claire-suellentrop/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
+
 [userlist.io/microconf](https://userlist.io/microconf)
 
 When marketing a product, it’s common for founders to focus on the product itself. “Look at our cool features! We help you do XYZ activity, but better!” This is a recipe for getting lost in the noise, and for losing to competitors with deeper pockets.

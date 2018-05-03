@@ -8,6 +8,9 @@ image: https://i.imgur.com/bKY95Ta.jpg
 isPublic: true
 ---
 
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/brian-casel/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
+
 ~64.35% of Brian's customers came from hearing me on a podcast: either [Bootstrapped Web](http://bootstrappedweb.com/) or [Productize Podcast](http://productizepodcast.com/).
 
 With every project Brian starts, he asks "how can I sustain this after I stop working on it?"

@@ -9,6 +9,9 @@ isPublic: true
 facebookStream: https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamlanio%2Fvideos%2F1676939992354624%2F&show_text=1&width=560
 ---
 
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/lianna-patch/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
+
 http://punchlinecopy.com/microconf-2018
 
 There are so many principles of improv and humor that can help you shape marketing copy, connect with your users, built loyalty, and increase retention.

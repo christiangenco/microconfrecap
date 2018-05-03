@@ -8,9 +8,8 @@ image: https://i.imgur.com/L79ZWF7.png
 isPublic: true
 ---
 
-![Dave Collins at Microconf Growth 2018](https://i.imgur.com/t7y8EnE.jpg)
-
-https://microconf2018.nyc3.digitaloceanspaces.com/Dave%20Collins%20-%20Recap.mp3
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/dave-collins/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
 
 Check out [Dave's summary of his talk](https://www.softwarepromotions.com/microconf-2018-resources-dave-collins/) - you can also schedule a call with him!
 
