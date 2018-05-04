@@ -7,12 +7,9 @@ date: 2018-04-23 16:46:06
 
 Up next:
 
-* Mojca Zove
-* _12:15: Lunch_
-* Garrett Dimon
 * Marie Poulin
 * Courtland Allen
-* _2:20pm: Roundtables_
+* _NAP_
 * _7:30pm: Closing reception_
 
 Sponsors:

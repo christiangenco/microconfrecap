@@ -190,4 +190,4 @@ I know it sounds weird, but people read long copy. We did hundreds of A/B tests 
 
 > Long form performed way better than short form copy every single time
 
-Facebook's visual rule is not to use more than 20% of your image for text.
+Facebook's visual rule is not to use more than 20% of your image for text. Facebook limits the reach on text more than that, but images with text convert way better. Experiment with it - you'll learn a lot.

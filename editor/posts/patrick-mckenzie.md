@@ -80,7 +80,7 @@ Great forms of friendcatchers:
 
 * stick-a-fork-in-it-and-it-is-done guide to one broadly applicable, tightly scoped problem: People come to it for years.
 * calculator which replaces an excel spreadsheet: This is unreasonably effective because most people in the world can't program even at the level of silly excel spreadsheet. There's no level too trivial! A/B testing statistical significance is hard for normal people.
-* definitive curated list of resources: listicles! plant a flag on the internet of a definitive list of everything great and outstanding in this field. Josh Kaufman has the definitive list of business books.
+* definitive curated list of resources: listicles! plant a flag on the internet of a definitive list of everything great and outstanding in this field. Josh Kaufman has [the definitive list of business books](https://personalmba.com/best-business-books/).
 * cheatsheet: Amy Hoy made the Ruby on Rails Cheatsheet that turned her into a celebrity in the Rails community
 
 > You can be the person that people are afraid to talk to
