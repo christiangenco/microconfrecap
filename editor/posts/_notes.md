@@ -1,5 +1,5 @@
 ---
-settings: {"showHousekeeping": true}
+settings: {"showHousekeeping": false}
 date: 2018-04-23 16:46:06
 ---
 

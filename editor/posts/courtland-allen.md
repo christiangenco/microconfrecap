@@ -175,3 +175,5 @@ If Courtland said there may or may not be a multimillion dollar diamond in his a
 **Apart from content marketing, are there others ways to get early traction?**
 
 It depends a lot on your target customers. Everyone knows about the default places to launch (HN, product hunt).
+
+Is your audience indie game developers? Spend a lot of time with them. Learn what influencers they care about, where they hang out online (watering holes), and where they get their news.

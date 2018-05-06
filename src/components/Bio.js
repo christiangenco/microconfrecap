@@ -1,4 +1,5 @@
 import React from "react";
+import { Follow } from "react-twitter-widgets";
 
 // Import typefaces
 // import 'typeface-montserrat'
@@ -18,8 +19,9 @@ class Bio extends React.Component {
           justifyContent: "flex-end",
         }}
       >
-        <p style={{ marginBottom: 0 }}>
+        <p style={{ marginBottom: 0, textAlign: "right" }}>
           by <a href="http://christian.gen.co">Christian Genco</a>
+          <Follow username={"cgenco"} />
         </p>
         <img
           src={profilePic}

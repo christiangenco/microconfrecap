@@ -57,7 +57,7 @@ export class PostPage extends Component {
 
           {false && <hr />}
 
-          <SummariesPage db={db} user={user} slug={post.slug} />
+          {/* <SummariesPage db={db} user={user} slug={post.slug} /> */}
         </div>
       );
 
