@@ -1,6 +1,9 @@
 const admin = require("firebase-admin");
 const functions = require("firebase-functions");
 const fs = require("fs");
+const showdown = require("showdown");
+const converter = new showdown.Converter();
+const md = text => converter.makeHtml(text);
 
 admin.initializeApp(functions.config().firebase);
 const db = admin.firestore();
@@ -13,6 +16,7 @@ const template = ({
   speaker,
   date,
   updatedAt,
+  body,
 }) => {
   // <meta property="og:image:width" content="99" />
   // <meta property="og:image:height" content="99" />
@@ -48,7 +52,7 @@ const template = ({
     <meta property="twitter:image" content="${fullImage}" />
     <meta name="twitter:card" value="summary_large_image" />
 
-  </head><body>Hello robot crawler!</body></html>`;
+  </head><body><h1>${fullTitle}</h1>${md(body)}</body></html>`;
 };
 
 const generateScrapablePage = (path, query) => {
@@ -56,11 +60,18 @@ const generateScrapablePage = (path, query) => {
     .collection("posts")
     .doc(path)
     .get()
-    .then(doc => {
-      const post = doc.data();
-      post.url = `https://microconf.gen.co${path}`;
-      if (query && query.img) post.image = query.img;
-      return template(post);
+    .then(postDoc => {
+      return db
+        .collection("bodies")
+        .doc(path)
+        .get()
+        .then(bodyDoc => {
+          const post = postDoc.data();
+          post.body = bodyDoc.data().body;
+          post.url = `https://microconf.gen.co${path}`;
+          if (query && query.img) post.image = query.img;
+          return template(post);
+        });
     });
 };
 
