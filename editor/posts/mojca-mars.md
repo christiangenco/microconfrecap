@@ -8,6 +8,8 @@ image: https://i.imgur.com/rD2yjg0.png
 isPublic: true
 ---
 
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679186075463349%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
 https://twitter.com/mijustin/status/988987906655109120
 
 https://twitter.com/patio11/status/991106078262755328

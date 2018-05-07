@@ -8,6 +8,10 @@ image: https://i.imgur.com/chrhcbw.png
 isPublic: true
 ---
 
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679433578771932%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679392802109343%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
 https://twitter.com/mijustin/status/989169967286308865
 
 Here's Marie's master class of what not to do. It's a very honest behind the scenes of what's happened since Oki Doki launched, and their journey to sustainability.

@@ -8,6 +8,8 @@ image: https://i.imgur.com/4RL9vIV.png
 isPublic: true
 ---
 
+https://business.facebook.com/teamlanio/videos/1679301118785178/
+
 https://twitter.com/mijustin/status/989173161844342784
 
 These are the types of lessons that usually cost an arm and a leg, but I got it half price.
