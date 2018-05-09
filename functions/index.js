@@ -1,3 +1,7 @@
+// curl -H "User-Agent: Facebot" https://microconf.gen.co/rob-walling
+// curl -H "User-Agent: Facebot" https://microconf.gen.co/book/13
+// curl -H "User-Agent: Facebot" http://localhost:5000/rob-walling?img=https%3A%2F%2Fwww.microconf.com%2Fgrowth%2Fwp-content%2Fuploads%2Fsites%2F4%2F2018%2F04%2FJustine_Mares_Headshot-262x272.png
+
 const admin = require("firebase-admin");
 const functions = require("firebase-functions");
 const fs = require("fs");
@@ -93,10 +97,6 @@ const generateScrapableBook = path => {
     updatedAt: new Date(),
   });
 };
-
-// curl -H "User-Agent: Facebot" https://microconf.gen.co/fomo
-// curl -H "User-Agent: Facebot" https://microconf.gen.co/book/13
-// curl -H "User-Agent: Facebot" http://localhost:5000/rob-walling?img=https%3A%2F%2Fwww.microconf.com%2Fgrowth%2Fwp-content%2Fuploads%2Fsites%2F4%2F2018%2F04%2FJustine_Mares_Headshot-262x272.png
 
 exports.host = functions.https.onRequest((req, res) => {
   const userAgent = req.headers["user-agent"];
