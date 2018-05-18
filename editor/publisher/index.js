@@ -13,6 +13,7 @@ const glob = (path, options) => {
 };
 
 const converter = new showdown.Converter({ metadata: true });
+// delete remarkParse.Parser.prototype.blockTokenizers.indentedCode;
 const md = text => {
   return { ...converter.getMetadata(), html: converter.makeHtml(text) };
 };
@@ -28,12 +29,13 @@ const run = async () => {
     return md(content);
   });
 
-  console.log(posts[2]);
+  // console.log(posts[2]);
 
-  const head = `<html><head><link rel="stylesheet" href="../style.css"></head><body>`;
+  const head = `<html><head><title>Microconf Recap 2018</title><link rel="stylesheet" href="../style.css"></head><body>`;
   const content = posts.reduce((acc, post) => acc + renderPost(post));
   const tail = "</body></html>";
 
   // fs.writeFileSync("build/index.html", head + content + tail);
+  fs.writeFileSync("build/index.html", head + renderPost(posts[2]) + tail);
 };
 run();
