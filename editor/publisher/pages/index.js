@@ -1,4 +1,5 @@
 import posts from "../posts.json";
+import Post from "./Post";
 
 export default () => (
   <div>
@@ -17,7 +18,6 @@ export default () => (
         margin: 0;
       }
     `}</style>{" "}
-    Welcome to next.js!
-    <pre>{JSON.stringify(posts[1], null, 2)}</pre>
+    <Post {...posts[1]} />
   </div>
 );
