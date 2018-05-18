@@ -1,5 +1,6 @@
 mkdir -p build
-node index.js
+curl http://localhost:3000 > ./build/index.html
+# node index.js
 
 # pandoc "./posts/adam-wathan.md" --css style.css --pdf-engine=prince -o build/test.pdf
 # pandoc "./posts/adam-wathan.md" -o build/test.html
@@ -9,3 +10,4 @@ node index.js
 # pandoc "./build/index.html" --pdf-engine=prince -o build/microconf-2018.mobi
 
 prince ./build/index.html
+open ./build/index.pdf

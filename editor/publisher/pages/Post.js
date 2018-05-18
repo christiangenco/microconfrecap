@@ -5,6 +5,8 @@ import get from "lodash.get";
 
 import { Tweet } from "react-twitter-widgets";
 
+const proxify = url => `http://localhost:4000/?url=${encodeURIComponent(url)}`;
+
 const innerText = el => {
   if (typeof el === undefined) return "";
   if (typeof el === "string") return el;
@@ -49,11 +51,9 @@ export default props => {
       return <a href={href}>{children}</a>;
     },
     image: ({ alt, src }) => {
-      let shareURL = `${url}?img=${encodeURIComponent(src)}`;
-
       return (
         <div className="card mb-3">
-          <img src={src} alt={alt} className="card-img-top" />
+          <img src={proxify(src)} alt={alt} className="card-img-top" />
           <div className="card-body">
             <p className="card-text">{alt}</p>
           </div>
@@ -78,8 +78,11 @@ export default props => {
 
   return (
     <div>
-      <h1>{title}</h1>
+      <div className="page">
+        <h1>{title}</h1>
+      </div>
 
+      {/* <pre>{JSON.stringify(speaker, null, 2)}</pre> */}
       {/* <Speaker speaker={speaker} /> */}
 
       <div style={{ height: 10 }} />
