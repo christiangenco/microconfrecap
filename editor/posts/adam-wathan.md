@@ -27,7 +27,7 @@ In the first three days, it made $61k, so he quit his job!
 
 ![Refactoring to Collections launch sales](https://i.imgur.com/rBf7Rhd.png)
 
-His next product was [Test Driven Laravel](#), which made $116k in its first three days of launching.
+His next product was [Test Driven Laravel](https://course.testdrivenlaravel.com/), which made $116k in its first three days of launching.
 
 ![Adam Wathan knows how to do info products](https://i.imgur.com/0vNvKhC.png)
 

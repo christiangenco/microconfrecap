@@ -1,6 +1,9 @@
 # Next
 
-* CTA after tweeting with checklist to follow me and post a summary of a talk
+* get publisher rendering markdown to pdf, epub, and mobi
+* tweet link -> embedded image of tweet
+* go through each talk and add a summary that helps organize it by business stage
+* copy edit/flesh out very first talk in that series
 
 ---
 
@@ -19,10 +22,14 @@ https://cards-dev.twitter.com/validator
 * slides: https://drive.google.com/file/d/14CrHtblkA-bM90F_UhlamCO2gCBkNtiX/view?__s=qsn3ienq4ahjsoqbk46b
 * also the CTA on "Your resources from my MicroConf talk" email
 
+# Add to the case against growth
+
+* https://davekiss.com/the-case-against-growth/
+
 ---
 
 # Inbox
 
-* cache twitter bios
 * star/like talks
+* CTA after tweeting with checklist to follow me and post a summary of a talk
 * outline of talk on the left
