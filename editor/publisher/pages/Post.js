@@ -1,11 +1,14 @@
 import Markdown from "react-markdown";
 import get from "lodash.get";
+import URL from "url";
 
 // import Speaker from "./Speaker";
 
 import { Tweet } from "react-twitter-widgets";
 
-const proxify = url => `http://localhost:4000/?url=${encodeURIComponent(url)}`;
+const proxify = url => `http://localhost:3001/?url=${encodeURIComponent(url)}`;
+
+const tweetImg = tweetId => `http://localhost:3002/${tweetId}.png`;
 
 const innerText = el => {
   if (typeof el === undefined) return "";
@@ -27,22 +30,16 @@ export default props => {
       const nakedLink = children[0] === href;
 
       try {
-        const url = new URL(href);
+        const url = URL.parse(href);
+
         const tweetRegex = /\/\w+\/status\/(\d+)/;
         const res = url.pathname.match(tweetRegex);
         const tweetId = get(res, 1);
 
         if (nakedLink && url.hostname === "twitter.com") {
-          return <Tweet tweetId={tweetId} />;
-        }
-
-        if (nakedLink && href.match(/\.mp3$/)) {
-          return (
-            <audio controls style={{ width: "100%" }}>
-              <source src={href} type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          );
+          // https://publish.twitter.com/oembed?url=https://twitter.com/jack/status/20
+          // return <Tweet tweetId={tweetId} />;
+          return <img src={tweetImg(tweetId)} alt="" />;
         }
       } catch (e) {
         console.error(e);

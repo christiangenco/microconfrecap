@@ -56,6 +56,19 @@ export default () => (
       img {
         width: 100%;
       }
+
+      img.wide {
+        column-span: all;
+        margin-top: 2em;
+      }
+      section {
+        margin: 0.7em 0;
+      }
+
+      hr {
+        page-break-after: always;
+        column-span: all;
+      }
     `}</style>
     <div className="container">
       <Post {...posts[1]} />
