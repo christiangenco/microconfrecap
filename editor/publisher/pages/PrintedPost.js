@@ -39,13 +39,25 @@ export default props => {
         if (nakedLink && url.hostname === "twitter.com") {
           // https://publish.twitter.com/oembed?url=https://twitter.com/jack/status/20
           // return <Tweet tweetId={tweetId} />;
-          return <img src={tweetImg(tweetId)} alt="" />;
+          return (
+            <figure className="sidecaption bottom">
+              <figcaption>
+                <a href={href}>{href}</a>
+              </figcaption>
+              <img src={tweetImg(tweetId)} alt="" />
+            </figure>
+          );
         }
       } catch (e) {
         console.error(e);
       }
 
-      return <a href={href}>{children}</a>;
+      return (
+        <span>
+          <a href={href}>{children}</a>
+          <span className="foot">{href}</span>
+        </span>
+      );
     },
     image: ({ alt, src }) => {
       return (
@@ -57,17 +69,10 @@ export default props => {
     },
     blockquote: ({ children }) => {
       let text = innerText(children);
-      if (speaker.twitter) text += ` --@${speaker.twitter}`;
-      else if (speaker.name) text += ` --${speaker.name}`;
+      // if (speaker.twitter) text += ` --@${speaker.twitter}`;
+      // else if (speaker.name) text += ` --${speaker.name}`;
 
-      return (
-        <blockquote className="blockquote">
-          {children}
-          <footer className="blockquote-footer">
-            {speaker.name}, Microconf 2018{" "}
-          </footer>
-        </blockquote>
-      );
+      return <aside>{text}</aside>;
     },
   };
 

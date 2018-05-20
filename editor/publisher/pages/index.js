@@ -178,7 +178,7 @@ export default () => (
       }
 
       aside {
-        background: #fcc;
+        background: #ddd;
         padding: 0.6em 1.3em 0.6em 1.3em; /* assuming it will end up on right page */
         font-style: italic;
         font-family: Lato, "Roboto Condensed", sans-serif;
@@ -288,11 +288,12 @@ export default () => (
       }
 
       hr {
-        page-break-after: always;
+        /*page-break-after: always;*/
       }
     `}</style>
     <div className="container">
-      <PrintedPost {...posts[17]} />
+      {/* <PrintedPost {...posts[17]} /> */}
+      <PrintedPost {...posts[1]} />
     </div>
   </div>
 );
