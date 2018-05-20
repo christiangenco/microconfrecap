@@ -13,38 +13,37 @@ isPublic: true
 <iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/adam-wathan/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
 <script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
 
-Check out [Adam's Tools for selling your product online](https://gist.github.com/adamwathan/30dc4230ac575cfa3425b39ca11ea859)
-
-## Who The Hell is Adam Wathan
+# Who The Hell is Adam Wathan
 
 https://twitter.com/mijustin/status/989174075695120385
 
 Adam started with a SaaS app that did just $3k in sales total. After that flopped, he was looking for another way to live on an online product.
 
-The next thing he tried was launching an infoproduct - Refactoring to Collections (launched in May 2016)
+The next thing he tried was launching an infoproduct - Refactoring to Collections (launched in May 2016).
 
-In the first three days, it made $61k, so he quit his job!
+In the first three days it made $61k, so he quit his job!
 
-![Refactoring to Collections launch sales](https://i.imgur.com/rBf7Rhd.png)
+![Refactoring to Collections' launch sales](https://i.imgur.com/rBf7Rhd.png)
 
 His next product was [Test Driven Laravel](https://course.testdrivenlaravel.com/), which made $116k in its first three days of launching.
 
-![Adam Wathan knows how to do info products](https://i.imgur.com/0vNvKhC.png)
+![Adam Wathan knows how to do info-products](https://i.imgur.com/0vNvKhC.png)
+
+Check out [Adam's Tools for selling your product online](https://gist.github.com/adamwathan/30dc4230ac575cfa3425b39ca11ea859)
 
 ---
 
 # Info Products
 
-## Why an info-product?
 
 ![Rob Walling hadoukens his Stair Step approach - a great model for starting with an info-product](https://i.imgur.com/IvrS4Iq.jpg)
 
-Why info-products?
+## Why an Info-Product?
 
-* One-time purchase products are way easier to sell
-* They can be "done"; you don't have to maintain them forever
-* You can put one together in 3 months of nights and weekends
-* They put money in the bank fast then drop off, opposite of SaaS
+* One-time purchase products are way easier to sell.
+* They can be "done," i.e. you don't have to maintain them forever.
+* You can put one together in 3 months of nights and weekends.
+* They put money in the bank fast, then drop off, which is the opposite of SaaS.
 
 https://twitter.com/brennandunn/status/982326554414985216
 
@@ -52,15 +51,15 @@ https://twitter.com/brennandunn/status/982326554414985216
 
 Being able to do this full time is awesome.
 
-## Building an Audience
+# Building an Audience
 
-Why build an audience? It's really important that people trust you. Having a large audience can make up any other deficiency in your marketing plan. Having a large audience and no marketing strategy beats having a perfect marketing strategy and no audience.
-
-> Having a large audience can make up any other deficiency in your marketing plan.
+Why build an audience? It's really important that people trust you. Having a large audience can make up for any other deficiency in your marketing plan. Having a large audience and no marketing strategy beats having a perfect marketing strategy and no audience.
 
 * You can't just throw up a landing page and expect people to sign up; people need to trust you and believe that you're the right person to help them.
 * Audience size is an exponential multiplier for product success.
 * No launch strategy + big audience > Perfect launch strategy and no audience.
+
+<!-- WHAT IS GOING ON IN THIS SECTION START  -->
 
 Here's a strategy that works well for Adam.
 
@@ -80,88 +79,86 @@ After posting more helpful tweets and helping people where they are, he's jumped
 
 https://twitter.com/steveschoger/status/981606881255976961
 
-## Picking the Right Idea
+<!-- WHAT IS GOING ON IN THIS SECTION STOP -->
 
-### Step 1: Have an idea
+# Picking the Right Idea
+
+## Step 1: Have an idea
 
 * What are you already putting out there that people seem excited about?
 * What are you excited about that you think others will get excited about?
-* What do people think you're better at than they are? What sorts of questions are people asking you? If people think you're better than them at something, that's an opportunity to teach.
+* What do people think you're better than them at? What sorts of questions are people asking you? If people think you're better than them at something, that's an opportunity to teach.
 * What have you learned outside your community/watering hole that you think your community would benefit from?
-* What did you have to figure out yourself but was really helpful to learn? You could make it easier for other people.
+* What did you have to figure out yourself that was really helpful to learn? You could make that easier for other people!
 
 > You could be the Christopher Columbus of programming knowledge.
 
-### Step 2: Test it
+## Step 2: Test it
 
 Adam tests ideas with small tweets:
 
 https://twitter.com/adamwathan/status/956620857236959232
 
-If it looks like things are working in a tweet format, he moves to a longer form (like high quality long-form comprehensive blog posts):
+If it looks like things are working in a tweet format, he moves to a longer form, like a high quality, long-form, comprehensive blog post:
 
 https://twitter.com/adamwathan/status/976909385938059264
 
 Start cataloging any good feedback you get about this test content, like replies on Twitter, blog post comments, etc. It'll be useful very soon!
 
-### Step 3: Define the Product
+## Step 3: Define the Product
 
-* Plan small; it will end up bigger than you think
+* Plan small; the product will end up bigger than you think.
   * Short books are still books. People don't want to read a 500 page book on something if they can read something in 4 hours that gets the same result.
-  * 3 hours is plenty for a video course
-* Books are a lot easier to work on, especially if you only have short blocks of time
-* Courses are easier to sell at a higher price but a lot harder to produce on nights and weekends
+  * 3 hours is plenty for a video course.
+* Books are a lot easier to work on, especially if you only have short blocks of time.
+* Courses are easier to sell at a higher price, but a lot harder to produce on nights and weekends.
 
-## Putting up a Landing Page
+# Putting up a Landing Page
 
-For [Advanced Vue Component Design landing page](https://adamwathan.me/advanced-vue-component-design/), Adam started with a clear headline on the value his users will get: "Learn how to design simpler, more flexible components that are both more powerful and easier to maintain."
+For [Advanced Vue Component Design's landing page](https://adamwathan.me/advanced-vue-component-design/) Adam started with a clear headline on the value his users will get: "Learn how to design simpler, more flexible components that are both more powerful and easier to maintain."
 
-![Advanced Vue Component Design landing page has a clear value headline and call to action](https://i.imgur.com/YVfPkj5.jpg)
+![Advanced Vue Component Design's landing page has a clear value headline and call to action](https://i.imgur.com/YVfPkj5.jpg)
 
-Next, give them a **clear incentive to sign up**. Not just "sign up if you're interested" - give them a reason to give you their email address! Promise them some free content. In this example, "Sign up for free screencasts and a big discount when the course is released this May."
+Next, give them a **clear incentive to sign up**. Not just "sign up if you're interested!" Give them a reason to give you their email address! Promise them some free content. In the example above the incentive is clear: "Sign up for free screencasts and a big discount when the course is released this May."
 
-Next, give them some context to trust you: [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/) proves Adam is an expert.
+Next, give them some context to trust you: the link to [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/) proves Adam is an expert.
 
-User testimonials are a great way to get social proof.
+User testimonials are another great way to get social proof.
 
 ![If PJ Trainor trusts Adam, you should too](https://i.imgur.com/HhvcBAi.png)
 
 The more you can do to convince your audience that you're someone to be trusted, the better.
 
-### Should I pre-sell?
-
-> I never felt happier than the day I finished my content. It felt like a huge burden lifted from me.
+# Should I pre-sell?
 
 Adam has experimented with pre-selling on his info-products.
 
-ADVANTAGES:
+## Advantages:
 
-* Best form of **product validation**. If someone gives you money before you've created it, that's great proof that they're actually interested.
-* You'll **make more money**. You'll have more opportunity to promote it by telling people about updates without seeming spammy ("buy this! buy this! buy this!")
-* More **motivation to finish**. If you already have people's money, you'll push through burnout. You don't want to not deliver on something people have already paid you for.
-* Can **buy you the time to focus on the product**. If you have a successful pre-launch, you can afford to do less freelance work to buy more of your time.
+* Pre-sales are the best form of **product validation**. If someone gives you money before you've created it, that's great proof that they're actually interested.
+* You'll **make more money**. You'll have more opportunity to promote the product by telling people about updates, without seeming spammy with "buy this! buy this! buy this!" emails.
+* You'll have more **motivation to finish**. If you already have people's money, you'll push through burnout. You don't want to not deliver on something people have already paid you for.
+* Pre-sales can **buy you the time to focus on the product**. If you have a successful pre-launch, you can afford to do less freelance work to buy more of your time for this product. 
 
-DISADVANTAGES
+## Disadvantages
 
-* Selling **multiple tiers is trickier**. It's harder to get people to buy the more expensive packages if right now they all get the same thing.
-* Can't easily **change scope**. Cutting scope is a great way to make your goal more attainable, but if you presell and promised too much you can end up in a situation where it takes you way longer to finish, which is a beat-down.
-* Like **taking on debt**, can be extremely stressful. Mechanically, pre-orders make you more money. Psychologically, it can be really stressful.
+* Selling **multiple tiers is trickier**. It's harder to get people to buy the more expensive packages if right now they all get the same thing from your product. 
+* You **can't easily change scope**. Cutting scope is a great way to make your goal more attainable, but if you pre-sell and promise too much, then you can end up in a situation where it takes you way longer to finish, which is a beat-down.
+* Like taking on debt, pre-selling can be **extremely stressful.** Mechanically, pre-orders make you more money. Psychologically, they can be really stressful. You might find yourself thinking this:
 
 > "Holy fuck I gotta finish this thing people are gonna be so fucking angry." - maybe don't presell
 
-## BUILDING YOUR EMAIL LIST
+# Building Your Email List
 
-### STEP #1: TELL YOUR AUDIENCE
+## Step #1: Tell Your Audience
 
 Announce that you're going to announce your announcement before you announce it:
 
 https://twitter.com/adamwathan/status/978661856687484928
 
-> Announce that you're going to announce your announcement before you announce it
+You usually get your biggest spike in signups at launch. How can you sustain that?
 
-You usually get your biggest spike in signups at launch. How can you sustain it?
-
-### STEP #2 SHARE UPDATES
+## Step #2: Share Updates
 
 Keep your list engaged and excited about the product by sharing updates:
 
@@ -171,13 +168,13 @@ If you don't have anything free to send out, just send out a work update:
 
 https://twitter.com/adamwathan/status/987362810521792512
 
-### STEP #3 REPURPOSE CONTENT
+## Step #3: Re-purpose Content
+the
+If you're working on this project full time, then it can be hard to also be generating content to hype it up.
 
-If you're working on this full time, it can be hard to also be generating content to hype it up.
+Try just re-purposing your main content into a massaged blog post:
 
-Try just repurposing your main content into a massaged blog post:
-
-![Repurpose content you already have](https://i.imgur.com/5YaplDi.png)
+![Re-purposing the content you already have can be insanely valuable](https://i.imgur.com/5YaplDi.png)
 
 ## Getting it Finished
 
