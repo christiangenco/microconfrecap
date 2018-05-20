@@ -49,12 +49,10 @@ export default props => {
     },
     image: ({ alt, src }) => {
       return (
-        <div className="card mb-3">
-          <img src={proxify(src)} alt={alt} className="card-img-top" />
-          <div className="card-body">
-            <p className="card-text">{alt}</p>
-          </div>
-        </div>
+        <figure className="sidecaption bottom">
+          <figcaption>{alt}</figcaption>
+          <img src={proxify(src)} />
+        </figure>
       );
     },
     blockquote: ({ children }) => {
