@@ -22,38 +22,71 @@ export class Mailtrain extends Component {
 
     this.setState({ submittedAt: +new Date() });
 
-    axios
-      .post("https://wt-christian-gen-co-0.run.webtask.io/mailtrain_api", {
+    this.props.db
+      .collection("emails")
+      .add({
         first,
         last,
         email,
         listId: "BkpoOc5hG",
       })
-      .then(res => {
-        if (res && res.data && res.data.data && res.data.data.id) {
-          const subscribedAt = +new Date();
-          onConvert({
-            first,
-            last,
-            email,
-            mailtrainId: res.data.data.id,
-            subscribedAt,
-          });
+      .then(docRef => {
+        const subscribedAt = +new Date();
+        onConvert({
+          first,
+          last,
+          email,
+          firebaseEmailId: docRef.id,
+          subscribedAt,
+        });
 
-          this.setState({
-            subscribedAt,
-          });
-        } else {
-          this.setState({
-            error:
-              "Uhoh - something went wrong. Refresh the page and try again? Tweet @cgenco? ...restart your computer?",
-            submittedAt: null,
-          });
-        }
+        this.setState({
+          subscribedAt,
+        });
       })
-      .catch(err => {
-        console.log(err);
+      .catch(error => {
+        this.setState({
+          error: `Uhoh - something went wrong: ${error.message}`,
+          submittedAt: null,
+        });
       });
+
+    // axios
+    //   .post("https://wt-christian-gen-co-0.run.webtask.io/mailtrain_api", {
+    //     first,
+    //     last,
+    //     email,
+    //     listId: "BkpoOc5hG",
+    //   })
+    //   .then(res => {
+    //     if (res && res.data && res.data.data && res.data.data.id) {
+    //       const subscribedAt = +new Date();
+    //       onConvert({
+    //         first,
+    //         last,
+    //         email,
+    //         mailtrainId: res.data.data.id,
+    //         subscribedAt,
+    //       });
+    //
+    //       this.setState({
+    //         subscribedAt,
+    //       });
+    //     } else {
+    //       this.setState({
+    //         error:
+    //           "Uhoh - something went wrong. Refresh the page and try again? Tweet @cgenco? ...restart your computer?",
+    //         submittedAt: null,
+    //       });
+    //     }
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //     this.setState({
+    //       error: `Uhoh - something went wrong: ${err.message}`,
+    //       submittedAt: null,
+    //     });
+    //   });
   };
   render() {
     const { first, last, email, submittedAt, error, subscribedAt } = this.state;
@@ -125,6 +158,12 @@ export class Mailtrain extends Component {
                   />
                   <small id="emailHelp" className="form-text text-muted" />
                 </div>
+
+                {error && (
+                  <div className="alert alert-danger" role="alert">
+                    {error}
+                  </div>
+                )}
 
                 <button
                   type="submit"

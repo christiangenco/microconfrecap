@@ -162,7 +162,7 @@ class App extends Component {
 
             <hr />
 
-            <CTA />
+            <CTA db={db} />
             <div style={{ width: "100%", height: 20 }} />
             <Bio />
             <div style={{ width: "100%", height: 20 }} />

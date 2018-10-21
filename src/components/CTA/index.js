@@ -21,6 +21,7 @@ class CTA extends Component {
 
   render() {
     const { profile } = this.state;
+    const { db } = this.props;
 
     const randomCoverIndex = Math.floor(Math.random() * 16);
 
@@ -68,6 +69,7 @@ class CTA extends Component {
 
     return (
       <Mailtrain
+        db={db}
         onConvert={profile => {
           localStorage.setItem("profile", JSON.stringify(profile));
           this.setState({ profile });
