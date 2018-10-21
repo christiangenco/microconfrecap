@@ -9,45 +9,25 @@ export default () => (
       @import url(http://fonts.googleapis.com/css?family=Lato);
 
       @prince-pdf {
-        prince-pdf-page-layout: two-column-right;
+        prince-pdf-page-layout: two-column;
       }
 
       @page {
         margin: 30mm 20mm 25mm 20mm;
-        size: 20cm 25cm;
+        /*size: 20cm 25cm;*/
+        size: A4;
 
         @footnotes {
-          border-top: thin solid black;
-          border-clip: 100px;
-          padding: 0;
-          margin: 0.6em 0 0 0;
-          margin-outside: -60mm;
-          padding: 0.3em 0 0 0;
+          /*border-top: thin solid black;*/
+          /*border-clip: 100px;*/
+          /*padding: 0;*/
+          /*margin: 0.6em 0 0 0;*/
+          /*margin-right: -60mm;*/
+          /*padding: 0.3em 0 0 0;*/
         }
       }
 
-      @page :left {
-        margin-left: 80mm;
-
-        @top-left {
-          font: 11pt "Lato", serif;
-          content: "microconf.gen.co";
-          margin-left: -60mm;
-          white-space: nowrap;
-          vertical-align: bottom;
-          padding-bottom: 2em;
-        }
-
-        @bottom-left-corner {
-          font: 11pt "Lato", serif;
-          content: counter(page);
-          vertical-align: top;
-          padding-top: 2em;
-          padding-right: 60mm;
-        }
-      }
-
-      @page :right {
+      @page {
         margin-right: 80mm;
 
         @top-right {
@@ -56,10 +36,12 @@ export default () => (
           white-space: nowrap;
           vertical-align: bottom;
           margin-right: -60mm;
+          margin-top: -10mm;
           padding-bottom: 2em;
+          color: #666;
         }
 
-        @bottom-right-corner {
+        @bottom-center {
           font: 11pt "Lato", serif;
           content: counter(page);
           vertical-align: top;
@@ -93,6 +75,7 @@ export default () => (
 
       body {
         font: 11pt "PT Serif", serif;
+        line-height: 1.314;
         text-align: justify;
         hyphens: auto;
         counter-reset: figure, table;
@@ -144,7 +127,7 @@ export default () => (
       }
       table.top {
         float: top;
-        margin-outside: -60mm;
+        margin-right: -60mm;
         vertical-align: top;
         margin-bottom: 1em;
       }
@@ -179,21 +162,22 @@ export default () => (
 
       aside {
         background: #ddd;
-        padding: 0.6em 1.3em 0.6em 1.3em; /* assuming it will end up on right page */
+        /* padding: 0.6em 1.3em 0.6em 1.3em; assuming it will end up on right page */
         font-style: italic;
         font-family: Lato, "Roboto Condensed", sans-serif;
         width: 75mm;
         box-sizing: border-box;
-        float: outside;
-        margin-outside: -80mm;
+        float: right;
+        margin-right: -80mm;
+        padding: 0.5em 20mm 0.5em 0.5em;
         text-align: inside;
         hyphens: manual;
       }
 
       figure.sidenote {
         width: 55mm;
-        float: outside;
-        margin-outside: -60mm;
+        float: right;
+        margin-right: -60mm;
       }
 
       figcaption {
@@ -215,18 +199,18 @@ export default () => (
       }
 
       figure.sidecaption figcaption {
-        float: outside;
+        float: right;
         width: 55mm;
-        margin-outside: -60mm;
+        margin-right: -60mm;
       }
 
       h1 {
-        margin-outside: -60mm;
+        margin-right: -60mm;
       }
 
       figure.wide {
         width: auto;
-        margin-outside: -60mm;
+        margin-right: -60mm;
       }
 
       a {
@@ -266,8 +250,6 @@ export default () => (
         text-indent: 0;
       }
 
-      @page {
-      }
       @media screen {
         body {
           margin: 10% 30% 10% 10%;
@@ -289,6 +271,16 @@ export default () => (
 
       hr {
         /*page-break-after: always;*/
+        margin-right: -100%;
+        margin-left: -100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        clear: both;
+      }
+
+      blockquote,
+      aside {
+        clear: both;
       }
     `}</style>
     <div className="container">

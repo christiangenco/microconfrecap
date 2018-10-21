@@ -2,6 +2,8 @@ import Markdown from "react-markdown";
 import get from "lodash.get";
 import URL from "url";
 
+import PrintedAuthor from "./PrintedAuthor";
+
 // import Speaker from "./Speaker";
 
 import { Tweet } from "react-twitter-widgets";
@@ -76,10 +78,15 @@ export default props => {
     },
   };
 
+  const doctitle = `${title} by ${speaker.name}`;
+
   return (
     <div>
       <div className="page">
-        <h1>{title}</h1>
+        <title>{doctitle}</title>
+        <h1 style={{ marginBottom: 10 }}>{title}</h1>
+        <PrintedAuthor speaker={speaker} />
+        <hr />
       </div>
 
       {/* <pre>{JSON.stringify(speaker, null, 2)}</pre> */}

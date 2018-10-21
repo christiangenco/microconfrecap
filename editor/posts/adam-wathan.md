@@ -37,7 +37,7 @@ His next product was [Test Driven Laravel](https://course.testdrivenlaravel.com/
 
 ## Why an Info-Product?
 
-* One-time purchase products are way easier to sell. Don't we all have a course saved on our laptop that we bought and never actually watched? The person who made that course has your $20, but the $4 re-occurring charge for a service that you canceled when you didn't use it one month isn't getting your money anymore. 
+* One-time purchase products are way easier to sell. Don't we all have a course saved on our laptop that we bought and never actually watched? The person who made that course has your $20, but the $4 re-occurring charge for a service that you canceled when you didn't use it one month isn't getting your money anymore.
 * They can be "done," i.e. you don't have to maintain them forever.
 * You can put one together in 3 months of nights and weekends.
 * They put money in the bank fast, then drop off, which is the opposite of SaaS. That fast money up front can be used to bankroll your time so you can invest in other things, like that Saas business you've always wanted to make!
@@ -57,7 +57,7 @@ https://twitter.com/brennandunn/status/982326554414985216
 
 ### How?
 
-* Be helpful on the Internet!!! This means blog posts, tutorials, screencasts, podcasts, interviews, anything that makes you worth following. 
+* Be helpful on the Internet!!! This means blog posts, tutorials, screencasts, podcasts, interviews, anything that makes you worth following.
 
 Here's a specific strategy that works well for Adam, which he stole from @wesbos.
 
@@ -67,7 +67,7 @@ Where are people? Well, a lot of them are on Twitter! Here's a useful tip that W
 
 https://twitter.com/wesbos/status/984500364245389312?lang=en
 
-Notice that tweet isn't a link to a blog post that's helpful, it's a small piece of help in of itself, which is why it has so many retweets and likes. 
+Notice that tweet isn't a link to a blog post that's helpful, it's a small piece of help in of itself, which is why it has so many retweets and likes.
 
 Adam does the same thing as Wes Bos, but with his own audience, through tweets like this:
 
@@ -75,7 +75,7 @@ https://twitter.com/adamwathan/status/829423543985307661?lang=en
 
 You can do the same sort of thing, even if you don't already have an audience! Here's how Steve Schoger, a guy with no audience to start with, did it:
 
-In Setember 2016 [steveschoger](https://twitter.com/steveschoger) had 436 twitter followers. He was just doing typical social media updates, which no one cares about. 
+In Setember 2016 [steveschoger](https://twitter.com/steveschoger) had 436 twitter followers. He was just doing typical social media updates, which no one cares about.
 
 ![](https://i.imgur.com/c9CAktU.jpg)
 
@@ -85,7 +85,7 @@ In less that a year and a half, after posting more helpful tweets and helping pe
 
 https://twitter.com/steveschoger/status/981606881255976961
 
-You can do that too. Just help people where they already are. For developers, that's probably Twitter. 
+You can do that too. Just help people where they already are. For developers, that's probably Twitter.
 
 # Picking the Right Idea
 
@@ -94,7 +94,7 @@ You can do that too. Just help people where they already are. For developers, th
 * What are you already putting out there that people seem excited about?
 * What are you excited about that you think others will get excited about? What do you think you are ahead of the curve on?
 * What do people think you're better than them at? What sorts of questions are people asking you? If people think you're better than them at something, that's an opportunity to teach.
-* What have you learned outside your community/watering hole that you think your community would benefit from? That's right, you don't have to invent these ideas yourself, you can just re-package things that already exist! Essentially: 
+* What have you learned outside your community/watering hole that you think your community would benefit from? That's right, you don't have to invent these ideas yourself, you can just re-package things that already exist! Essentially:
 
 > You could be the Christopher Columbus of programming knowledge.
 
@@ -116,15 +116,13 @@ https://twitter.com/adamwathan/status/976909385938059264
 
 ## Step 3: Define the Product
 
-* Start by planning small, because the product will end up bigger than you think. 
-	* Planning small will also help you be concise: a short book is still a book, and a 3 hour video course can totally be sufficient. 
-* Books are a lot easier to work on than things that require recording, like courses, especially if you only have short blocks of time. 
+* Start by planning small, because the product will end up bigger than you think. \* Planning small will also help you be concise: a short book is still a book, and a 3 hour video course can totally be sufficient.
+* Books are a lot easier to work on than things that require recording, like courses, especially if you only have short blocks of time.
 * Courses are easier to sell at a higher price than books, but a lot harder to produce on nights and weekends.
 
 # Putting up a Landing Page
 
 The landing page collects your email addresses, and confirms that people are interested in this topic as a product, not just a tweet.
-
 
 * Start with a clear headline that explains what users will learn from your product. For Adam's [Advanced Vue Component Design's landing page,](https://adamwathan.me/advanced-vue-component-design/) that headline is: "Learn how to design simpler, more flexible components that are both more powerful and easier to maintain."
 
@@ -134,30 +132,30 @@ The landing page collects your email addresses, and confirms that people are int
 
 * Be sure to give people some evidence that proves you know what you're talking about. On Adam's landing page the link to [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/) proves Adam is an expert.
 
-* Throw in pieces of social proof that you know your stuff, like the user testimonial above. This doesn't have to be a review from an influencer, it just has to serve the same purpose as an Amazon review. 
+* Throw in pieces of social proof that you know your stuff, like the user testimonial above. This doesn't have to be a review from an influencer, it just has to serve the same purpose as an Amazon review.
 
 ![The link to Adam's previous work, Renderless Components in Vue.js, and the review from a fan help convince landing-page-viewers that they should give Adam their email.](https://i.imgur.com/HhvcBAi.png)
 
-* Then, outline what you're planning to do with your product. Keep it simple. 
+* Then, outline what you're planning to do with your product. Keep it simple.
 
-* At the end of the page drop another sign up form, with a little bit more social proof if you have any. This is for those people who needed to read your whole page to be convinced to give you their email. 
+* At the end of the page drop another sign up form, with a little bit more social proof if you have any. This is for those people who needed to read your whole page to be convinced to give you their email.
 
 * Finally, finish up your page with a little "Who Am I?" section. Link to Twitter, any other products you've already released, or even just cool things you've made or done, like your blog, conference talks, etc. This is another way to convince someone that you can be trusted to know what you're talking about.
 
 # Side Note: Should You Pre-Sell?
 
-Adam has done it both ways: he completely finished and then released his first product, and released his second product in early access when he was done with 20%, then added new content as he went on. 
+Adam has done it both ways: he completely finished and then released his first product, and released his second product in early access when he was done with 20%, then added new content as he went on.
 
 ## Advantages:
 
 * Pre-sales are the best form of product validation. If someone gives you money before you've created it, that's great proof that they're actually interested.
 * You'll make more money. You'll have more opportunity to promote the product by telling people about product updates, without seeming spammy with "buy this! buy this! buy this!" emails.
 * You might have more motivation to finish. If you already have people's money, you'll push through burnout. You don't want to not deliver on something people have already paid you for.
-* Pre-sales can buy you the time to focus on the product. If you have a successful pre-launch, you can afford to do less freelance work to buy more of your time for this product. 
+* Pre-sales can buy you the time to focus on the product. If you have a successful pre-launch, you can afford to do less freelance work to buy more of your time for this product.
 
 ## Disadvantages
 
-* Selling multiple tiers is trickier. It's harder to get people to buy the more expensive packages if right now all users get the same thing from your product (because the fancy add-ons aren't ready yet). 
+* Selling multiple tiers is trickier. It's harder to get people to buy the more expensive packages if right now all users get the same thing from your product (because the fancy add-ons aren't ready yet).
 * You can't easily change scope. Cutting scope is a great way to make your goal more attainable, but if you pre-sell and promise too much, then you can end up in a situation where it takes you way longer to finish, which is a beat-down.
 * Like taking on debt, pre-selling can be extremely stressful. Mechanically, pre-sales make you more money. Psychologically, they can be really stressful. You might find yourself thinking this when pre-sale orders come in:
 
@@ -167,8 +165,7 @@ Adam has done it both ways: he completely finished and then released his first p
 
 ## Step #1: Tell Your Audience
 
-* Announce that you're going to announce your landing page before you announce it:
-	* A tweet like the one below won't get much engagement, but it will prime your audience to share your real announcement. 
+* Announce that you're going to announce your landing page before you announce it: \* A tweet like the one below won't get much engagement, but it will prime your audience to share your real announcement.
 
 https://twitter.com/adamwathan/status/978661856687484928
 
@@ -204,13 +201,11 @@ If you're working on this project part-time, then it can be hard to also be gene
 
 Promising things to people on public platforms can make you feel accountable and motivated to deliver.
 
-### STRATEGY #3 REDUCE SCOPE
-
 ## Strategy #2: Email on a Schedule
 
 For Adam's audience, emailing once a week makes sure people stay excited, and don't forget about what he's working on. Having an email schedule like that can help you feel like people are expecting content from you.
 
-> I'm afraid to go a week without emailing people. 
+> I'm afraid to go a week without emailing people.
 
 ## Strategy #3: Reduce Scope
 
@@ -230,7 +225,7 @@ In general though, prefer multiple tiers.
 
 ### Two Tier Pricing
 
-Use price anchoring: make the second tier your real product, with the first tier as a reduced version of your product that really only exists to push people to the second tier. 
+Use price anchoring: make the second tier your real product, with the first tier as a reduced version of your product that really only exists to push people to the second tier.
 
 ![@wesbos's second tier is only $10 more, but it has twice as much content, displaying the price anchoring strategy.](https://i.imgur.com/8jjKhqg.jpg)
 
@@ -275,7 +270,7 @@ The easiest and most fun part!
 * Leverage your time zones if you need to. Adam uses morning Eastern Time Zone to launch things because he has a lot of European customers.
 * Pick you favorite day:
 
-> I like Tuesdays. I have no evidence, but it seems like a good day to launch things. Monday is too early, every other day seems too late. Tuesday seems fine. 
+> I like Tuesdays. I have no evidence, but it seems like a good day to launch things. Monday is too early, every other day seems too late. Tuesday seems fine.
 
 * Sit back and make money!
 
@@ -283,7 +278,7 @@ The easiest and most fun part!
 
 You're not done! You still have more emails to send.
 
-* Catalog feedback from the first people who buy your product, including tweets like this one. 
+* Catalog feedback from the first people who buy your product, including tweets like this one.
 
 https://twitter.com/philwinkle/status/733273064201392128
 
@@ -299,12 +294,11 @@ https://twitter.com/philwinkle/status/733273064201392128
 
 > I had a money hose that was just like firing money at me, and I was just like "Oh, we gotta get this under control! We gotta turn this off! I don't want this money!"
 
-* Tell people that during the launch there will be a discount, and read the field of your sales to see when sales are dropping off. That's the signal for the end of your launch. 
+* Tell people that during the launch there will be a discount, and read the field of your sales to see when sales are dropping off. That's the signal for the end of your launch.
 
 * Then, email people to tell them the launch is ending in a week. That will drive more sales, like a smaller, second launch week.
 
-[Adam's Github Info Link](https://gist.github.com/adamwathan/30dc4230ac575cfa3425b39ca11ea859)
----
+## [Adam's Github Info Link](https://gist.github.com/adamwathan/30dc4230ac575cfa3425b39ca11ea859)
 
 # Question
 
@@ -312,10 +306,10 @@ https://twitter.com/philwinkle/status/733273064201392128
 
 Those charts are just for the first three days, so that wasn't a huge tail.
 
-When I've released in early access before, it's been easy to update people about new content, which gets new people to see and buy the product, especially since it was still at an early access price. 
+When I've released in early access before, it's been easy to update people about new content, which gets new people to see and buy the product, especially since it was still at an early access price.
 
 For my book, sales dropped off very seriously after the launch was over, which is why I feel like I made a big mistake in closing the launch after three days.
 
-I got around this mistake a little by sending out an email telling people that they could still get the launch discount because I had gotten back feedback that people had just been unable to get to the launch discount in time. 
+I got around this mistake a little by sending out an email telling people that they could still get the launch discount because I had gotten back feedback that people had just been unable to get to the launch discount in time.
 
 In general now, I send people free content over 2 weeks after the launch, and if they haven't bought the product by then I send them a coupon for a big discount that expires really soon, which encourages people to buy immediately. This is stolen from Brennan Dunn.

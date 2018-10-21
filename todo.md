@@ -1,7 +1,10 @@
 # Next
 
-* get publisher rendering markdown to pdf, epub, and mobi
-* tweet link -> embedded image of tweet
+* render speaker bio
+* DR copy edits to one talk
+* send out a talk as a preview for feedback; mention tweet to image
+* emoji to image: https://github.com/emojione/emojify.js?files=1
+* table of contents
 * go through each talk and add a summary that helps organize it by business stage
 * copy edit/flesh out very first talk in that series
 
