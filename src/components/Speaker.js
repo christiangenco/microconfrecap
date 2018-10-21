@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
-import axios from "axios";
+// import axios from "axios";
 import get from "lodash.get";
 import { Follow } from "react-twitter-widgets";
 
@@ -10,18 +10,18 @@ export class Speaker extends Component {
   };
 
   componentDidMount() {
-    const { speaker } = this.props;
-    if (false && speaker && speaker.twitter) {
-      axios
-        .get(
-          `https://wt-christian-gen-co-0.run.webtask.io/twitterwebtask?screen_name=${
-            speaker.twitter
-          }`
-        )
-        .then(res => {
-          this.setState({ twitter: get(res, "data") });
-        });
-    }
+    // const { speaker } = this.props;
+    // if (false && speaker && speaker.twitter) {
+    //   axios
+    //     .get(
+    //       `https://wt-christian-gen-co-0.run.webtask.io/twitterwebtask?screen_name=${
+    //         speaker.twitter
+    //       }`
+    //     )
+    //     .then(res => {
+    //       this.setState({ twitter: get(res, "data") });
+    //     });
+    // }
   }
 
   render() {

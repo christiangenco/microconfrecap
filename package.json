@@ -15,7 +15,6 @@
     "react-scripts": "1.1.4"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "date-fns": "^1.29.0",
     "firebase": "^4.12.1",
     "immer": "^1.2.1",

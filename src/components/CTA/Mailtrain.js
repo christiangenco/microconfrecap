@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+// import axios from "axios";
 import PropTypes from "prop-types";
 
 const defaultState = {
@@ -19,6 +19,14 @@ export class Mailtrain extends Component {
 
     const { first, last, email } = this.state;
     const { onConvert } = this.props;
+
+    if (!/\S+@\S+/.test(email)) {
+      this.setState({
+        error:
+          "WELP it sure will be hard to send you an email if you don't give me your email address ಠ_ಠ",
+      });
+      return;
+    }
 
     this.setState({ submittedAt: +new Date() });
 
