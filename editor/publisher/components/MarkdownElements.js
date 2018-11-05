@@ -31,7 +31,14 @@ export const Blockquote = ({ children }) => {
   // if (speaker.twitter) text += ` --@${speaker.twitter}`;
   // else if (speaker.name) text += ` --${speaker.name}`;
 
-  return <aside>{text}</aside>;
+  return (
+    <aside
+      className="italic leading-tight font-sans w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix pl-2"
+      style={{ borderLeft: "5px solid #eee" }}
+    >
+      {text}
+    </aside>
+  );
 };
 
 export const Heading = props => {

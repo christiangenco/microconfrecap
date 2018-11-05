@@ -15,6 +15,26 @@ export default () => (
         break-before: page;
       }
 
+      title {
+        string-set: title content();
+      }
+
+      @page {
+        @top {
+          font-family: "Istok Web", sans-serif;
+          content: string(title, first-except);
+          margin-top: -10mm;
+          padding-top: 10mm;
+          color: #666;
+        }
+
+        @bottom-center {
+          font-family: "Istok Web", sans-serif;
+          content: counter(page);
+          padding-top: 2em;
+        }
+      }
+
       /* footnotes */
       ::footnote-call {
         content: counter(footnote);

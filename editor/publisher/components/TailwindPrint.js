@@ -3,25 +3,14 @@ import React from "react";
 export const TailwindPrint = props => {
   return (
     <style jsx global>{`
-      @import url(
-        http://fonts.googleapis.com/css?family=PT+Serif:400,
-        700,
-        400italic,
-        700italic
-      );
-      @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
       @import url(http://fonts.googleapis.com/css?family=Lato);
       @import url(https://fonts.googleapis.com/css?family=Istok+Web);
 
       .font-sans {
-        font-family: "Istok Web", "Roboto Condensed", sans-serif;
+        font-family: "Istok Web", sans-serif;
       }
 
       .font-serif {
-        font-family: "Lato", "PT Serif", serif;
-      }
-
-      .font-lato {
         font-family: "Lato", serif;
       }
 
