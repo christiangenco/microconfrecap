@@ -21,7 +21,7 @@ const run = async () => {
     const content = fm(fs.readFileSync(filename, { encoding: "utf8" }));
     return { ...content.attributes, body: content.body };
   });
-  console.log(Object.keys(posts[2]));
+  // console.log(Object.keys(posts[2]));
   fs.writeFileSync("posts.json", JSON.stringify(posts, null, 2));
 };
 run();

@@ -1,42 +1,49 @@
 import posts from "../posts.json";
 import PrintedPost from "../components/PrintedPost";
-import Head from "next/head";
+import TailwindPrint from "../components/TailwindPrint";
 
 export default () => (
   <div>
     <style jsx global>{`
-      @import url(
-        http://fonts.googleapis.com/css?family=PT+Serif:400,
-        700,
-        400italic,
-        700italic
-      );
-      @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
-      @import url(http://fonts.googleapis.com/css?family=Lato);
-      @import url(https://fonts.googleapis.com/css?family=Istok+Web);
-
-      .font-sans {
-        font-family: "Istok Web", "Roboto Condensed", system-ui,
-          BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu,
-          Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      body {
+        text-align: justify;
+        hyphens: auto;
+        counter-reset: figure, table;
       }
 
-      .font-serif {
-        font-family: "PT Serif", serif;
+      h1 {
+        break-before: page;
       }
 
-      .font-lato {
-        font-family: "Lato", serif;
+      /* footnotes */
+      ::footnote-call {
+        content: counter(footnote);
+        font-size: 83%;
+        vertical-align: super;
+        line-height: none;
       }
 
-      .font-mono {
-        font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New,
-          monospace;
+      ::footnote-marker {
+        content: counter(footnote);
+        list-style-position: inside;
+        font-size: 83%;
+        vertical-align: super;
+        margin: 0;
+        padding: 0 0.3em 0 0;
+      }
+
+      .foot {
+        float: footnote;
+        font-size: 90%;
+        font-variant: normal;
+        footnote-style-position: inside;
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
       }
     `}</style>
-    <Head>
-      <link href="/static/style.css" rel="stylesheet" />
-    </Head>
+    <TailwindPrint />
+
     <div>
       <PrintedPost {...posts[1]} />
     </div>

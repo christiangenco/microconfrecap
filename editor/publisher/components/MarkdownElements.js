@@ -1,9 +1,22 @@
 import URL from "url";
 import get from "lodash.get";
 
+const createElement = React.createElement;
+
 const proxify = url => `http://localhost:4000/?url=${encodeURIComponent(url)}`;
 
 const tweetImg = tweetId => `http://localhost:4001/${tweetId}.png`;
+
+const extractHashtags = str => {
+  if (!str) return { stripped: "", hashtags: [] };
+
+  let hashtags = str.match(/\#(\w+)/g) || [];
+  let stripped = str;
+  hashtags.forEach(hashtag => (stripped = stripped.replace(hashtag, "")));
+
+  hashtags = hashtags.map(hashtag => hashtag.replace("#", ""));
+  return { stripped, hashtags };
+};
 
 const innerText = el => {
   if (typeof el === undefined) return "";
@@ -11,6 +24,47 @@ const innerText = el => {
   if (el.props)
     return el.props.children.map(child => innerText(child)).join("");
   return el.map(child => innerText(child)).join("");
+};
+
+export const Blockquote = ({ children }) => {
+  let text = innerText(children);
+  // if (speaker.twitter) text += ` --@${speaker.twitter}`;
+  // else if (speaker.name) text += ` --${speaker.name}`;
+
+  return <aside>{text}</aside>;
+};
+
+export const Heading = props => {
+  return createElement(
+    `h${props.level}`,
+    { className: "font-sans text-left" },
+    props.children
+  );
+};
+
+export const Image = ({ alt, src }) => {
+  let caption = alt;
+  let className = "w-third -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
+
+  if (false) {
+    const { hashtags, stripped } = extractHashtags(alt);
+    caption = stripped;
+
+    if (hashtags.includes("small")) {
+      className = "w-third -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
+    } else if (hashtags.includes("medium")) {
+      className = "w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
+    } else if (hashtags.includes("large")) {
+      className = "w-full -mr-32 mb-6 -mr-32";
+    }
+  }
+
+  return (
+    <figure className={className}>
+      <img src={proxify(src)} className="w-full" />
+      <figcaption className="leading-none italic">{caption}</figcaption>
+    </figure>
+  );
 };
 
 export const Link = ({ href, children }) => {
@@ -26,14 +80,14 @@ export const Link = ({ href, children }) => {
     if (nakedLink && url.hostname === "twitter.com") {
       // https://publish.twitter.com/oembed?url=https://twitter.com/jack/status/20
       // return <Tweet tweetId={tweetId} />;
-      return (
-        <figure className="sidecaption bottom">
-          <img src={tweetImg(tweetId)} alt="" />
-          <figcaption>
-            <a href={href}>{href}</a>
-          </figcaption>
-        </figure>
-      );
+      return Image({
+        alt: (
+          <a href={href} className="no-underline">
+            {href}
+          </a>
+        ),
+        src: tweetImg(tweetId),
+      });
     }
   } catch (e) {
     console.error(e);
@@ -47,19 +101,14 @@ export const Link = ({ href, children }) => {
   );
 };
 
-export const Image = ({ alt, src }) => {
-  return (
-    <figure>
-      <img src={proxify(src)} />
-      <figcaption>{alt}</figcaption>
-    </figure>
-  );
+export const List = props => {
+  return <pre>{JSON.stringify(props, null, 2)}</pre>;
 };
 
-export const Blockquote = ({ children }) => {
-  let text = innerText(children);
-  // if (speaker.twitter) text += ` --@${speaker.twitter}`;
-  // else if (speaker.name) text += ` --${speaker.name}`;
+export const ListItem = props => {
+  return <pre>{JSON.stringify(props, null, 2)}</pre>;
+};
 
-  return <aside>{text}</aside>;
+export const Paragraph = props => {
+  return <pre>{JSON.stringify(props, null, 2)}</pre>;
 };

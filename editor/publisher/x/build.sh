@@ -12,5 +12,5 @@ curl http://localhost:3000 > ./build/index.html
 # pandoc "./build/index.html" --pdf-engine=prince -o build/microconf-2018.epub
 # pandoc "./build/index.html" --pdf-engine=prince -o build/microconf-2018.mobi
 
-prince ./build/index.html --pdf-title="Microconf Recap 2018" --pdf-author="Christian Genco @cgenco"
+prince ./build/index.html --pdf-title="Microconf Recap 2018" --pdf-author="Christian Genco @cgenco" #--no-default-style
 open ./build/index.pdf
