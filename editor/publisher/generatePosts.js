@@ -1,3 +1,6 @@
+// gather up all the ../posts/*.md talks, parse their frontmatter,
+// and stick it all in one clean posts.json file
+
 const fs = require("fs");
 const path = require("path");
 const fm = require("front-matter");

@@ -1,290 +1,43 @@
 import posts from "../posts.json";
-import PrintedPost from "./PrintedPost";
+import PrintedPost from "../components/PrintedPost";
+import Head from "next/head";
 
 export default () => (
   <div>
     <style jsx global>{`
-      @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+      @import url(
+        http://fonts.googleapis.com/css?family=PT+Serif:400,
+        700,
+        400italic,
+        700italic
+      );
       @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
       @import url(http://fonts.googleapis.com/css?family=Lato);
+      @import url(https://fonts.googleapis.com/css?family=Istok+Web);
 
-      @prince-pdf {
-        prince-pdf-page-layout: two-column;
-      }
-
-      @page {
-        margin: 30mm 20mm 25mm 20mm;
-        /*size: 20cm 25cm;*/
-        size: A4;
-
-        @footnotes {
-          /*border-top: thin solid black;*/
-          /*border-clip: 100px;*/
-          /*padding: 0;*/
-          /*margin: 0.6em 0 0 0;*/
-          /*margin-right: -60mm;*/
-          /*padding: 0.3em 0 0 0;*/
-        }
+      .font-sans {
+        font-family: "Istok Web", "Roboto Condensed", system-ui,
+          BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu,
+          Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       }
 
-      @page {
-        margin-right: 80mm;
-
-        @top-right {
-          font: 11pt "Lato", serif;
-          content: string(title, first-except);
-          white-space: nowrap;
-          vertical-align: bottom;
-          margin-right: -60mm;
-          margin-top: -10mm;
-          padding-bottom: 2em;
-          color: #666;
-        }
-
-        @bottom-center {
-          font: 11pt "Lato", serif;
-          content: counter(page);
-          vertical-align: top;
-          padding-top: 2em;
-          padding-left: 60mm;
-        }
+      .font-serif {
+        font-family: "PT Serif", serif;
       }
 
-      html,
-      body,
-      div,
-      h1,
-      h2,
-      h3,
-      p,
-      blockquote,
-      ul,
-      ol,
-      li,
-      pre {
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        margin-left: 1.5em;
+      .font-lato {
+        font-family: "Lato", serif;
       }
 
-      title {
-        string-set: title content();
-      }
-
-      body {
-        font: 11pt "PT Serif", serif;
-        line-height: 1.314;
-        text-align: justify;
-        hyphens: auto;
-        counter-reset: figure, table;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font: 2.5em "Roboto Condensed", serif;
-        margin: 1.2em 0 0.5em;
-      }
-
-      h1 {
-        margin: 0 0 1em;
-      }
-      h2 {
-        font-size: 1.5em;
-      }
-      h3 {
-        font-size: 1.2em;
-      }
-
-      a {
-        color: inherit;
-      }
-
-      p + p,
-      aside + p {
-        text-indent: 1.4em;
-      }
-      p.first {
-        text-indent: 0;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      tr {
-        text-align: left;
-        text-align: start;
-      }
-
-      table {
-        border-collapse: collapse;
-        counter-increment: table;
-      }
-      table.top {
-        float: top;
-        margin-right: -60mm;
-        vertical-align: top;
-        margin-bottom: 1em;
-      }
-      td,
-      th {
-        border: thin solid black;
-        padding: 0.2em;
-      }
-      table:after {
-        content: "Table " counter(table);
-        font-style: italic;
-        padding: 0.5em 0;
-        display: block;
-      }
-
-      figure {
-        width: 100%;
-        margin: 0;
-        counter-increment: figure;
-      }
-
-      figure img {
-        width: 100%;
-      }
-
-      .mw-headline-anchor {
-        display: none;
-      }
-      .mw-editsection {
-        display: none;
-      }
-
-      aside {
-        background: #ddd;
-        /* padding: 0.6em 1.3em 0.6em 1.3em; assuming it will end up on right page */
-        font-style: italic;
-        font-family: Lato, "Roboto Condensed", sans-serif;
-        width: 75mm;
-        box-sizing: border-box;
-        float: right;
-        margin-right: -80mm;
-        padding: 0.5em 20mm 0.5em 0.5em;
-        text-align: inside;
-        hyphens: manual;
-      }
-
-      figure.sidenote {
-        width: 55mm;
-        float: right;
-        margin-right: -60mm;
-      }
-
-      figcaption {
-        font-style: italic;
-      }
-
-      figcaption:before {
-        content: "Figure " counter(figure) ": ";
-        padding-right: 0.5em;
-      }
-
-      figure.top {
-        float: top;
-        margin-bottom: 2em;
-      }
-      figure.bottom {
-        float: bottom;
-        margin-top: 1em;
-      }
-
-      figure.sidecaption figcaption {
-        float: right;
-        width: 55mm;
-        margin-right: -60mm;
-      }
-
-      h1 {
-        margin-right: -60mm;
-      }
-
-      figure.wide {
-        width: auto;
-        margin-right: -60mm;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      p.author {
-        margin: 2em 0;
-        font-variant: small-caps;
-      }
-
-      /* footnotes */
-
-      ::footnote-call {
-        content: counter(footnote);
-        font-size: 83%;
-        vertical-align: super;
-        line-height: none;
-      }
-
-      ::footnote-marker {
-        content: counter(footnote);
-        list-style-position: inside;
-        font-size: 83%;
-        vertical-align: super;
-        margin: 0;
-        padding: 0 0.3em 0 0;
-      }
-
-      .foot {
-        float: footnote;
-        font-size: 90%;
-        font-variant: normal;
-        footnote-style-position: inside;
-        margin: 0;
-        padding: 0;
-        text-indent: 0;
-      }
-
-      @media screen {
-        body {
-          margin: 10% 30% 10% 10%;
-        }
-        figure {
-          width: 100%;
-        }
-        figure.sidecaption figcaption {
-          width: 28%;
-          float: right;
-          margin-right: -30%;
-        }
-        aside {
-          float: none;
-          width: auto;
-          margin: 1em 0;
-        }
-      }
-
-      hr {
-        /*page-break-after: always;*/
-        margin-right: -100%;
-        margin-left: -100%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        clear: both;
-      }
-
-      blockquote,
-      aside {
-        clear: both;
+      .font-mono {
+        font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New,
+          monospace;
       }
     `}</style>
-    <div className="container">
-      {/* <PrintedPost {...posts[17]} /> */}
+    <Head>
+      <link href="/static/style.css" rel="stylesheet" />
+    </Head>
+    <div>
       <PrintedPost {...posts[1]} />
     </div>
   </div>
