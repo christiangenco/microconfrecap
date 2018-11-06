@@ -11,19 +11,19 @@ export default ({ speaker }) => {
   const location = speaker.location;
 
   return (
-    <div>
+    <div style={{ float: "bottom" }}>
       {image && (
-        <div style={{ float: "right", marginRight: "-60mm", clear: "both" }}>
+        <div className="float-right">
           <img src={image} alt={name} style={{ width: "55mm" }} />
         </div>
       )}
-      <h2 style={{ marginBottom: 0, marginTop: 0 }}>by {name}</h2>
+      <h2 className="mb-0 mt-0">{name}</h2>
       {title && (
-        <h4 style={{ marginTop: 0, marginBottom: 10 }}>
+        <h4 className="mt-0">
           {title} {title && location && "//"} {location}
         </h4>
       )}
-      <p>{description}</p>
+      <p className="italic">{description}</p>
     </div>
   );
 };

@@ -138,6 +138,9 @@ export const TailwindPrint = props => {
       .w-two-thirds {
         width: 66.66667%;
       }
+      .w-three-quarters {
+        width: 75%;
+      }
       .w-full {
         width: 100%;
       }

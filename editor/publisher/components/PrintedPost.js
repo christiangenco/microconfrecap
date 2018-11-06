@@ -27,7 +27,7 @@ export default props => {
     // paragraph: Paragraph,
     // break
     // code
-    // definition
+    // definition: props => console.log(props),
     // delete
     // emphasis
     // imageReference
@@ -51,9 +51,11 @@ export default props => {
   return (
     <div className="font-serif leading-normal pr-32">
       <title>{doctitle}</title>
-      <h1 className="font-sans text-left text-5xl mb-6">{title}</h1>
-      {/* <PrintedAuthor speaker={speaker} /> */}
-      <hr />
+      <h1 className="font-sans text-left text-5xl mb-32 mt-32 -mr-32">
+        {title}
+      </h1>
+      {/* <hr className="-mr-32 mb-8" /> */}
+      <PrintedAuthor speaker={speaker} />
 
       {/* <pre>{JSON.stringify(speaker, null, 2)}</pre> */}
       {/* <Speaker speaker={speaker} /> */}

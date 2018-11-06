@@ -6,8 +6,6 @@ export default () => (
   <div>
     <style jsx global>{`
       body {
-        text-align: justify;
-        hyphens: auto;
         counter-reset: figure, table;
       }
 
@@ -20,18 +18,19 @@ export default () => (
       }
 
       @page {
+        margin: 15mm;
+        margin-top: 15mm;
+
         @top {
           font-family: "Istok Web", sans-serif;
           content: string(title, first-except);
-          margin-top: -10mm;
-          padding-top: 10mm;
           color: #666;
         }
 
         @bottom-center {
           font-family: "Istok Web", sans-serif;
           content: counter(page);
-          padding-top: 2em;
+          color: #666;
         }
       }
 

@@ -33,8 +33,8 @@ export const Blockquote = ({ children }) => {
 
   return (
     <aside
-      className="italic leading-tight font-sans w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix pl-2"
-      style={{ borderLeft: "5px solid #eee" }}
+      className="italic leading-tight font-sans w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix pr-2 text-right text-lg"
+      style={{ borderRight: "5px solid #eee" }}
     >
       {text}
     </aside>
@@ -44,16 +44,16 @@ export const Blockquote = ({ children }) => {
 export const Heading = props => {
   return createElement(
     `h${props.level}`,
-    { className: "font-sans text-left" },
+    { className: "font-sans text-left mt-0", style: { breakInside: "avoid" } },
     props.children
   );
 };
 
 export const Image = ({ alt, src }) => {
   let caption = alt;
-  let className = "w-third -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
+  let className = "w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
 
-  if (false) {
+  if (typeof alt === "string") {
     const { hashtags, stripped } = extractHashtags(alt);
     caption = stripped;
 
@@ -62,14 +62,21 @@ export const Image = ({ alt, src }) => {
     } else if (hashtags.includes("medium")) {
       className = "w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
     } else if (hashtags.includes("large")) {
-      className = "w-full -mr-32 mb-6 -mr-32";
+      return (
+        <figure className={"-mr-32 mb-6"} style={{ breakInside: "avoid" }}>
+          <figcaption className="leading-none italic text-sm w-quarter float-right text-right">
+            {caption}
+          </figcaption>
+          <img src={proxify(src)} className="w-three-quarters" />
+        </figure>
+      );
     }
   }
 
   return (
-    <figure className={className}>
+    <figure className={className} style={{ breakInside: "avoid" }}>
       <img src={proxify(src)} className="w-full" />
-      <figcaption className="leading-none italic">{caption}</figcaption>
+      <figcaption className="leading-none italic text-sm">{caption}</figcaption>
     </figure>
   );
 };
@@ -89,7 +96,11 @@ export const Link = ({ href, children }) => {
       // return <Tweet tweetId={tweetId} />;
       return Image({
         alt: (
-          <a href={href} className="no-underline">
+          <a
+            href={href}
+            className="no-underline text-xs"
+            style={{ color: "#444" }}
+          >
             {href}
           </a>
         ),
