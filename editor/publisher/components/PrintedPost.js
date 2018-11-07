@@ -54,6 +54,7 @@ export default props => {
       <h1 className="font-sans text-left text-5xl mb-32 mt-32 -mr-32">
         {title}
       </h1>
+      <div className="emoji">😘</div>
       {/* <hr className="-mr-32 mb-8" /> */}
       <PrintedAuthor speaker={speaker} />
 

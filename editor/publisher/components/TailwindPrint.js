@@ -5,18 +5,19 @@ export const TailwindPrint = props => {
     <style jsx global>{`
       @import url(http://fonts.googleapis.com/css?family=Lato);
       @import url(https://fonts.googleapis.com/css?family=Istok+Web);
+      @import url(http://localhost:3000/static/TwitterColorEmoji-SVGinOT.ttf);
 
       .font-sans {
-        font-family: "Istok Web", sans-serif;
+        font-family: "Istok Web", "Twitter Color Emoji", sans-serif;
       }
 
       .font-serif {
-        font-family: "Lato", serif;
+        font-family: "Lato", "Twitter Color Emoji", serif;
       }
 
       .font-mono {
         font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New,
-          monospace;
+          "Twitter Color Emoji", monospace;
       }
 
       /* Size */

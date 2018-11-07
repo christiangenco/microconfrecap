@@ -2,6 +2,12 @@ import posts from "../posts.json";
 import PrintedPost from "../components/PrintedPost";
 import TailwindPrint from "../components/TailwindPrint";
 
+// @font-face {
+//   font-family: "Emoji";
+//   src: local("Emoji"), url("TwitterColorEmoji-SVGinOT.ttf"),
+//     format("truetype");
+// }
+
 export default () => (
   <div>
     <style jsx global>{`
@@ -64,7 +70,9 @@ export default () => (
     <TailwindPrint />
 
     <div>
-      <PrintedPost {...posts[1]} />
+      {posts
+        .filter(post => post.speaker && post.speaker.name == "Justin Jackson")
+        .map(post => <PrintedPost {...post} />)}
     </div>
   </div>
 );
