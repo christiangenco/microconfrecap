@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  padding: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+p, li {
+  font-family: 'Merriweather', serif;
+}
+
+h1 span {
+  transition: all 0.3s ease;
+}
+
+.loading, .loading h1, .loading h2, .loading h3, .loading h4, .loading h5, .loading p, .loading ul, .loading li, .loading span, .loading div {
+  animation: pulse 1.8s infinite;
+  font-family: "BLOKK";
+}
+
+.pulsing {
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blockquote {
+  border-left: 5px solid #eee;
+  padding-left: 10px
+}

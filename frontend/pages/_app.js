@@ -1,4 +1,4 @@
-import App, { Container } from "next/app";
+import App, { Container, Head } from "next/app";
 import Page from "../components/Page";
 
 export class MyApp extends App {
