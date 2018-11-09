@@ -18,8 +18,9 @@ const glob = (path, options) => {
 const run = async () => {
   const filenames = await glob("../posts/*.md");
   const posts = filenames.map(filename => {
+    const slug = path.basename(filename, path.extname(filename));
     const content = fm(fs.readFileSync(filename, { encoding: "utf8" }));
-    return { ...content.attributes, body: content.body };
+    return { ...content.attributes, body: content.body, slug };
   });
   // console.log(Object.keys(posts[2]));
   fs.writeFileSync("posts.json", JSON.stringify(posts, null, 2));

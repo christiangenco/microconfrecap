@@ -13,6 +13,12 @@ isPublic: true
 <iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/adam-wathan/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
 <script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
 
+Learn how to:
+
+- Nail a launch that makes $115,676 in three days
+- Grow your audience from 800 to 20,000 in 15 months
+- Sell a PDF file for $135
+
 # Who The Hell is Adam Wathan?
 
 <!-- https://twitter.com/mijustin/status/989174075695120385 -->

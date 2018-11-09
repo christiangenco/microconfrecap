@@ -5,7 +5,10 @@ export default ({ speaker }) => {
 
   const image =
     speaker.image ||
-    (get(twitter, "profile_image_url_https") || "").replace("_normal", "");
+    (get(speaker, "twitter.profile_image_url_https") || "").replace(
+      "_normal",
+      ""
+    );
   const screen_name = speaker.twitter;
   const description = speaker.description;
   const location = speaker.location;
@@ -13,7 +16,7 @@ export default ({ speaker }) => {
   return (
     <div style={{ float: "bottom" }}>
       {image && (
-        <div className="float-right">
+        <div className="float-right ml-2">
           <img src={image} alt={name} style={{ width: "55mm" }} />
         </div>
       )}

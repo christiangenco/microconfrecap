@@ -5,6 +5,7 @@ import PrintedAuthor from "./PrintedAuthor";
 // import { Tweet } from "react-twitter-widgets";
 import {
   Blockquote,
+  Break,
   Heading,
   Image,
   Link,
@@ -18,6 +19,7 @@ export default props => {
 
   const renderers = {
     blockquote: Blockquote,
+    thematicBreak: Break,
     heading: Heading,
     html: props => "",
     image: Image,
@@ -25,7 +27,6 @@ export default props => {
     // list: List,
     // listItem: ListItem,
     // paragraph: Paragraph,
-    // break
     // code
     // definition: props => console.log(props),
     // delete
@@ -51,10 +52,8 @@ export default props => {
   return (
     <div className="font-serif leading-normal pr-32">
       <title>{doctitle}</title>
-      <h1 className="font-sans text-left text-5xl mb-32 mt-32 -mr-32">
-        {title}
-      </h1>
-      <div className="emoji">😘</div>
+      {/* <pre>{JSON.stringify(Object.keys(props), null, 2)}</pre> */}
+      <h1 className="font-sans text-left text-5xl -mr-32">{title}</h1>
       {/* <hr className="-mr-32 mb-8" /> */}
       <PrintedAuthor speaker={speaker} />
 

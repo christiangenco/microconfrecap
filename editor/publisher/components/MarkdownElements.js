@@ -34,12 +34,16 @@ export const Blockquote = ({ children }) => {
   return (
     <aside
       className="italic leading-tight font-sans w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix pr-2 text-right text-lg"
-      style={{ borderRight: "5px solid #eee" }}
+      style={{ borderRight: "5px solid #eee", breakInside: "avoid" }}
     >
       {text}
     </aside>
   );
 };
+
+export const Break = () => (
+  <div className="clearfix" style={{ breakBefore: "page" }} />
+);
 
 export const Heading = props => {
   return createElement(

@@ -6,12 +6,18 @@
   "dependencies": {
     "front-matter": "^2.3.0",
     "glob": "^7.1.2",
-    "next": "^6.0.3",
+    "next": "^7.0.2",
+    "path-match": "^1.2.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "showdown": "^1.8.6"
   },
   "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "oldScripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
