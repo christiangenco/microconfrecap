@@ -1,5 +1,6 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
+const firebase = require("firebase/app");
+require("firebase/firestore");
+
 const config = {
   apiKey: "AIzaSyClVXSCMxMLFTxwNe9w-WsJtFyQmctwtxk",
   authDomain: "microconfrecap.firebaseapp.com",
@@ -20,4 +21,4 @@ if (!firebase.apps.length) {
   firestore.settings(settings);
 }
 
-export default firestore;
+module.exports = firestore;

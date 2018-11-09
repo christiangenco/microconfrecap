@@ -16,5 +16,8 @@
     "react-twitter-widgets": "^1.7.1",
     "showdown": "^1.8.7"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "export": "next build && next export"
+  }
 }

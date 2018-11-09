@@ -1,1 +1,1 @@
-yarn run build
+yarn run export

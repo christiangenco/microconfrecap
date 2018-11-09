@@ -7,7 +7,13 @@ Router.events.on("routeChangeComplete", url => NProgress.done());
 Router.events.on("routeChangeError", (err, url) => NProgress.done());
 
 export const Header = props => {
-  return <h1>Microconf Recap 2018</h1>;
+  return (
+    <h1>
+      <Link href="/">
+        <a>Microconf Recap 2018</a>
+      </Link>
+    </h1>
+  );
 };
 
 export default Header;
