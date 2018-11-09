@@ -7,7 +7,7 @@ export const Meta = props => {
       <meta charSet="utf-8" />
       <link rel="shortcut icon" href="/static/favicon.png" />
       <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
-      <title>Sick Fits!</title>
+      <title>Microconf Recap</title>
     </Head>
   );
 };

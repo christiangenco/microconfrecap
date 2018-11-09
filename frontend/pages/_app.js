@@ -29,4 +29,4 @@ export class MyApp extends App {
 // https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
 MyApp.propTypes = {};
 
-export default withData(MyApp);
+export default MyApp;
