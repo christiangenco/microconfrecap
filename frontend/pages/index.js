@@ -33,19 +33,30 @@ const Index = ({ posts }) => {
       <ul className="text-lg">
         <li>
           Kai Davis:{" "}
-          <a href="https://kaidavis.com/microconf-2015/">
+          <a
+            href="https://kaidavis.com/microconf-2015/"
+            className="no-underline hover:underline"
+          >
             Microconf Recap 2015
           </a>
         </li>
         <li>
           remarq.io:{" "}
-          <a href="https://docs.google.com/document/d/1EefLjujm3TW0oL21XvstCx7OuUfwmcJsASvakyhZ2LI/edit#">
+          <a
+            href="https://docs.google.com/document/d/1EefLjujm3TW0oL21XvstCx7OuUfwmcJsASvakyhZ2LI/edit#"
+            className="no-underline hover:underline"
+          >
             Microconf Recap 2016
           </a>
         </li>
         <li>
           Shai Schechter:{" "}
-          <a href="https://shai.io/microconf/">Microconf Recap 2017</a>
+          <a
+            href="https://shai.io/microconf/"
+            className="no-underline hover:underline"
+          >
+            Microconf Recap 2017
+          </a>
         </li>
       </ul>
     </div>

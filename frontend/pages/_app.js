@@ -2,6 +2,7 @@ import App, { Container, Head } from "next/app";
 import Header from "../components/Header";
 import Meta from "../components/Meta";
 import CTA from "../components/CTA";
+import Bio from "../components/Bio";
 
 export class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -27,6 +28,7 @@ export class MyApp extends App {
               <Header />
               <Component {...pageProps} />
               <CTA />
+              <Bio />
             </div>
           </div>
         </div>
