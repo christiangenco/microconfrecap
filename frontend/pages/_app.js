@@ -1,7 +1,7 @@
 import App, { Container, Head } from "next/app";
 import Header from "../components/Header";
 import Meta from "../components/Meta";
-import Mailtrain from "../components/Mailtrain";
+import CTA from "../components/CTA";
 
 export class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -26,7 +26,7 @@ export class MyApp extends App {
             <div className="bg-white md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto p-4">
               <Header />
               <Component {...pageProps} />
-              <Mailtrain />
+              <CTA />
             </div>
           </div>
         </div>
