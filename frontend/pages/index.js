@@ -2,9 +2,10 @@ import Link from "next/link";
 import db from "../firebase";
 
 const PostItem = ({ post }) => (
-  <li>
+  <li className="mb-2 text-lg">
+    {post.speaker.name}:{" "}
     <Link href={`/${post.slug}`}>
-      <a>{post.title}</a>
+      <a className="no-underline hover:underline">{post.title}</a>
     </Link>
   </li>
 );
@@ -24,10 +25,29 @@ const Index = ({ posts }) => {
 
   return (
     <div>
-      <h2>Starter</h2>
+      <h2 className="font-sans">Starter</h2>
       <PostList posts={starterPosts} />
-      <h2>Growth</h2>
+      <h2 className="mt-6 font-sans">Growth</h2>
       <PostList posts={growthPosts} />
+      <h2 className="mt-6 font-sans">Past Recaps</h2>
+      <ul className="text-lg">
+        <li>
+          Kai Davis:{" "}
+          <a href="https://kaidavis.com/microconf-2015/">
+            Microconf Recap 2015
+          </a>
+        </li>
+        <li>
+          remarq.io:{" "}
+          <a href="https://docs.google.com/document/d/1EefLjujm3TW0oL21XvstCx7OuUfwmcJsASvakyhZ2LI/edit#">
+            Microconf Recap 2016
+          </a>
+        </li>
+        <li>
+          Shai Schechter:{" "}
+          <a href="https://shai.io/microconf/">Microconf Recap 2017</a>
+        </li>
+      </ul>
     </div>
   );
 };

@@ -32,6 +32,7 @@ export const Meta = props => {
       />
       <meta name="msapplication-TileColor" content="#00a300" />
       <meta name="theme-color" content="#ffffff" />
+
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
@@ -48,17 +49,18 @@ export const Meta = props => {
         href="https://fonts.googleapis.com/css?family=Lato|Merriweather"
         rel="stylesheet"
       />
-      <link
+      {/* <link
         rel="stylesheet"
         type="text/css"
         href="/static/blokkfont.css"
         rel="stylesheet"
-      />
+      /> */}
       <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
       <link
         href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
         rel="stylesheet"
       />
+      <link rel="stylesheet" href="/static/style.css" />
     </Head>
   );
 };

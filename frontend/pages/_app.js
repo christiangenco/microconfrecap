@@ -1,5 +1,7 @@
 import App, { Container, Head } from "next/app";
-import Page from "../components/Page";
+import Header from "../components/Header";
+import Meta from "../components/Meta";
+import Mailtrain from "../components/Mailtrain";
 
 export class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -18,15 +20,19 @@ export class MyApp extends App {
 
     return (
       <Container>
-        <Page>
-          <Component {...pageProps} />
-        </Page>
+        <Meta />
+        <div className="bg-grey-lightest min-h-screen font-serif leading-normal">
+          <div className="container mx-auto min-h-screen bg-white">
+            <div className="bg-white md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto p-4">
+              <Header />
+              <Component {...pageProps} />
+              <Mailtrain />
+            </div>
+          </div>
+        </div>
       </Container>
     );
   }
 }
-
-// https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
-MyApp.propTypes = {};
 
 export default MyApp;
