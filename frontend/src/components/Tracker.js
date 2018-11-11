@@ -25,7 +25,5 @@ export class Tracker extends Component {
     return null;
   }
 }
-// https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
-Tracker.propTypes = {};
 
 export default Tracker;
