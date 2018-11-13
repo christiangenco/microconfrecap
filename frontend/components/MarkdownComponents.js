@@ -4,7 +4,7 @@ import { Share, Follow, Tweet } from "react-twitter-widgets";
 // import { URL } from "url";
 // const URL = require("url").URL;
 
-// let URL;
+// URL polyfill
 if (typeof global.URL !== "function") {
   global.URL = require("url").URL;
 }
@@ -36,7 +36,7 @@ export const Blockquote = ({ speaker, url }) => ({ children }) => {
   else if (speaker.name) text += ` -${speaker.name}`;
 
   return (
-    <aside className="w-2/3 ml-4 mb-6 md:-mr-16 lg:-mr-32 pr-4 italic leading-tight font-sans  float-right clearfix text-right text-lg border-solid border-grey-light border-r-8">
+    <aside className="w-full md:w-2/3 ml-4 mb-6 md:-mr-16 lg:-mr-32 pr-4 italic leading-tight font-sans  float-right clearfix text-right text-lg border-solid border-grey-light border-r-8">
       {children}
       <div className="text-grey">
         {speaker.name}
@@ -116,7 +116,7 @@ export const Image = ({ speaker, url }) => ({ alt, src }) => {
     figureClassName +=
       "w-1/2 md:w-1/3 md:-mr-16 lg:-mr-32 ml-6 mb-6 float-right clearfix";
   } else if (hashtags.includes("large")) {
-    figureClassName += "w-full md:-mr-16 lg:-mr-32";
+    figureClassName += "float-right md:-mr-16 lg:-mr-32";
   } else {
     // medium
     figureClassName +=
