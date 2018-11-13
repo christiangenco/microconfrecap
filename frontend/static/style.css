@@ -11,3 +11,7 @@
 p, ul, ol {
   margin-bottom: 1rem;
 }
+
+.clearfix {
+  clear: both;
+}

@@ -1,9 +1,17 @@
 import { createElement } from "react";
 import get from "lodash.get";
 import { Share, Follow, Tweet } from "react-twitter-widgets";
+// import { URL } from "url";
+// const URL = require("url").URL;
+
+// let URL;
+if (typeof global.URL !== "function") {
+  global.URL = require("url").URL;
+}
 
 const extractHashtags = str => {
-  if (!str) return { stripped: "", hashtags: [] };
+  if (!str || typeof str !== "string")
+    return { stripped: str || "", hashtags: [] };
 
   let hashtags = str.match(/\#(\w+)/g) || [];
   let stripped = str;
@@ -26,9 +34,6 @@ export const Blockquote = ({ speaker, url }) => ({ children }) => {
   let text = innerText(children);
   if (speaker.twitter) text += ` @${speaker.twitter}`;
   else if (speaker.name) text += ` -${speaker.name}`;
-
-  // className="italic leading-tight font-sans w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix pr-2 text-right text-lg"
-  // style={{ borderRight: "5px solid #eee", breakInside: "avoid" }}
 
   return (
     <aside className="w-2/3 ml-4 mb-6 md:-mr-16 lg:-mr-32 pr-4 italic leading-tight font-sans  float-right clearfix text-right text-lg border-solid border-grey-light border-r-8">
@@ -85,64 +90,49 @@ export const Heading = props => {
 };
 
 export const Image = ({ speaker, url }) => ({ alt, src }) => {
-  let shareURL = `${url}?img=${encodeURIComponent(src)}`;
-  // const match = src.match(/https:\/\/i\.imgur.com\/(\w+)/);
-  // if (match[1]) shareURL = `https://imgur.com/${match[1]}`;
+  const shareButton = (
+    <Share
+      url={`${url}?img=${encodeURIComponent(src)}`}
+      options={{
+        text: `${alt} ${
+          speaker && speaker.twitter ? "@" + speaker.twitter : ""
+        }`,
+        hashtags: "microconf",
+        via: "cgenco",
+        related: "microconf",
+      }}
+    />
+  );
+
+  // w-2/3 ml-4 mb-6 md:-mr-16 lg:-mr-32
+  let caption = alt;
+  let figureClassName = "rounded border ";
+  let captionClassName = "";
+
+  const { hashtags, stripped } = extractHashtags(alt);
+  caption = stripped;
+
+  if (hashtags.includes("small")) {
+    figureClassName +=
+      "w-1/2 md:w-1/3 md:-mr-16 lg:-mr-32 ml-6 mb-6 float-right clearfix";
+  } else if (hashtags.includes("large")) {
+    figureClassName += "w-full md:-mr-16 lg:-mr-32";
+  } else {
+    // medium
+    figureClassName +=
+      "w-full md:w-3/4 md:-mr-16 lg:-mr-32 md:ml-6 mb-6 float-right clearfix";
+  }
 
   return (
-    <div className="rounded border">
-      <img src={src} alt={alt} className="rounded-t" />
-      <div className="p-4">
-        <div class="float-right">
-          <Share
-            url={shareURL}
-            options={{
-              text: `${alt} ${
-                speaker && speaker.twitter ? "@" + speaker.twitter : ""
-              }`,
-              hashtags: "microconf",
-              via: "cgenco",
-              related: "microconf",
-            }}
-          />
-        </div>
-        <p className="card-text">{alt}</p>
-      </div>
-    </div>
+    <figure className={figureClassName}>
+      <img src={src} className="w-full rounded-t" />
+      <figcaption className="leading-none text-sm p-4">
+        <div className="float-right">{shareButton}</div>
+        {caption}
+      </figcaption>
+    </figure>
   );
 };
-
-// export const Image = ({ alt, src }) => {
-//   let caption = alt;
-//   let className = "w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
-//
-//   if (typeof alt === "string") {
-//     const { hashtags, stripped } = extractHashtags(alt);
-//     caption = stripped;
-//
-//     if (hashtags.includes("small")) {
-//       className = "w-third -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
-//     } else if (hashtags.includes("medium")) {
-//       className = "w-two-thirds -mr-32 ml-6 mb-6 -mr-32 float-right clearfix";
-//     } else if (hashtags.includes("large")) {
-//       return (
-//         <figure className={"-mr-32 mb-6"} style={{ breakInside: "avoid" }}>
-//           <figcaption className="leading-none italic text-sm w-quarter float-right text-right">
-//             {caption}
-//           </figcaption>
-//           <img src={proxify(src)} className="w-three-quarters" />
-//         </figure>
-//       );
-//     }
-//   }
-//
-//   return (
-//     <figure className={className} style={{ breakInside: "avoid" }}>
-//       <img src={proxify(src)} className="w-full" />
-//       <figcaption className="leading-none italic text-sm">{caption}</figcaption>
-//     </figure>
-//   );
-// };
 
 export const Link = ({ href, children }) => {
   const nakedLink = children[0] === href;
