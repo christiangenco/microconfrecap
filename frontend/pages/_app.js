@@ -22,7 +22,7 @@ export class MyApp extends App {
     return (
       <Container>
         <Meta />
-        <div className="bg-grey-lightest min-h-screen font-serif leading-normal">
+        <div className="bg-grey-lightest min-h-screen font-serif leading-normal text-black">
           <div className="container mx-auto min-h-screen bg-white">
             <div className="bg-white md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto p-4">
               <Header />

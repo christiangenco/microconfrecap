@@ -1,6 +1,7 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import { Component } from "react";
 import ReactGA from "react-ga";
+
+// https://github.com/zeit/next.js#routing
 
 // "UA-118473626-1"
 export class Tracker extends Component {
