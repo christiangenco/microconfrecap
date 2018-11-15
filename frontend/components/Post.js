@@ -34,7 +34,7 @@ export default ({ title, body, speaker, slug, url, updatedAt }) => {
     );
   }
 
-  console.log({ url });
+  // console.log({ url });
 
   const renderers = {
     blockquote: Blockquote({ speaker, url }),
