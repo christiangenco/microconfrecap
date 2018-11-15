@@ -5,10 +5,6 @@ export const Meta = props => {
     <Head>
       <title>Microconf Recap</title>
       <meta
-        property="description"
-        content="Microconf 2017 official conference notes by Christian Genco."
-      />
-      <meta
         name="viewport"
         content="width=device-width,initial-scale=1,shrink-to-fit=no"
       />
@@ -36,25 +32,6 @@ export const Meta = props => {
       />
       <meta name="msapplication-TileColor" content="#00a300" />
       <meta name="theme-color" content="#ffffff" />
-
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:description"
-        content="Microconf 2017 official conference notes by Christian Genco."
-      />
-      <meta property="og:title" content="Microconf Recap 2018" />
-      <meta property="og:url" content="https://microconf.gen.co/" />
-      <meta
-        property="og:image"
-        content="https://microconf.gen.co/microconf.jpg"
-      />
-
-      {/* <meta name="twitter:site" value="@microconf" />
-      <meta property="twitter:url" content="${url}" />
-      <meta property="twitter:title" content="${fullTitle}" />
-      <meta property="twitter:description" content="${fullDescription}" />
-      <meta property="twitter:image" content="${fullImage}" />
-      <meta name="twitter:card" value="summary_large_image" /> */}
 
       <link
         href="https://fonts.googleapis.com/css?family=Lato|Merriweather"

@@ -1,2 +1,2 @@
-yarn run export
+yarn run export && \
 firebase deploy --only hosting

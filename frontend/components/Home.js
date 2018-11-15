@@ -26,14 +26,44 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
 
   return (
     <div>
-      {coverIndex && (
-        <Head>
-          <meta
-            property="og:image"
-            content={`https://microconf.gen.co/static/covers/${coverIndex}.jpg`}
-          />
-        </Head>
-      )}
+      <Head>
+        <meta property="og:title" content="Microconf Recap 2018" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="description"
+          content="Microconf 2018 official conference notes by Christian Genco."
+        />
+        <meta
+          property="og:description"
+          content="Microconf 2018 official conference notes by Christian Genco."
+        />
+        <meta property="og:url" content="https://microconf.gen.co/" />
+        <meta
+          property="og:image"
+          content={
+            coverIndex
+              ? `https://microconf.gen.co/static/covers/${coverIndex}.jpg`
+              : "https://microconf.gen.co/static/microconf.jpg"
+          }
+        />
+        <meta name="twitter:site" value="@microconf" />
+        <meta property="twitter:url" content="https://microconf.gen.co/" />
+        <meta property="twitter:title" content="Microconf 2018 Recap" />
+        <meta
+          property="twitter:description"
+          content="Microconf 2018 official conference notes by Christian Genco."
+        />
+        <meta
+          property="twitter:image"
+          content={
+            coverIndex
+              ? `https://microconf.gen.co/static/covers/${coverIndex}.jpg`
+              : "https://microconf.gen.co/static/microconf.jpg"
+          }
+        />
+        <meta name="twitter:card" value="summary_large_image" />
+      </Head>
+
       <h2 className="font-sans">Starter</h2>
       <PostList posts={starterPosts} />
       <h2 className="mt-6 font-sans">Growth</h2>
