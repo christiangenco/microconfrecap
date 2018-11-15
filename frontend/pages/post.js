@@ -4,7 +4,7 @@ import db from "../firebase";
 import Post from "../components/Post";
 
 const PostPage = props => {
-  const { post } = props;
+  const { post, query } = props;
   const { title, date, updatedAt, speaker, description, image, slug } = post;
   const url = `https://microconf.gen.co/${slug}`;
 
@@ -14,6 +14,7 @@ const PostPage = props => {
   let fullDescription = description || "Microconf 2018 talk recap";
 
   let fullImage = image || "https://microconf.gen.co/microconf.jpg";
+  if (query && query.img) fullImage = query.img;
 
   return (
     <div>
@@ -48,7 +49,7 @@ const PostPage = props => {
         <meta property="twitter:image" content={fullImage} />
         <meta name="twitter:card" value="summary_large_image" />
       </Head>
-      <Post {...post} />
+      <Post {...post} url={"https://microconf.gen.co/" + post.slug} />
     </div>
   );
 };
@@ -64,7 +65,7 @@ PostPage.getInitialProps = async ({ query }) => {
     .doc(query.slug)
     .get();
 
-  return { post: { ...post.data(), body: body.data().body } };
+  return { post: { ...post.data(), body: (body.data() || {}).body } };
 };
 
 export default PostPage;
