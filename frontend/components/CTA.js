@@ -43,7 +43,7 @@ class CTA extends Component {
               tweets!"
               {false && (
                 <Share
-                  url={`https://microconf.gen.co/book/${randomCoverIndex}`}
+                  url={`https://microconf.gen.co/?coverIndex=${randomCoverIndex}`}
                   options={{
                     text:
                       "I just signed up for a free ebook summary of @microconf 2018 at ",

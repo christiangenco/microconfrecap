@@ -13,6 +13,10 @@ module.exports = {
       doc => (paths["/" + doc.id] = { page: "/post", query: { slug: doc.id } })
     );
 
+    for (let i = 0; i < 16; i++) {
+      paths["/book/" + i] = { page: "/book", query: { coverIndex: i } };
+    }
+
     return paths;
   },
 };

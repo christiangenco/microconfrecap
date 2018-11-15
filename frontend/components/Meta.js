@@ -45,6 +45,13 @@ export const Meta = props => {
         content="https://microconf.gen.co/microconf.jpg"
       />
 
+      {/* <meta name="twitter:site" value="@microconf" />
+      <meta property="twitter:url" content="${url}" />
+      <meta property="twitter:title" content="${fullTitle}" />
+      <meta property="twitter:description" content="${fullDescription}" />
+      <meta property="twitter:image" content="${fullImage}" />
+      <meta name="twitter:card" value="summary_large_image" /> */}
+
       <link
         href="https://fonts.googleapis.com/css?family=Lato|Merriweather"
         rel="stylesheet"
