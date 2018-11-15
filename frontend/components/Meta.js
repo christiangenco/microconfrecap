@@ -5,6 +5,10 @@ export const Meta = props => {
     <Head>
       <title>Microconf Recap</title>
       <meta
+        property="description"
+        content="Microconf 2017 official conference notes by Christian Genco."
+      />
+      <meta
         name="viewport"
         content="width=device-width,initial-scale=1,shrink-to-fit=no"
       />
@@ -36,7 +40,7 @@ export const Meta = props => {
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Microconf 2017 official notes by Christian Genco."
+        content="Microconf 2017 official conference notes by Christian Genco."
       />
       <meta property="og:title" content="Microconf Recap 2018" />
       <meta property="og:url" content="https://microconf.gen.co/" />
