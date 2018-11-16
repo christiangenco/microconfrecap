@@ -21,9 +21,10 @@ const extractHashtags = str => {
 const innerText = el => {
   if (typeof el === undefined) return "";
   if (typeof el === "string") return el;
-  if (el.props)
-    return el.props.children.map(child => innerText(child)).join("");
-  return el.map(child => innerText(child)).join("");
+  if (typeof el.map === "function") return el.map(innerText).join("");
+  if (el.props && el.props.children)
+    return [...el.props.children].map(child => innerText(child)).join("");
+  return "Error rendering innerText";
 };
 
 export const Blockquote = ({ children }) => {
