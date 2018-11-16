@@ -1,6 +1,6 @@
 ---
 title: Your First 60 Days
-speaker: {"image":"https://pbs.twimg.com/profile_images/476049306072276993/s9QMnPC5.jpeg","name":"Patrick McKenzie","title":"Atlas","bioUrl":"http://www.microconf.com/starter/speakers/patrick-mckenzie/","twitter":"patio11","website":"http://www.kalzumeus.com","location":"東京都 Tokyo","description":"I work for the Internet, at @stripe, mostly on Atlas. Opinions here are my own.","verified":false}
+speaker: {"image":"https://pbs.twimg.com/profile_images/476049306072276993/s9QMnPC5.jpeg","name":"Patrick McKenzie","title":"Atlas","bioUrl":"http://www.microconf.com/starter/speakers/patrick-mckenzie/","twitter":"patio11","website":"http://www.kalzumeus.com","location":"東京都 Tokyo","description":"I work for the Internet, at @stripe, mostly on Atlas.","verified":false}
 date: 2018-05-03 10:03:27 UTC-07:00
 conference: starter
 description: Microconf 2018 talk recap
@@ -12,84 +12,118 @@ isPublic: true
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679137985468158%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 
-https://twitter.com/mijustin/status/988986209987842051
+<!-- https://twitter.com/mijustin/status/988986209987842051 -->
 
-Patrick ran a several SaaS companies, and most recently started working at Stripe.
+You'll learn:
 
-> Microconf lets us lead the life we want to live. We can be more present for our families and our communities. It's not _how_ you do it, it's _why_ you do it.
+- one
+- two
+- three
 
-Don't get caught up in the silicon valley mentality. What are you going to do over the next 40 years?
+# Intro
 
-## Decision making over the long haul:
+Patrick ran five Software/training/consulting businesses from 2006 through 2016, and most recently started working at Stripe. His first Microconf was in 2011.
 
-* make more small bets. Very little of what you do in business are "trapdoor" (irreversable) decisions.
-* decide quickly on reversible things that don't matter in the long run. Don't agonize about if you've hit perfection, just get it out the door.
-* do things which still matter in 40 years. You have a sharply limited amount of time as an entrepreneur - do things that will matter years from now. Write about topics that will still matter in 20 years.
+The Microconf mentality lets us lead the lives we want to live. Having a great business means you can be more present for our families and our communities, and have a better way of working. It's not just _how_ you do it, it's also _why_ you do it - don't loose sight of that.
 
-> Don't agonize about hitting perfection, just get it out the door.
+The title of this talk - Your First 60 Days - is misleading. What you do over your first 60 days is important, but not nearly as important as what you do consistently over a 40 year career.
 
-## Grinding, duh
+Keep an eye on the long game of providing value to your community and capturing value for yourself.
 
-You don't need the long term perfect grand strategy, or being an expert, or know what you're doing: you need to go out there every day doing repetitive things that generate small amounts of value, and you need to do it a lot over a long amount of time.
+---
 
-> You need to go out there every day doing repetitive things that generate small amounts of value, and you need to do it a lot over a long amount of time.
+## Decision making over the long haul
+
+![#small](https://i.imgur.com/OdpUqPd.png)
+
+Decision paralysis as a founder can be worse than making the wrong decision. Instead of agonizing over perfection, it's almost always better to just ship ideas and see if they worked.
+
+- **Make more small bets.** Not ever decision you make _needs_ to be the right one, so make decisions in a way that optimizes for learning. Very little of what you do in business are "trapdoor" (irreversible) decisions.
+- **Decide quickly** on reversible things that don't matter in the long run. Don't agonize about if you've hit perfection, just get it out the door. Making more decisions faster and learning from them is a better strategy than trying to make the perfect decision every time.
+- **Maximize for the long term.** You have a sharply limited amount of time as an entrepreneur - do things that will still matter and be relevant 40 years from now.
+
+### Grinding, duh
+
+How are you going to build a business in the next 60 days? Easy - you're going to grind.
+
+You don't need to be an expert, or have the perfect long term grand strategy, or know what you're doing: you need to go out there every day doing repetitive things that generate small amounts of value, and you need to keep doing it a lot over a long amount of time.
 
 ## What should I build?
 
-"What should I build" is the wrong question to ask first. Ask instead "who should I serve?"
+"What should I build" is the wrong question to ask first. Instead, ask "who do I want to serve?"
 
-What communities do you feel a calling towards? This is going to be a part of your life for the next several years, so the audience you pick will have a huge impact on your quality of life.
+What people communities do you feel a calling towards? Don't look at building a business as a quick way to make money, look at it as a big part of your life for several years. The audience you pick will have a huge impact on your quality of life.
 
-> "Are you going to bounce up every morning with enthusiasm at talking to dental offices?" - "oh god no!"
+Patrick made the mistake of not choosing the people he would be serving first with a business that made a service for dental offices. Did he feel like he could bounce up every morning with enthusiasm at the prospect of talking to dental offices? Oh God no!
 
-Pick people...
+"Oh God no!" is the wrong reaction to have when thinking about your customers. To maximize your quality of life and chance of success in business, don't serve people you feel contempt for.
 
-* ...who you're energized in talking to
-* ...whose problems are tractable (ie: not "fight global poverty!")
-* ...with money (serve people who can afford to pay for solutions)
+Instead, choose to serve people:
 
-Patrick bounces with enthusiasm talking to Microconf people! He had a business talking to teachers for 6 years and got really tired talking to them. Find the people you don't get tired talking to.
+- ...**who you're energized in talking to**. Who are you never tired to talk to? Who are you excited to work with? Patrick bounces with enthusiasm talking to Microconf people, and got really tired talking to teachers for the 6 years he ran [Bingo Card Creator](https://www.bingocardcreator.com/).
+- ...**whose problems are tractable**. Making a dent in global poverty is an awesome mission to have, and not one that a single person working really hard for several years can reasonably materially impact.
+- ...**with money**. Serve people who can afford to pay for your solutions, which usually means businesses. If you have charitable impulses, it's much easier and more effective to be charitable with a healthy business behind you than to undercharge.
 
-> Find the people you don't get tired talking to.
+## Assemble your business piece-by-piece
 
-If you have charitable impulses, it's much easier to be charitable with a healthy business behind you.
+![Assemble your business piece-by-piece instead of striving for a perfect end state. #small](https://i.imgur.com/4CtYzts.jpg)
 
-We have this image of striving for a business that's all put together. Focus instead on adding a little bit to a puzzle (not a perfect analogy, since there's no end state in business like there is in puzzles).
+It's easy to look at currently successful businesses and think "wow, they have it all figured out," which can be discouraging. In reality, everyone is making it up as they go.
 
-Every day, if you've added a piece to your business that wasn't there yesterday and will still be there in years, that's a great metric for success
+Even Patrick Collison - the billionaire cofounder of Stripe - has said that when going into early meetings with banks he felt like three squirrels in a trenchcoat.
+
+Instead of targeting a business that's all put together, focus on adding a little piece at a time, similar to putting together a puzzle (though a puzzle isn't a perfect analogy - there's no perfectly defined end state in business).
+
+View work on your business as snapping in another little puzzle piece that brings you towards a more finished product:
+
+- a little bit of marketing gets you a little more credibility
+- a little product development helps your customers to be a little more satisfied
+- a single conversation with a customer helps you understand their desires and needs a little better
+
+Adding small meaningful pieces every day that will still be there in several years is a great metric for success.
 
 ## Talk to people
 
+![Patrick Collison cold-emailed Patrick McKenzie when Collison had first developed Stripe asking McKenzie to try it for Bingo Card Creator. Cold emailing, if you can do it, is a super useful entrepreneural skill.](https://i.imgur.com/wxVcBTM.png)
+
 It's never a bad time to talk to a customer or prospect. If you're capable of sending out cold emails, go for it.
 
-## Platform before product
+If you hate setting up phone calls or emailing people, push through it. Talking to people is a tremendously important skill to develop as an entrepreneur.
 
-Build a marketing platform to cater to an audience first.
+## Marketing platform before product
 
-Build at least:
+Build a marketing platform to engage an audience before you build a product.
 
-* 3 friendcatchers: don't learn to cook because you want to eat food, learn to cook because it's a great excuse to have people over. Build something that solves problems for people and you'll never lack people to talk to who have problems.
-* 5 emails: (we'll talk about this later)
-* ~45 days of grinding: you don't need a grand strategy or a fancy process, just talk/email/tweet to people every day
+don't learn to cook because you want to eat food, learn to cook because it's a great excuse to have people over.
+
+What does a marketing platform look like? At least:
+
+- **3 "friendcatchers"**: If you know how to cook (a friendcatcher from Patrick's mom), you'll never lack for friends. If you build something that solves problems for people, you'll never lack people to talk to who have problems.
+- **5 emails**: TODO: summary
+- **~45 days of grinding**: build the habit of talking to people every day. You don't need a grand strategy or a fancy process, just send a few emails and tweets.
 
 ### The ideal friendcatcher
 
-TODO: ven diagram
+![The ideal friendcatcher fixes a problem which is resonant, tractable, and underserved. #small ](https://i.imgur.com/CUXI7C1.png)
 
-The ideal friendcatcher solves a problem that is resonant, tractable, and underserved.
+The ideal friendcatcher solves a problem that is:
+
+- **resonant**:
+- **tractable**: to genuinely solve the problem your friendcatcher promises to solve, tackle problems that are managable. "How to solve global warming" probably can't be solved in a 7,000 word article, but [making more money with salary negotiation](https://www.kalzumeus.com/2012/01/23/salary-negotiation/) can.
+- **underserved**:
 
 How? Pay attention to pain people have. Javascript developers feel visceral pain at the phrase "build pipeline" - write about that!
 
-Great forms of friendcatchers:
+### Great forms of friendcatchers
 
-* stick-a-fork-in-it-and-it-is-done guide to one broadly applicable, tightly scoped problem: People come to it for years.
-* calculator which replaces an excel spreadsheet: This is unreasonably effective because most people in the world can't program even at the level of silly excel spreadsheet. There's no level too trivial! A/B testing statistical significance is hard for normal people.
-* definitive curated list of resources: listicles! plant a flag on the internet of a definitive list of everything great and outstanding in this field. Josh Kaufman has [the definitive list of business books](https://personalmba.com/best-business-books/).
-* cheatsheet: Amy Hoy made the Ruby on Rails Cheatsheet that turned her into a celebrity in the Rails community
+- stick-a-fork-in-it-and-it-is-done guide to one broadly applicable, tightly scoped problem: People come to it for years.
+- calculator which replaces an excel spreadsheet: This is unreasonably effective because most people in the world can't program even at the level of silly excel spreadsheet. There's no level too trivial! A/B testing statistical significance is hard for normal people.
+- definitive curated list of resources: listicles! plant a flag on the internet of a definitive list of everything great and outstanding in this field. Josh Kaufman has [the definitive list of business books](https://personalmba.com/best-business-books/).
+- cheatsheet: Amy Hoy made the Ruby on Rails Cheatsheet that turned her into a celebrity in the Rails community
 
 > You can be the person that people are afraid to talk to
 
-TODO: Stripe CTA screenshot
+![Stripe puts a call to action on every one of their freindcatchers.](https://i.imgur.com/p87GRIU.png)
 
 ## Email Literally Everyone
 
@@ -97,18 +131,18 @@ Companies can't do lots of things at scale that you can. When you have ~100 peop
 
 ### Everything about email courses in one slide
 
-* Make a promise with every subject line and keep it. That's the one copywriting trick you need to know if you know no others.
-* 75% education; 25% sales. You need both. **Ask for the freaking sale at some point**
-* Frontload delivery. 3x in the first week is fine, then back off a little bit.
-* After the end of the course, email 1x every 2-4 weeks.
+- Make a promise with every subject line and keep it. That's the one copywriting trick you need to know if you know no others.
+- 75% education; 25% sales. You need both. **Ask for the freaking sale at some point**
+- Frontload delivery. 3x in the first week is fine, then back off a little bit.
+- After the end of the course, email 1x every 2-4 weeks.
 
 There's a world of people - find the people that love hearing from you, and establish the expectation that you'll be sending them more things they like.
 
 ### Checkpoints
 
-* 10 great conversations (25 for SaaS)
-* 500 emails
-* 10 commits to buy (in SaaS) or you'll have a super hard time selling it.
+- 10 great conversations (25 for SaaS)
+- 500 emails
+- 10 commits to buy (in SaaS) or you'll have a super hard time selling it.
 
 You're going to be talking to customers for the rest of your life. You're not in the "doing cool stuff with your business phase" until you've had 10 great conversations (25 for SaaS).
 
@@ -132,9 +166,9 @@ The bar for businesses in the economy is _just_ above getting sued. It's disconc
 
 ### Abuse your advantages
 
-* "This is what I do" is an amazing sales message. Even if you just spend 60 days on something, you'll probably quickly become the world's leading expert in that thing. How many people are studying javascript pipelines? Saying "This is what I do" builds a lot of trust with customers. You can be the person that's _unreasonably_ good at the details (like Patrick's loan officer talking to every underwriter for 2 hours)
-* Be _irrationally_ responsive to customers, especially early
-* Most fast and _make things_. Most businesses don't have a development team capable of making _anything_, or a marketing team capable of _selling anything_. Check the microconf archives for more on this.
+- "This is what I do" is an amazing sales message. Even if you just spend 60 days on something, you'll probably quickly become the world's leading expert in that thing. How many people are studying javascript pipelines? Saying "This is what I do" builds a lot of trust with customers. You can be the person that's _unreasonably_ good at the details (like Patrick's loan officer talking to every underwriter for 2 hours)
+- Be _irrationally_ responsive to customers, especially early
+- Most fast and _make things_. Most businesses don't have a development team capable of making _anything_, or a marketing team capable of _selling anything_. Check the microconf archives for more on this.
 
 ## Charge more
 
@@ -142,7 +176,7 @@ Charging more will get you more money, get you better customers, and attract peo
 
 How much more? Whatever your number is right now, raise it.
 
-TODO: reasonable floors, but not ceilings slide
+![Reasonable floors for pricing your product](https://i.imgur.com/xzIKCVQ.png)
 
 Charge at tiers to segment out customers getting outstanding value from you.
 
@@ -156,57 +190,55 @@ Stripe giving you a business is like giving you a puppy - a year from now your b
 
 ### Immediately
 
-* get a new credit card: put every business expense on the credit card and it makes accounting a lot easier
-* business gmail/google apps account (ex: `accounts@${domain}`, `receipts@${domain}`)
-* use a password manager (OnePass, etc.)
+- get a new credit card: put every business expense on the credit card and it makes accounting a lot easier
+- business gmail/google apps account (ex: `accounts@${domain}`, `receipts@${domain}`)
+- use a password manager (OnePass, etc.)
 
 ### Medium term
 
-* get an accountant
-* find a peer group to talk shop with and meet regularly
-* derisk your family life
-  * retirement savings (talk to John Knox)
-  * insurance (term life and long-term disability)
-  * go to the gym like it is your job
-
-Chat with patrick at @patio11, [patrick@kalzumeus.com](mailto:patrick@kalzumeus.com), or [patio11@stripe.com](mailto:patio11@stripe.com)
-
----
+- get an accountant
+- find a peer group to talk shop with and meet regularly
+- derisk your family life
+  - retirement savings (talk to John Knox)
+  - insurance (term life and long-term disability)
+  - go to the gym like it is your job
 
 # Questions
 
 **Blog posts?**
 
-Ahh yes! My blog has ~3M words on it. It was a mistake.
+_Ahh yes! My blog has ~3M words on it. It was a mistake._
 
-Don't make one of your life commitments keeping it up to date. A dead blog is worse than no blog at all.
+_Don't make one of your life commitments keeping it up to date. A dead blog is worse than no blog at all._
 
-Instead of a blog, post articles on your website that are definite evergreen guides.
+_Instead of a blog, post articles on your website that are definite evergreen guides._
 
 **How did you become such a good storyteller?**
 
-I'm the storyteller of my Irish Catholic family's generation. It seems to work for me for business, so I lean into it.
+_I'm the storyteller of my Irish Catholic family's generation. It seems to work for me for business, so I lean into it._
 
-I don't have a great guide other than grinding at it. Tell more stories!
+_I don't have a great guide other than grinding at it. Tell more stories!_
 
-Try adopting narrative structure like [the hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey).
+_Try adopting narrative structure like [the hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey)._
 
 **Do you hate B2C?**
 
-I don't have an emotional hatred of B2C - I don't hate anyone anywhere. Hating people is a commitment of emotional energy in the future, and I'd rather commit to positive things.
+_I don't have an emotional hatred of B2C - I don't hate anyone anywhere. Hating people is a commitment of emotional energy in the future, and I'd rather commit to positive things._
 
-Google has a war chest of a hundred billion dollars. You can't beat them at the B2C game.
+_Google has a war chest of a hundred billion dollars. You can't beat them at the B2C game._
 
-If you have to, pick a demographic that has some money to pay and is super emotionally invested. Most consumers are pathologically bad at spending money on things. Prosumers like skaters who spend $800 on skates or [the guy who sold gaming tables](#) are better.
+_If you have to, pick a demographic that has some money to pay and is super emotionally invested. Most consumers are pathologically bad at spending money on things. Prosumers like skaters who spend $800 on skates or [the guy who sold gaming tables](#) are better._
 
 **How do you split time spent talking to customers vs. building?**
 
-It depends on where you are in the cycle. I do 50/25/25 to tactical marketing/talking to customers/product.
+_It depends on where you are in the cycle. I do 50/25/25 to tactical marketing/talking to customers/product._
 
-If I didn't have a laser focus of what the product is, I'd spend the 50 on talking to people. Do it first thing in the morning so you can do the trivial, easy, fun stuff of building stuff.
+_If I didn't have a laser focus of what the product is, I'd spend the 50 on talking to people. Do it first thing in the morning so you can do the trivial, easy, fun stuff of building stuff._
 
 **My favorite talk is your [Hello Ladies talk from Business of software](https://vimeo.com/96701548). How do you build things for people who aren't you?**
 
-Even software for software developers is a huge market opportunity - if you're building software for people similar to you, it's probably still a good market.
+_Even software for software developers is a huge market opportunity - if you're building software for people similar to you, it's probably still a good market._
 
-Some markets can't pay, so don't serve a market like that. A market like "women in tech positions" is a great underserved market.
+_Some markets can't pay, so don't serve a market like that. A market like "women in tech positions" is a great underserved market._
+
+Chat with patrick at @patio11, [patrick@kalzumeus.com](mailto:patrick@kalzumeus.com), or [patio11@stripe.com](mailto:patio11@stripe.com)
