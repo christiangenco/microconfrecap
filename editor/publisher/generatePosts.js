@@ -20,7 +20,12 @@ const run = async () => {
   const posts = filenames.map(filename => {
     const slug = path.basename(filename, path.extname(filename));
     const content = fm(fs.readFileSync(filename, { encoding: "utf8" }));
-    return { ...content.attributes, body: content.body, slug };
+    return {
+      ...content.attributes,
+      // my markdown editor is autocorrecting $ to \$ :/
+      body: content.body.replace(/\\\$/g, "$"),
+      slug,
+    };
   });
   // console.log(Object.keys(posts[2]));
   fs.writeFileSync("posts.json", JSON.stringify(posts, null, 2));
