@@ -1,6 +1,17 @@
 ---
 title: Navigating the Startup Landscape
-speaker: {"image":"https://pbs.twimg.com/profile_images/892897123967971328/5KaloE83.jpg","name":"Courtland Allen","title":"Indie Hacker, Stripe","bioUrl":"http://www.microconf.com/starter/speakers/courtland-allen/","twitter":"csallen","website":"http://www.IndieHackers.com","location":"San Francisco","description":"MIT 09 🏛 YC 11 🚀 developer 💻 designer 🎨 avid reader 📚 casual traveler ✈️ StarCraft fan 👾 @IndieHackers at @stripe ⚡","verified":true}
+speaker:
+  {
+    "image": "https://pbs.twimg.com/profile_images/892897123967971328/5KaloE83.jpg",
+    "name": "Courtland Allen",
+    "title": "Indie Hacker, Stripe",
+    "bioUrl": "http://www.microconf.com/starter/speakers/courtland-allen/",
+    "twitter": "csallen",
+    "website": "http://www.IndieHackers.com",
+    "location": "San Francisco",
+    "description": "MIT 09 🏛 YC 11 🚀 developer 💻 designer 🎨 avid reader 📚 casual traveler ✈️ StarCraft fan 👾 @IndieHackers at @stripe ⚡",
+    "verified": true,
+  }
 date: 2018-05-03 16:46:48 UTC-07:00
 conference: starter
 description: "Inspire people to create internet businesses and to help these new founders succeed at a scale large enough to have a global impact."
@@ -8,25 +19,37 @@ image: https://i.imgur.com/3pxXk2L.png
 isPublic: true
 ---
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679433578771932%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679433578771932%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
 
-https://twitter.com/mijustin/status/988984477081718784
+You'll learn:
 
-Indie Hackers is a community for founders.
+- one
+- two
+- three
 
-![Courtland has done over 300 interviews with founders. Most of them are success stories, but every one of these founders failed](https://i.imgur.com/bCo4pCc.png)
+<!-- https://twitter.com/csallen/status/979860753103507456 -->
 
-As founders failed, they learned things.
+Check out [my tweet](https://twitter.com/cgenco/status/992198610304417792)
 
-This talk will help you skip a few steps so you don't have to fail as much. See the world like these experienced founders do.
+# About Courtland Allen
 
-![Four different startup landscapes. Each is a metaphor for a phase of your startup](https://i.imgur.com/m3LmNCM.png)
+![Every one of the hundreds of company founders Courtland has interviewed have failed repeatedly.](https://i.imgur.com/bCo4pCc.png)
 
-# 1. The Startup Runway
+Courtland Allen founded [Indie Hackers](https://www.indiehackers.com/) - an online community of founders and entrepreneurs. In April of 2017 it was [acquired by Stripe](https://www.indiehackers.com/blog/acquired-by-stripe). Courtland now works on IndieHackers full time.
 
-![The startup runway of almost certain death](https://i.imgur.com/DGqVXk0.jpg)
+Courtland has interviewed hundreds of founders in person and on the [Indie Hackers Podcast](https://www.indiehackers.com/podcast) discussing how the founders run their businesses. Most of the founders Courtland has talked to have been successful - some making millions of dollars per month - and every one has failed in some way.
 
-Runway is how long you have left until your business is dead. How do you navigate it? Just become cashflow positive before you run out of money.
+![Four startup landscapes. Each is a metaphor for a phase of your startup. #small](https://i.imgur.com/SmSo0KX.png)
+
+In this recap, you'll learn to avoid some common mistakes the founders he's talked to have made through four mental models of startup success: the Startup Runway, the El Dorado of Ideas, the Climbing Wall of Growth, and Vision.
+
+# 1. The Startup Runway (of almost certain death)
+
+![#small](https://i.imgur.com/DGqVXk0.jpg)
+
+The Startup Runway is a representation of how much money you have left and how much time you have until your business is dead.
+
+Navigating the Startup Runway is simple: become cashflow positive before you run out of money.
 
 How? The same way a pilot takes off a plane: know your plane's metrics, have your eyes at the end of the runway, and make sure you're prepared for takeoff.
 
@@ -34,7 +57,7 @@ This isn't how it always works out though.
 
 ## Exhibit 1: Courtland won a business competition!
 
-![](https://i.imgur.com/eURV7VU.png)
+![Courtland Allen as a young man. #small](https://i.imgur.com/eURV7VU.png)
 
 ![Courtland spent his time working on product, refactoring, unit tests, landing pages, new features, design, and then launched. He did everything except charging money to a customer. You should charge money for your product.](https://i.imgur.com/8k0FdF1.png)
 
@@ -48,9 +71,9 @@ When was the last time you calculated your runway? Calculate how much you have l
 
 "...but as I ran lower and lower on cash, my ideas would start focusing less and less on building social music apps, and more on how to generate revenue immediately."
 
-"And then I ran out of all my cash. I was $4,000 in debt, so I had to put up the website for my last idea to collect money. I created, tested, and launched it in just a couple days..."
+"And then I ran out of all my cash. I was \$4,000 in debt, so I had to put up the website for my last idea to collect money. I created, tested, and launched it in just a couple days..."
 
-"...I put the page up on Reddit, and in two weeks I'd made over $2,000 in sales."
+"...I put the page up on Reddit, and in two weeks I'd made over \$2,000 in sales."
 
 After three years pivoting, he made a successful product in two weeks!
 
@@ -94,18 +117,18 @@ While you're living your daily life, the chance of stumbling on gold nobody else
 
 Digging deep means asking questions like:
 
-* Who are these people?
-* Where do they hang out?
-* What do they complain about?
-* What makes them really excited?
-* What do they buy? What do they never buy?
-* Who do they follow, trust, and respect?
-* What do they fear?
-* What are their goals?
-* Where do they get their product recommendations?
-* What do they read, watch, or listen to?
-* What makes them angry?
-* etc.
+- Who are these people?
+- Where do they hang out?
+- What do they complain about?
+- What makes them really excited?
+- What do they buy? What do they never buy?
+- Who do they follow, trust, and respect?
+- What do they fear?
+- What are their goals?
+- Where do they get their product recommendations?
+- What do they read, watch, or listen to?
+- What makes them angry?
+- etc.
 
 You'll start finding ideas nobody else has found.
 
@@ -117,12 +140,12 @@ Also check out Amy Hoy's [Stacking the Bricks](https://stackingthebricks.com/), 
 
 ![What if you have a new idea? Dig deep again! Don't build your house over what you _think_ is a goldmine without proof](https://i.imgur.com/q3p00W9.png)
 
-* How much money is changing hands here? Are the customers reachable?
-* How long would it take to launch a product? What are your weaknesses?
-* What's your runway like?
-* Would you like your customers?
-* What are your personal goals?
-* What industry would make you happy? etc.
+- How much money is changing hands here? Are the customers reachable?
+- How long would it take to launch a product? What are your weaknesses?
+- What's your runway like?
+- Would you like your customers?
+- What are your personal goals?
+- What industry would make you happy? etc.
 
 # Landscape 3: The Climbing Wall of Growth
 
@@ -170,12 +193,10 @@ If Courtland said there may or may not be a multimillion dollar diamond in his a
 
 > "Inspire people to create internet businesses and to help these new founders succeed at a scale large enough to have a global impact."
 
----
-
 # Questions
 
 **Apart from content marketing, are there others ways to get early traction?**
 
-It depends a lot on your target customers. Everyone knows about the default places to launch (HN, product hunt).
+_It depends a lot on your target customers. Everyone knows about the default places to launch (HN, product hunt)._
 
-Is your audience indie game developers? Spend a lot of time with them. Learn what influencers they care about, where they hang out online (watering holes), and where they get their news.
+_Is your audience indie game developers? Spend a lot of time with them. Learn what influencers they care about, where they hang out online (watering holes), and where they get their news._

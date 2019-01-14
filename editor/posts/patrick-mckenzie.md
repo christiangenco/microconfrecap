@@ -8,9 +8,9 @@ image:
 isPublic: true
 ---
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679128498802440%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679128498802440%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679137985468158%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679137985468158%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
 
 <!-- https://twitter.com/mijustin/status/988986209987842051 -->
 
@@ -70,7 +70,7 @@ Instead, choose to serve people:
 
 It's easy to look at currently successful businesses and think "wow, they have it all figured out," which can be discouraging. In reality, everyone is making it up as they go.
 
-Even Patrick Collison - the billionaire cofounder of Stripe - has said that when going into early meetings with banks he felt like three squirrels in a trenchcoat.
+Even Patrick Collison - the cofounder of Stripe - has said that when going into early meetings with banks he felt like three squirrels in a trench coat.
 
 Instead of targeting a business that's all put together, focus on adding a little piece at a time, similar to putting together a puzzle (though a puzzle isn't a perfect analogy - there's no perfectly defined end state in business).
 
@@ -84,7 +84,7 @@ Adding small meaningful pieces every day that will still be there in several yea
 
 ## Talk to people
 
-![Patrick Collison cold-emailed Patrick McKenzie when Collison had first developed Stripe asking McKenzie to try it for Bingo Card Creator. Cold emailing, if you can do it, is a super useful entrepreneural skill.](https://i.imgur.com/wxVcBTM.png)
+![Patrick Collison cold-emailed Patrick McKenzie when Collison had first developed Stripe asking McKenzie to try it for Bingo Card Creator. Cold emailing, if you can do it, is a super useful entrepreneurial skill.](https://i.imgur.com/wxVcBTM.png)
 
 It's never a bad time to talk to a customer or prospect. If you're capable of sending out cold emails, go for it.
 
@@ -96,36 +96,36 @@ Build a marketing platform to engage an audience before you build a product. Lik
 
 What does a marketing platform look like? At least:
 
-- **3 "friendcatchers"**: If you know how to cook (a friendcatcher from Patrick's mom), you'll never lack for friends. If you build something that solves problems for people, you'll never lack people to talk to who have problems.
+- **3 "friend-catchers"**: If you know how to cook (a friend-catcher from Patrick's mom), you'll never lack for friends. If you build something that solves problems for people, you'll never lack people to talk to who have problems.
 - **5 emails**: see the "Email course cheat sheet" section below for what these emails could look like
 - **~45 days of grinding**: build the habit of talking to people every day. You don't need a grand strategy or a fancy process, just send a few emails and tweets.
 
-### The ideal friendcatcher
+### The ideal friend-catcher
 
-![The ideal friendcatcher fixes a problem which is tractable, resonant, and underserved. #small ](https://i.imgur.com/CUXI7C1.png)
+![The ideal friend-catcher fixes a problem which is tractable, resonant, and underserved. #small ](https://i.imgur.com/CUXI7C1.png)
 
-The ideal friendcatcher solves a problem that is:
+The ideal friend-catcher solves a problem that is:
 
-- **Tractable**: To genuinely solve the problem your friendcatcher promises to solve, tackle problems that are manageable. "How to solve global warming" probably can't be solved in a 7,000 word guide, but [making more money with salary negotiation](https://www.kalzumeus.com/2012/01/23/salary-negotiation/) can.
-- **Resonant**: When your audience sees your friendcatcher exists, they should respond with "oh EFF yes! This is exactly what I need!" - that response means they're much more likely to share your friendcatcher. How do you find problems your audience will resonate with? Pay attention to the pains your audience has (ex: Javascript Developers feel visceral pain about build pipelines).
+- **Tractable**: To genuinely solve the problem your friend-catcher promises to solve, tackle problems that are manageable. "How to solve global warming" probably can't be solved in a 7,000 word guide, but [making more money with salary negotiation](https://www.kalzumeus.com/2012/01/23/salary-negotiation/) can.
+- **Resonant**: When your audience sees your friend-catcher exists, they should respond with "oh EFF yes! This is exactly what I need!" - that response means they're much more likely to share your friend-catcher. How do you find problems your audience will resonate with? Pay attention to the pains your audience has (ex: Javascript Developers feel visceral pain about build pipelines).
 - **Underserved**: There are many 101 guides to any topic, but 201 guides are scarce. There are many guides about specific technologies, but guides about how to use multiple related technologies together are scarce.
 
-### Great forms of friendcatchers
+### Great forms of friend-catchers
 
-![Amy Hoy's Ruby on Rails Cheat Sheet is the friendcatcher she used to befriend Patrick. #small](https://i.imgur.com/h7LWrYw.png)
+![Amy Hoy's Ruby on Rails Cheat Sheet is the friend-catcher she used to befriend Patrick. #small](https://i.imgur.com/h7LWrYw.png)
 
 Things you're already good at making are likely great form catchers. If you're struggling for ideas on what specifically to build, try:
 
 - **Stick-a-fork-in-it-and-it-is-done guide**: Write the definitive guide on how to solve one broadly applicable and tightly scoped problem and people will use it for years.
 - **Excel-replacement Calculator**: Presenting a useful bit of math in a format that can be used by people who can't code is unreasonably effective. There's no calculation too trivial! (ex: [A/B testing statistical significance](https://abtestguide.com/calc/) is hard math for normal people)
 - **Definitive curated list of resources**: Plant a flag on the internet of a definitive list of everything great and outstanding in this field (ex: Josh Kaufman's [definitive list of the best business books](https://personalmba.com/best-business-books/)).
-- **Cheatsheets**: Amy Hoy made the Ruby on Rails Cheatsheet that turned her into a celebrity in the Rails community. Patrick was afraid to talk to her the first time he saw her in person because of her fame in making great friendcatcher cheat sheets.
+- **Cheatsheets**: Amy Hoy made the Ruby on Rails Cheatsheet that turned her into a celebrity in the Rails community. Patrick was afraid to talk to her the first time he saw her in person because of her fame in making great friend-catcher cheat sheets.
 
 ## Get their email
 
-![Stripe puts a call to action on every one of their freindcatchers.](https://i.imgur.com/p87GRIU.png)
+![Stripe puts a call to action on every one of their friend-catchers.](https://i.imgur.com/p87GRIU.png)
 
-On each of your friendcatchers, include a way to collect your audience's email addresses. You're effectively saying "hey, if you like this, give me your email address so I can send you more things you like."
+On each of your friend-catchers, include a way to collect your audience's email addresses. You're effectively saying "hey, if you like this, give me your email address so I can send you more things you like."
 
 Making a call to action isn't rocket science. Make a promise for what you're going to give someone if they give you their email address, and add a field they can type their address in. This strategy is unreasonably effective at collecting people who have problems you can solve.
 
@@ -140,13 +140,13 @@ Being able to individually email everyone on your list is a huge advantage that 
 Here's everything you need to know about putting together an email course:
 
 - **Make a promise with every subject line and overdeliver**. This is the one copywriting trick you need to know if you know no others.
-- **Write 75% of emails to educate and 25% to sell**. Sales emails work best on their own instead of getting hidden in educational content. Don't forget to ask for the freaking sale, even if it's embarassing!
-- **Frontload delivery**. Your audience will be at their happiest right when they sign up, so immediately start providing value. Emailing ~3 times in the first week and ~6 times in the first month is fine.
+- **Write 75% of emails to educate and 25% to sell**. Sales emails work best on their own instead of getting hidden in educational content. Don't forget to ask for the freaking sale, even if it's embarrassing!
+- **Front-load delivery**. Your audience will be at their happiest right when they sign up, so immediately start providing value. Emailing ~3 times in the first week and ~6 times in the first month is fine.
 - **Email once ever 2-4 weeks after your email course ends**. After the end of the course, then you can back off so your audience can decide if they actually like you. Promise "more things you like."
 
 There's a world of people - find the people that love hearing from you, and establish the expectation that you'll be sending them more things they like.
 
-For more on nailing email, check out [You Should Probably Send More Email Than You Do on Patrick's blog](https://www.kalzumeus.com/2012/05/31/can-i-get-your-email/).
+For more on nailing email, check out Patrick's blog post [You Should Probably Send More Email Than You Do](https://www.kalzumeus.com/2012/05/31/can-i-get-your-email/) and his email training course [Hacking Lifecycle Emails for Software Companies](https://training.kalzumeus.com/lifecycle-emails). Patrick's course is free to anyone who has attended MicroConf - just [send him an email](mailto:patrick@kalzumeus.com) for access!
 
 ### Checkpoints
 
@@ -182,7 +182,7 @@ The bar for businesses in the economy is _just_ above making something so bad yo
 
 ### Abuse your advantages
 
-Patrick was applying for a mortgage in Japan and was worried he'd be racially stereotyped by Japanese banks. His loan officer said "don't worry - I got this," and followed through with 4 out of 4 approvals.
+Patrick was applying for a mortgage in Japan and was worried he'd be racially stereotyped by Japanese banks. His real estate broker said "don't worry - I got this," and followed through with 4 out of 4 approvals.
 
 Patrick thought he'd just gotten lucky, but his loan officer let Patrick know that he had talked to every loan officer for two hours on Patrick's behalf, because "this is what I do."
 
@@ -265,4 +265,4 @@ _Even software for software developers is a huge market opportunity - if you're 
 
 _Some markets can't pay, so don't serve a market like that. A market like "women in tech positions" is a great underserved market._
 
-Chat with patrick at @patio11, [patrick@kalzumeus.com](mailto:patrick@kalzumeus.com), or [patio11@stripe.com](mailto:patio11@stripe.com)
+Chat with patrick at @patio11, patrick@kalzumeus.com, or patio11@stripe.com.

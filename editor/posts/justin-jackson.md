@@ -9,10 +9,7 @@ image: https://i.imgur.com/8RoCyQ1.png
 isPublic: true
 ---
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1677994718915818%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-
-<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/justin-jackson/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
-<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1677994718915818%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
 
 You'll learn:
 
@@ -151,7 +148,7 @@ A few ideas for finding your market:
 
 What are the big pain points in your market that already exist? What problems are simmering in your target market?
 
-[Björn Forsberg](https://www.forsbergplustwo.com/) was doing customer research in [the Shopify discussion fourms](https://ecommerce.shopify.com/forums) day after day and noticed that people regularly complained about how difficult it was to print shipping labels, so he made an app to make that easier.
+[Björn Forsberg](https://www.forsbergplustwo.com/) was doing customer research in [the Shopify discussion forums](https://ecommerce.shopify.com/forums) day after day and noticed that people regularly complained about how difficult it was to print shipping labels, so he made an app to make that easier.
 
 ![ProductValidator.com helps you see your audience's pain points](https://i.imgur.com/jqIqCDr.png)
 
@@ -229,7 +226,7 @@ Noticing trends in the industry that match your hypothesis will also help you kn
 
 Start with a small free offering. If that works, move to a small paid offering. If that works. build a simple product. If that works, put more features in and charge more.
 
-![Start with a small free offering. If that works, move to a small paid offering. If that works. build a simple product. If that works, put more features in and charge more. #large](https://i.imgur.com/ZWqFAJC.png)
+![Rob Walling's Star Step Approach to building a business. #large](https://i.imgur.com/ZWqFAJC.png)
 
 ## Transistor.fm case study
 
@@ -281,3 +278,6 @@ _I've launched so many times that I have much better parameters for success now.
 _I know the market needs to be big enough to make enough money for me to support my family._
 
 Download Justin Jackson's slides for this talk at [megamaker.co/microconf2018](https://megamaker.co/microconf2018), and more from him on this topic at [productvalidationchecklist.com](https://productvalidationchecklist.com).
+
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/justin-jackson/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
