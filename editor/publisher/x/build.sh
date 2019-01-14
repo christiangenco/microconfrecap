@@ -2,8 +2,10 @@ node generatePosts.js
 sleep 1
 
 mkdir -p build
-curl http://localhost:3000/patrick-mckenzie > ./build/index.html
-# node index.js
+# curl http://localhost:3000/patrick-mckenzie > ./build/index.html
+# curl http://localhost:3000/justin-jackson > ./build/index.html
+# curl http://localhost:3000/mojca-mars > ./build/index.html
+curl http://localhost:3000/courtland-allen  > ./build/index.html
 
 # pandoc "./posts/adam-wathan.md" --css style.css --pdf-engine=prince -o build/test.pdf
 # pandoc "./posts/adam-wathan.md" -o build/test.html
