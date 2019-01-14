@@ -86,8 +86,10 @@ export const Image = ({ alt, src }) => {
   );
 };
 
-export const Link = ({ href, children }) => {
-  const nakedLink = children[0] === href;
+export const Link = attrs => {
+  const { href, children } = attrs;
+
+  const nakedLink = children[0].props.value === href;
 
   try {
     const url = URL.parse(href);
@@ -95,6 +97,8 @@ export const Link = ({ href, children }) => {
     const tweetRegex = /\/\w+\/status\/(\d+)/;
     const res = url.pathname.match(tweetRegex);
     const tweetId = get(res, 1);
+
+    if (url.hostname === "twitter.com") console.log({ children });
 
     if (nakedLink && url.hostname === "twitter.com") {
       // https://publish.twitter.com/oembed?url=https://twitter.com/jack/status/20
@@ -116,10 +120,12 @@ export const Link = ({ href, children }) => {
     console.error(e);
   }
 
+  const displayHref = href.replace("mailto:", "");
+
   return (
     <span>
       <a href={href}>{children}</a>
-      <span className="foot">{href}</span>
+      <span className="foot">{displayHref}</span>
     </span>
   );
 };
