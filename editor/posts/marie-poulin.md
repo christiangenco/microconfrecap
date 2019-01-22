@@ -1,263 +1,167 @@
 ---
 title: "The Sustainable SaaS: What Permaculture Can Teach Us About Building Software"
-speaker: {"image":"https://pbs.twimg.com/profile_images/990021288876888064/e7mpmeya.jpg","name":"Marie Poulin","title":"Co-Founder, Digital Strategist, Oki Doki","bioUrl":"http://www.microconf.com/starter/speakers/marie-poulin/","twitter":"mariepoulin","website":"http://learn.weareokidoki.com/launch","location":"Halfmoon Bay, BC","description":"I help people move from 1:1 to 1:many offerings @ https://t.co/H5oPxaKXfl Saas co-founder, online courses + programs: https://t.co/q0mb9i35wM","verified":false}
+speaker:
+  {
+    "image": "https://i.imgur.com/kEzhQib.jpg",
+    "name": "Marie Poulin",
+    "title": "Co-Founder, Digital Strategist, Oki Doki",
+    "bioUrl": "http://www.microconf.com/starter/speakers/marie-poulin/",
+    "twitter": "mariepoulin",
+    "website": "http://learn.weareokidoki.com/launch",
+    "location": "Halfmoon Bay, BC",
+    "description": "I help people move from 1:1 to 1:many offerings @ weareokidoki.com  Saas co-founder, online courses + programs: doki.io",
+    "verified": false,
+  }
 date: 2018-05-03 15:44:08 UTC-07:00
 conference: starter
 description: "What does permaculture have to do with building a startup? Everything."
-image: https://i.imgur.com/chrhcbw.png
+image: https://i.imgur.com/kEzhQib.jpg
 isPublic: true
 ---
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679392802109343%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679392802109343%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
 
-https://twitter.com/mijustin/status/989169967286308865
+You'll learn:
 
-Here's Marie's master class of what not to do. It's a very honest behind the scenes of what's happened since Oki Doki launched, and their journey to sustainability.
+- one
+- two
+- three
 
-![Oki Doki helps people launch online courses and productized services, with Mochi - their head of customer happiness](https://i.imgur.com/h7g4mwF.jpg)
+# Marie Poulin
 
-![Marie and Ben's house on the sunshine coast of Canada. They had to learn how to maintain the land: chopping wood not giving a good gosh darn](https://i.imgur.com/IKm1wvA.jpg)
+![Marie, Ben, and Mochi's company - Oki Doki - helps people launch online courses and productized services.](https://i.imgur.com/h7g4mwF.jpg)
 
-<!-- ![](https://i.imgur.com/gOkWchW.jpg) -->
+Marie started attending MicroConf three years ago and wishes she had started going earlier. She's made a lot of mistakes in her business that could've been avoided if she'd followed the advice of MicroConf.
 
-![Permaculture design certificate with cats hanging out in a field? This will be good.](https://i.imgur.com/71Qn6lB.jpg)
+This talk is a very honest behind-the-scenes look at what's happened since her company - [Oki Doki](https://oki.doki.io/) - launched, and their journey to sustainability.
 
-![Permaculture: A set of techniques and principles for designing sustainable human settlements. - Toby Hemenway](https://i.imgur.com/4o38hjU.png)
+Marie and Ben couldn't afford the expensive real estate in Vancouver while bootstrapping, so they bought a half-acre property on the Sunshine Coast of Canada.
 
-![There's no right answer to how to do permaculture](https://i.imgur.com/bt7y9pn.jpg)
+![Marie, Ben, and Mochi's property on the Sunshine Coast of Canada.](https://i.imgur.com/IKm1wvA.jpg)
 
-![There's no right answer to how to do SaaS, just like in permaculture](https://i.imgur.com/wHW6RTQ.jpg)
+They had no idea how to maintain the land or gardens. On the suggestion of a friend, Marie decided to take a class in permaculture. The class promised to "become a more conscious designer of your life, landscape, relationships, and work while learning how to save time, energy, and money." That sounded compelling!
 
-What would our SaaS look like if we had designed it on purpose? Marie and Ben stumbled into it.
+# Permaculture
 
-Outline:
+![Permaculture principles, with highlighted principles relevant to SaaS. #large](https://i.imgur.com/WDG7u8H.png)
 
-* How we launched our idea(s)
-* what we got wrong (and right)
-* What permaculture can teach us
-* What it means for you
+According to Toby Hemenway - a leading permaculturist - permaculture is "a set of techniques and principles for designing sustainable human settlements." It's a practice for clarifying what you want and how to sustainably get it.
 
-![Relevant permaculture principles for SaaS](https://i.imgur.com/WDG7u8H.png)
+In studying Permaculture, Marie noticed many parallels to what she wanted out of her SaaS business. She wondered what her business would look like if she approached it with the same intentionality as she was thinking about her land.
 
-# 1. How Marie and Ben Launched their Idea(s)
+<!-- Outline:
 
-Ben and Marie didn't start with any customer research or audience building, but they did get $10k for their first Digital Strategy School. The beta later made $50k.
+- How we launched our idea(s)
+- what we got wrong (and right)
+- What permaculture can teach us
+- What it means for you -->
 
-![](https://i.imgur.com/FwxXTuX.png)
+# Oki Doki
 
-## 1. Observe & Interact
+Ben and Marie teamed up in early 2014 to form Oki Doki. Marie handled web design and strategy while Ben handled development projects. Though they'd teamed up, they kept their processes and clients separate.
 
-Pay attention to the patterns.
+Marie's clients were well paying people who had online courses, membership programs, and productized services. It took a lot of manual work for her to set up her clients' custom integrations in a hodge podge of WordPress plugins.
 
-![Observing and Interacting to and with your environment is a basic tenant of permaculture. You're spending up to a year just observing your land before making any major decisions.](https://i.imgur.com/QcLNVZ9.jpg)
+Ben had the idea to build their own course platform to automate Marie's tedious client setup process. They started building Doki later that year, though they didn't do any customer research or audience building.
 
-![Observing and Interacting to and with your environment is a basic tenant of SaaS, as in Permaculture](https://i.imgur.com/3yTL0Bo.jpg)
+In parallel, Marie was developing a program to help web designers transition into the role of digital strategist called Digital Strategy School. She raised \$10k pre-selling an alpha version of the course, and \$50k pre-selling the beta to a list of only 300 people.
 
-> We didn't do enough research. This is really something I wish I'd understood before we started building.
+Now that they had some money banked up, Ben decided to go full time building Doki.
 
-Marie and Ben could've learned a lot from 10 or 20 customer interviews before touching a line of code.
+## Permaculture Lesson 1: Observe & Interact
 
-![](https://i.imgur.com/LebjYzk.png)
+![Marie and Ben learned that any plants left uncovered were an all-you-can-eat buffet for deer.](https://i.imgur.com/NwgkEny.jpg)
 
-![Oki Doki's path skipped the necessary permaculture lessons](https://i.imgur.com/RmHX1pX.png)
+In permaculture, you study everything you can about the land before making major decisions. What are the temperature ranges? Where does the sun and shade land? Are there predators? What plants are fertile? Before you've observed the environment, it's easy to make avoidable mistakes like planting uncovered alpine strawberries that get feasted on by local deer.
 
-## 2. User Small and Slow Solutions
+They'd made a similar mistake building Doki. They didn't do any deep-digging customer interviews to help understand their customer landscape before going all-in. They didn't consider what their lives would look like if the business succeeded.
 
-![You can't start with a tropical oasis - just start with the smallest little piece. In permaculture, a raised garden bed is a great small start](https://i.imgur.com/RmHX1pX.png)
+The permaculture lesson Marie learned was to make sure she truly, deeply understood the landscape before starting to build. That means 20-100 deep customer interviews to understand why things happen the way they do before touching a line of code.
 
-Oki Doki made several mistakes:
+<!-- ![Oki Doki's path skipped the necessary permaculture lessons](https://i.imgur.com/RmHX1pX.png) -->
 
-* New endeavour
-* New technology
-* Complex functionality Multi-layers of user permissions New (to us) market
-* Very competitive space Committed before any revenue Over-engineered for growth
+## Permaculture Lesson 2: Use Small and Slow Solutions
 
-They should have started small:
+![A perfect tropical oasis isn't where to start, it's where you incrementally build to.](https://i.imgur.com/KNwyUnB.jpg)
 
-* Interview 20 people
-* Design prototypes
-* Landing page with signups Blog posts
-* Office hours Consultations
+In permaculture, it's infeasible to start by building a perfect tropical oasis in your backyard. A better step would be a simple raised garden bed.
 
-They did our first demo once the product was already built to scale - **don't do this!!!** Bring in someone at the rough and ready state to play with it. Observe them to see how they're using it. Product demos - just watching someone using their tool - are very humbling. Things you think are intuitive aren't. You are not your audience.
+When building software, instead of spending months building perfect scale-ready over-engineered infrastructure, start with the smallest useful thing you can sell to a customer. What's the "single raised garden bed" version of your application?
 
-> Product demos - just watching someone using their tool - are very humbling. Things you think are intuitive aren't.
+Marie and Ben made the mistake of building too much too fast for Doki. The first version of their software was built in secret with extravagant features (like complex multi-user permissions). Their first product demo happened after the product was already built.
 
-They built it in secret - **don't do this either!!!**
+A better first version of Doki could've looked like a single landing page with signup blog posts, a few prototypes, and office hour consultations. By watching people use the small pieces they built, it would've been much clearer which parts of Doki were intuitive and which weren't. By having more conversations with their audience of course creators, they would've better understood their challenges. By sharing early concepts of Doki, they would've let their customers lead their innovation.
 
-> "Oh, I had no idea you had a platform - I already signed up for a competitor!" - "friend"
+Instead, they spent so much time building Doki in secret that they were afraid to tell people about it, because that would mean they could fail.
 
-We were letting our competitors lead our innovation (instead of our customers). Your customers have the most to teach you.
+Even with these mistakes, they managed to get to \$1k MRR from their immediate network at the beginning of 2016.
 
-> Embrace small, imperfect progress. Your customers have the most to teach you.
+## Permaculture Lesson 3: Design from patterns to details
 
-What should you do? Tell people what you're working on and be in conversation constantly:
+In permaculture, following high level patterns of working with nature are more important than most detailed decisions. Instead of worrying about what color to paint your house facing the road, face your house to the sun. Instead of deliberating what type of grass to plant in your lawn, plant a garden.
 
-* Share early concepts
-* Don’t wait until your product is polished to share it
-* Do things right the first time
-* Be honest about your limitations
+In software, it's easy to get caught up in the details of what technical stack to use or what specific features to implement. Instead, focus on the bigger picture. What do your users actually care about?
 
-![When Marie went to Microconf for the first time in 2016, she had her mind blown by all these new concepts: churn, MRR, CAC - she realized she had a lot to learn](https://i.imgur.com/qJDXlpL.png)
+Once Marie and Ben started having conversations with users, they realized the reason they were interested in a course platform was to diversify their consulting offerings. Users were interested in solving the problem of how to turn their one-on-one consulting into a course. Instead of caring about specific software features, Doki's users wanted help building courses.
 
-Even with these mistakes, they managed to get to $1k MRR.
+To help broaden her focus and make sure she wasn't getting caught in the details, Marie found it useful to ask "how might we...?" questions. For example, "how might we improve the experience of teaching?" High-level pattern questions like this lead to better solutions than trying to optimize your course platform software's refresh time.
 
-## 3. Design from patterns to details
+## Permaculture lesson 4: Integrate, rather than segregate
 
-![](https://i.imgur.com/TZRuJN7.jpg)
+![Chickens integrated with plants creates an environment of healthier chickens and plants.](https://i.imgur.com/xWk5X7M.jpg)
 
-Don't focus on the details:
+In permaculture, complementary systems are brought together to make a healthier ecosystem.
 
-* Technical stack
-* Specific Features
-* Create a course
-* Sell a course
-* Deliver a course
+Marie was running Digital Strategy School and Ben was building Doki completely separately, but Ben couldn't build and market Doki alone. Marie wondered how they could better integrate their efforts.
 
-Focus on the patterns:
+![Marie and Ben launched a product - Run Your Learning Launch - to help people learn how to launch their first course, which integrated perfectly with Doki and private consulting.](https://i.imgur.com/uAGo3ik.jpg)
 
-* Diversify offers
-* "how do I turn my 1:1 into training?"
-* Bundle offers
-* Services onboarding
-* Mentorship
-* Guided course experiences
-* Course fatigue
-* Imposter Complex
-* Procrastination
+Marie put Digital Strategy School on hold and doubled down on building a course to help people launch their first course - Run Your Learning Launch. She also returned to course consulting services. Marie and Ben found it was easier to sell \$2k/mo consulting retainers than a \$49/mo SaaS subscription.
 
-We were so focused on the details of execution that we were missing out on the larger patterns of behaviour.
+In working more with clients 1:1, she noticed they were:
 
-Our ideal customers were entrepreneurs who had high-touch coaching programs.
+- spending too long building their courses before validating their ideas with their learners
+- fire-hosing their learners with too much information up front
+- expecting their first courses to replace their client income
 
-Our customers kept extending their trial because their courses were taking them way longer to build than they expected.
+These lessons could be used to improve her Run Your Learning Launch course and the Doki software platform.
 
-To zoom out and make sure you're not getting caught up in the details, ask "how might we".
-
-![Ask real questions that solve your audience's problems, not "how might we build a course platform and help sell people sell their courses?"](https://i.imgur.com/4IZ2AjZ.png)
-
-Design generally before specifically; Understand the underlying patterns
-
-Summary:
-
-* Ask “How might we?” questions
-* ZOOM OUT: Understand the problem from all angles
-* Understand the emotional context surrounding the problem
-
-![Marie and Ben realized they needed to integrate more of their efforts](https://i.imgur.com/6biDh0D.png)
-
-## 4. Integrate, rather than segregate
-
-![](https://i.imgur.com/kfrPFZr.jpg)
-
-Integration
-What do we each want to get out of the business?
-How can we collaborate and make better make use of our existing resources, skills, strengths?
-How we make things easier?
-
-Reality check: It was easier to sell $2k/mo consulting retainers than a $49/mo SaaS subscription
-
-Reality check: It was easier to sell a $1k coaching program than a $49/mo SaaS subscription
-
-twitter brennan dunn as somebody with a business that can do nearly in a weekend with a super targeted promo
-
-https://twitter.com/brennandunn/status/982326554414985216
-
-Marie then:
-
-* Hired Instructional Designer
-* Put Digital Strategy School on hold
-* Did Deeper Customer Research
-* Introduced Course Consulting
-* Shifted Company Positioning
-
-> "Why do you hate making money?" -Ben
-
-They went back to what we knew how to do best: working with clients 1:1. That meant noticing:
-
-* Spending way too long building courses and programs before validating the idea
-* People were signing up for a platform long before they had content ready to go (then procrastinating)
-* Amateur course creators were fire-hosing their learners with too much information
-* New(ish) product creators were expecting their first courses to replace their client income
-
-![Marie and Ben launched a new service that used their audience's language](https://i.imgur.com/uAGo3ik.jpg)
-
-![](https://i.imgur.com/ZhFPkq7.jpg)
-
-![On-demand demos have become a lead generation tool for OKI DOKI's services](https://i.imgur.com/sq5O5MY.png)
-
-We finally had an integrated product / service / SaaS ecosystem.
-
-What now? On-demand demos have become a lead generation tool for our services.
-
-Elements should work collectively toward a stronger whole:
-
-* Leverage existing skills + assets
-* Think holistically
-* Integrate services into your SaaS
-* “Many hands make light work”
+Marie and Ben now had an integrated product/SaaS/service ecosystem. Marie's Run Your Learning Launch course helped people learn how to create a course, which could lead people to using the Doki SaaS platform to host their course and book course consulting
 
 ## 5. Creatively use and respond to change
 
-![The problem is the solution](https://i.imgur.com/7PcKtgx.jpg)
+![Marie and Ben adapted their language and features to serve their best customers.](https://i.imgur.com/xNsrrqZ.png)
 
-We had to adapt in a way that made sense for the way we work with people.
+In permaculture, problems are looked at as potential solutions. Instead of having too many aphids, perhaps you have an ecosystem that could support more ladybugs.
 
-We knew we didn’t want to be the “build your 6-figure passive income course” people.
+Marie and Ben had to adapt their business in a way that made sense for the way they worked with people. After two years of working with course creators and coaches, they had a much better understanding of who their best customers were and what their problems were.
 
-2 years of working with course creators and coaches finally gave us the insights we were looking for.
+With this improved understanding, they could stop worrying about what their competitors were doing and focus on what their customers needed. This focused their copy and features.
 
-We stopped worrying about what our competitors were doing, and focused on what our customers needed.
+# Takeaway
 
-![](https://i.imgur.com/xNsrrqZ.png)
+![Marie, Ben, and Mochi living a great life with their small business.](https://i.imgur.com/g1e2EDU.jpg)
 
-![](https://i.imgur.com/Hw2TWtA.png)
+It took OKI DOKI 3 years to find their groove and become sustainable, and they feel great about that pace. They've made a conscious choice to grow slowly with less stress and less FOMO.
 
-What happened? Everything became easier. Better copy creates resonance, which helps you stay competitive.
-
-“When life gives you lemons, make lemonade”;
-Turn change into opportunity
-
-* Change is inevitable
-* Problems are opportunities
-* Listen to your customers over your competitors
-* Find your unique edge
-
-Permaculture principles:
-
-* observe & interact
-* use small and slow solutions
-* design from patterns to details integrate, rather than segregate
-* creatively use and respond to change
-
-- Deeply Understand the people + problem
-- Favour small progress and share iterations
-- design for generalities before specifics
-- Think of everything as a functioning whole
-- Embrace change and adapt
-
-It took OKI DOKI 3 years to find our groove + become sustainable. Is your SaaS part of your business, or is it your business?
-
-Why would we hustle so damn hard... for a life we already have? Once we let go of the “shoulds” and the FOMO, we realized that we could make a great living as a small company, and love our life.
-
-![Why would we hustle so damn hard... for a life we already have?](https://i.imgur.com/jZZI4Qt.jpg)
-
-What do you want to get out of your SaaS, and how hard are you willing to work for it?
-
-We’ve made a conscious choice to grow slowly, with less stress and less FOMO.
-
-learn.weareokidoki.com/launch
-
-Check out [Gaia's Garden](https://www.amazon.com/Gaias-Garden-Guide-Home-Scale-Permaculture/dp/1603580298) for more on permaculture.
-
----
+What do you want to get out of your SaaS, and how hard are you willing to work for it? Why hustle harder for a life you already have? You can make a great living as a small company and love life.
 
 # Questions
 
-**Being married to your business partner, have you set up "just in case" scenarios?**
+**How do you set ground rules being married to your business partner? Have you set up "just in case" scenarios?**
 
-We treat eachother like equals and give eachother a ton of autonomy. We found out we have to have a meeting every week to get on the same page. Weekly meetings and checkins, being honest about strengths and limitations, and getting an outside perspective.
+_We treat each other like equals and give each other a ton of autonomy. We found out we have to have a meeting every week to get on the same page. Weekly meetings and check-ins, being honest about strengths and limitations, and getting an outside perspective._
 
 **What other ways can you know if you're creating resonance?**
 
-Get your friends to describe what you do to someone else. How do outside people perceive you? What words do they use?
+_Get your friends and other people in the industry to describe what you do to someone else. How do outside people perceive you? What words do they use? Those are the words that are going to create resonance with new customers._
+
+**How did competition in the online learning landscape factor in your business decisions?**
+
+_Our mastermind group suggested using high-touch onboarding as our strategic advantage. I love talking to people - that's our strength, let's use it to our advantage._
+
+**Could you talk more about your nontechnical diverse audience?**
+
+_Don't get stuck in your bubble of technical entrepreneurs - there are so many other kinds of people out there. Women especially are very willing to pay for help._
+
+For more on Oki Doki, check out the [Oki Doki Launch Page](http://learn.weareokidoki.com/launch/). For more on permaculture, check out [Gaia's Garden](https://www.amazon.com/Gaias-Garden-Guide-Home-Scale-Permaculture/dp/1603580298).
