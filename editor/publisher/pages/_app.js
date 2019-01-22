@@ -27,6 +27,14 @@ export class MyApp extends App {
             break-before: page;
           }
 
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            break-after: avoid;
+          }
+
           title {
             string-set: title content();
           }
