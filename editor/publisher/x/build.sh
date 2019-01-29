@@ -7,7 +7,13 @@ mkdir -p build
 # curl http://localhost:3000/mojca-mars > ./build/index.html
 # curl http://localhost:3000/courtland-allen  > ./build/index.html
 # curl http://localhost:3000/marie-poulin  > ./build/index.html
-curl http://localhost:3000/mike-taber  > ./build/index.html
+# curl http://localhost:3000/mike-taber  > ./build/index.html
+# curl http://localhost:3000/val-geisler  > ./build/index.html
+# curl http://localhost:3000/matt-molter  > ./build/index.html
+# curl http://localhost:3000/chad-deshon > ./build/index.html
+curl http://localhost:3000/brian-parks > ./build/index.html
+
+# curl http://localhost:3000/garrett-dimon  > ./build/index.html
 
 # pandoc "./posts/adam-wathan.md" --css style.css --pdf-engine=prince -o build/test.pdf
 # pandoc "./posts/adam-wathan.md" -o build/test.html

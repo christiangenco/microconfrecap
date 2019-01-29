@@ -25,6 +25,7 @@ export class MyApp extends App {
 
           h1 {
             break-before: page;
+            line-height: 1.2;
           }
 
           h2,

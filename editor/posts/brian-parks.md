@@ -9,6 +9,14 @@ isPublic: true
 facebookStream: https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamlanio%2Fvideos%2F1676996419015648%2F&show_text=0&width=560
 ---
 
+You'll learn:
+
+1. a
+2. b
+3. c
+
+# Brian Parks
+
 Check out [Bigfoot Capital's Growth Edition Giveaways](https://www.bigfootcap.com/microconf-growth-edition-giveaways/)
 
 bigfootcap.com/microconf - claim one of 48 service packages
@@ -31,9 +39,7 @@ How do you give investors comfort early on in the process so they invest?
 
 > How you go about raising money can be an indicator for how you run the rest of your business, and thus for how good of an investment you may end up being.
 
----
-
-# 6 pitfalls to avoid  when raising money
+# 6 pitfalls to avoid when raising money
 
 ## Pitfall #1: Casually Raising Money
 
@@ -43,7 +49,7 @@ If you're not keeping in contact with your investors, they'll question your comm
 
 If you're not putting your investors to work, they'll lose the inclination to help.
 
-## Pitfall #2:  Having poor timing
+## Pitfall #2: Having poor timing
 
 Don't go out for funding too early or you'll have to prove more faster.
 
@@ -71,7 +77,7 @@ If you're overemphasizing edge cases, your judgement will be called into questio
 
 If you can't get comfortable, your investors will start doubting their investment late in the game.
 
-## Pitfall #6:  Not thinking ahead
+## Pitfall #6: Not thinking ahead
 
 It’s easy to jeopardize future capital raises
 
