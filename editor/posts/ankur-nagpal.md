@@ -1,6 +1,6 @@
 ---
 title: "From $0 To $10M ARR: The Tactics We Used To Scale Teachable"
-speaker: {"image":"https://pbs.twimg.com/profile_images/922551419206553602/v-h5PUmH.jpg","name":"Ankur Nagpal","title":"CEO, Teachable","bioUrl":"https://www.microconf.com/growth/speakers/ankur-nagpal/","twitter":"ankurnagpal","website":"http://teachable.com","location":"New York, NY","description":"Founder @Teachable. Twenty inch blades on the impala. DMs open if you wanna holla.","verified":true}
+speaker: {"image":"https://i.imgur.com/FIgF0rh.jpg","name":"Ankur Nagpal","title":"CEO, Teachable","bioUrl":"https://www.microconf.com/growth/speakers/ankur-nagpal/","twitter":"ankurnagpal","website":"http://teachable.com","location":"New York, NY","description":"Founder @Teachable. Twenty inch blades on the impala. DMs open if you wanna holla.","verified":true}
 date: 2018-05-01 13:39:03 UTC-07:00
 conference: growth
 description: Microconf 2018 talk recap
@@ -8,10 +8,15 @@ image: https://i.imgur.com/jl5QfLo.png
 isPublic: true
 ---
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamlanio%2Fvideos%2F1677114439003846%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1677114439003846%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
 
-<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/ankur-nagpal/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
-<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
+You'll learn:
+
+1. How to grow monthly recurring revenue (MRR) 30% every month for 30 months
+2. a
+3. a
+
+# Ankur Nagpal
 
 https://twitter.com/patio11/status/991425694583341056
 
@@ -150,18 +155,19 @@ Teachable spent ~6 months after hitting $500k MRR trying to do one off activitie
 
 They now divide growth into **strong-armed growth** and **evergreen growth** (growth that moves organic customers added per day, churn rate, or average revenue per customer).
 
----
-
 # Questions
 
 **This seems to go against the advice of doing one thing well. How do you reconcile your one-off growth projects with that?**
 
-We never found one strategy to grow that continued to work. There was no single channel we could focus on and still hit our numbers.
+_We never found one strategy to grow that continued to work. There was no single channel we could focus on and still hit our numbers._
 
 **How many people did you have dedicated to growth at each stage?**
 
-It was never smaller than 4 people. Right now our growth team is like its own mini company (even with its own engineers) - about 16.
+_It was never smaller than 4 people. Right now our growth team is like its own mini company (even with its own engineers) - about 16._
 
 **Should I focus on growth or product first?**
 
-Once you have some kind of product market fit, don't use product improvements as an excuse to not push on growth. You'll never feel ready enough.
+_Once you have some kind of product market fit, don't use product improvements as an excuse to not push on growth. You'll never feel ready enough._
+
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/ankur-nagpal/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
