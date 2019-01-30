@@ -19,7 +19,7 @@ image: https://i.imgur.com/kEzhQib.jpg
 isPublic: true
 ---
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679392802109343%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679392802109343%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
 You'll learn:
 
@@ -49,13 +49,6 @@ According to Toby Hemenway - a leading permaculturist - permaculture is "a set o
 
 In studying Permaculture, Marie noticed many parallels to what she wanted out of her SaaS business. She wondered what her business would look like if she approached it with the same intentionality as she was thinking about her land.
 
-<!-- Outline:
-
-- How we launched our idea(s)
-- what we got wrong (and right)
-- What permaculture can teach us
-- What it means for you -->
-
 # Oki Doki
 
 Ben and Marie teamed up in early 2014 to form Oki Doki. Marie handled web design and strategy while Ben handled development projects. Though they'd teamed up, they kept their processes and clients separate.
@@ -64,7 +57,7 @@ Marie's clients were well paying people who had online courses, membership progr
 
 Ben had the idea to build their own course platform to automate Marie's tedious client setup process. They started building Doki later that year, though they didn't do any customer research or audience building.
 
-In parallel, Marie was developing a program to help web designers transition into the role of digital strategist called Digital Strategy School. She raised \$10k pre-selling an alpha version of the course, and \$50k pre-selling the beta to a list of only 300 people.
+In parallel, Marie was developing a program to help web designers transition into the role of digital strategist called Digital Strategy School. She raised $10k pre-selling an alpha version of the course, and $50k pre-selling the beta to a list of only 300 people.
 
 Now that they had some money banked up, Ben decided to go full time building Doki.
 
@@ -77,8 +70,6 @@ In permaculture, you study everything you can about the land before making major
 They'd made a similar mistake building Doki. They didn't do any deep-digging customer interviews to help understand their customer landscape before going all-in. They didn't consider what their lives would look like if the business succeeded.
 
 The permaculture lesson Marie learned was to make sure she truly, deeply understood the landscape before starting to build. That means 20-100 deep customer interviews to understand why things happen the way they do before touching a line of code.
-
-<!-- ![Oki Doki's path skipped the necessary permaculture lessons](https://i.imgur.com/RmHX1pX.png) -->
 
 ## Permaculture Lesson 2: Use Small and Slow Solutions
 
@@ -116,7 +107,7 @@ Marie was running Digital Strategy School and Ben was building Doki completely s
 
 ![Marie and Ben launched a product - Run Your Learning Launch - to help people learn how to launch their first course, which integrated perfectly with Doki and private consulting.](https://i.imgur.com/uAGo3ik.jpg)
 
-Marie put Digital Strategy School on hold and doubled down on building a course to help people launch their first course - Run Your Learning Launch. She also returned to course consulting services. Marie and Ben found it was easier to sell \$2k/mo consulting retainers than a \$49/mo SaaS subscription.
+Marie put Digital Strategy School on hold and doubled down on building a course to help people launch their first course - Run Your Learning Launch. She also returned to course consulting services. Marie and Ben found it was easier to sell $2k/mo consulting retainers than a $49/mo SaaS subscription.
 
 In working more with clients 1:1, she noticed they were:
 

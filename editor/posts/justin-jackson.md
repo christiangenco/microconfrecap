@@ -9,13 +9,13 @@ image: https://i.imgur.com/8RoCyQ1.png
 isPublic: true
 ---
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1677994718915818%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1677994718915818%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
 You'll learn:
 
 - How to validate that a business idea will make money, and that you'll love working on it.
 - How to choose the perfect market and figure out what they want.
-- How Justin started the worst imaginable business and got in $85,000 of debt at 25.
+- How Justin started the worst imaginable business and got in \$85,000 of debt at 25.
 
 # Justin Jackson @mijustin
 
@@ -42,7 +42,7 @@ Justin started a snowboard shop with two friends in 2003. The shop, realdeal, tu
 
 Why? Starting a retail shop is incredibly expensive: unused inventory, suppliers, employee salaries, and lease costs add up quickly.
 
-Two years later, at 25 years old, he closed the shop $85,000 in debt.
+Two years later, at 25 years old, he closed the shop \$85,000 in debt.
 
 He learned several important lessons from this painful experience:
 
@@ -115,9 +115,9 @@ Check out James Clear's [large list of core values](https://jamesclear.com/core-
 Precisely how much money would you like to have?
 
 - Basic needs ($50k-$100k / year)
-- Financially secure ($150k / year)
-- Higher than average ($300k / year)
-- Very wealthy ($1 million+)
+- Financially secure (\$150k / year)
+- Higher than average (\$300k / year)
+- Very wealthy (\$1 million+)
 
 ## Section 2: Choose your market
 
@@ -218,7 +218,7 @@ What does initial validation look like? How do you know if you're successful? Go
 
 Noticing trends in the industry that match your hypothesis will also help you know you're on the right track:
 
-- What is your target market investing in? (ex: ReWork podcast is a $200k/year investment from basecamp, which is a sign that Justin's hypothesis that tech businesses want a branded podcast is more likely)
+- What is your target market investing in? (ex: ReWork podcast is a \$200k/year investment from basecamp, which is a sign that Justin's hypothesis that tech businesses want a branded podcast is more likely)
 - What's getting a lot of publicity right now?
 - What are people struggling with?
 

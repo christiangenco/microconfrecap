@@ -1,17 +1,17 @@
 ---
 title: Navigating the Startup Landscape
 speaker:
-    {
-        "image": "https://pbs.twimg.com/profile_images/892897123967971328/5KaloE83.jpg",
-        "name": "Courtland Allen",
-        "title": "Indie Hacker, Stripe",
-        "bioUrl": "http://www.microconf.com/starter/speakers/courtland-allen/",
-        "twitter": "csallen",
-        "website": "http://www.IndieHackers.com",
-        "location": "San Francisco",
-        "description": "MIT 09 🏛 YC 11 🚀 developer 💻 designer 🎨 avid reader 📚 casual traveler ✈️ StarCraft fan 👾 @IndieHackers at @stripe ⚡",
-        "verified": true,
-    }
+  {
+    "image": "https://pbs.twimg.com/profile_images/892897123967971328/5KaloE83.jpg",
+    "name": "Courtland Allen",
+    "title": "Indie Hacker, Stripe",
+    "bioUrl": "http://www.microconf.com/starter/speakers/courtland-allen/",
+    "twitter": "csallen",
+    "website": "http://www.IndieHackers.com",
+    "location": "San Francisco",
+    "description": "MIT 09 🏛 YC 11 🚀 developer 💻 designer 🎨 avid reader 📚 casual traveler ✈️ StarCraft fan 👾 @IndieHackers at @stripe ⚡",
+    "verified": true,
+  }
 date: 2018-05-03 16:46:48 UTC-07:00
 conference: starter
 description: "The Startup Runway is a representation of how much money you have left and how much time you have until your business is dead. Navigating the Startup Runway is simple: become cashflow positive before you run out of money."
@@ -19,13 +19,13 @@ image: https://i.imgur.com/3pxXk2L.png
 isPublic: true
 ---
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679433578771932%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679433578771932%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
 You'll learn:
 
--   How to get infinite startup runway.
--   How to reliably discover golden nugget business ideas (like a file upload form that makes six figures every month).
--   How Hotmail, AirBnB, Yelp, and Dropbox lied to you about their hockey stick growth.
+- How to get infinite startup runway.
+- How to reliably discover golden nugget business ideas (like a file upload form that makes six figures every month).
+- How Hotmail, AirBnB, Yelp, and Dropbox lied to you about their hockey stick growth.
 
 # About Courtland Allen
 
@@ -69,7 +69,7 @@ Chris got a \$110k loan for that gave him an impressive 3-year runway. Having a 
 
 After three years of pivoting, he ran out of cash. He moved entirely out of the social music app space and looked for an idea that could generate revenue immediately.
 
-\$4,000 in debt, he created, tested, and launched [Instapainting](https://www.instapainting.com/) in a few days. In two weeks, he'd made \$2,000 in sales. Check out Chris's full story on the [Indie Hackers Podcast Episode #002](https://www.indiehackers.com/podcast/002-chris-chen-of-instapainting).
+$4,000 in debt, he created, tested, and launched [Instapainting](https://www.instapainting.com/) in a few days. In two weeks, he'd made $2,000 in sales. Check out Chris's full story on the [Indie Hackers Podcast Episode #002](https://www.indiehackers.com/podcast/002-chris-chen-of-instapainting).
 
 ## Exhibit 3: Max Lytvyn of Grammarly
 
@@ -117,18 +117,18 @@ The best strategy for navigating The El Dorado of Ideas is to dig deep instead o
 
 Digging deep means asking questions like:
 
--   Who are these people?
--   Where do they hang out?
--   What do they complain about?
--   What makes them really excited?
--   What do they buy? What do they never buy?
--   Who do they follow, trust, and respect?
--   What do they fear?
--   What are their goals?
--   What do they actually care about?
--   Where do they get their product recommendations?
--   What do they read, watch, or listen to?
--   What makes them angry?
+- Who are these people?
+- Where do they hang out?
+- What do they complain about?
+- What makes them really excited?
+- What do they buy? What do they never buy?
+- Who do they follow, trust, and respect?
+- What do they fear?
+- What are their goals?
+- What do they actually care about?
+- Where do they get their product recommendations?
+- What do they read, watch, or listen to?
+- What makes them angry?
 
 You'll start finding ideas nobody else has found because not many people dig deep for good ideas.
 
@@ -138,13 +138,13 @@ How do you decide where to start digging deep? Start where the money is at. Look
 
 Also ask:
 
--   Are the customers reachable?
--   How long would it take to launch a product?
--   What are your weaknesses?
--   What's your runway like?
--   Would you like your customers?
--   What are your personal goals?
--   What industry would make you happy?
+- Are the customers reachable?
+- How long would it take to launch a product?
+- What are your weaknesses?
+- What's your runway like?
+- Would you like your customers?
+- What are your personal goals?
+- What industry would make you happy?
 
 Wherever you dig, it'll determine the next five years of your life. Decide what's important to you and put some thought into what it would look like if you actually hit gold, and if you'd be in a place you actually want to be. Don't start a business that needs a lot of customer support if you hate customer support.
 

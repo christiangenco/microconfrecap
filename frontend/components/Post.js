@@ -25,7 +25,6 @@ export default ({ title, body, speaker, slug, url, updatedAt }) => {
             allowFullScreen
           />
         </div>
-
         <h1 className="font-sans">I can't find that page 😩</h1>
         <p>
           Try looking for it <a href="/">on the homepage?</a>
@@ -48,9 +47,7 @@ export default ({ title, body, speaker, slug, url, updatedAt }) => {
   return (
     <div>
       <h1 className="font-sans text-5xl mb-6">{title}</h1>
-
       <Speaker speaker={speaker} />
-
       <Markdown source={body} renderers={renderers} escapeHtml={false} />
     </div>
   );

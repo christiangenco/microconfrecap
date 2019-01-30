@@ -1,6 +1,17 @@
 ---
 title: Nailing Your First (Info-Product) Launch
-speaker: {"image":"https://pbs.twimg.com/profile_images/887661330832003072/Zp6rA_e2.jpg","name":"Adam Wathan","title":"Owner, NothingWorks Inc.","bioUrl":"http://www.microconf.com/starter/speakers/adam-wathan/","twitter":"adamwathan","website":"http://adamwathan.me","location":"Cambridge, Ontario, Canada","description":"Building @tailwindcss, teaching Test-Driven Laravel, and hosting @fullstackradio. Still listening to Slayer.","verified":false}
+speaker:
+  {
+    "image": "https://pbs.twimg.com/profile_images/887661330832003072/Zp6rA_e2.jpg",
+    "name": "Adam Wathan",
+    "title": "Owner, NothingWorks Inc.",
+    "bioUrl": "http://www.microconf.com/starter/speakers/adam-wathan/",
+    "twitter": "adamwathan",
+    "website": "http://adamwathan.me",
+    "location": "Cambridge, Ontario, Canada",
+    "description": "Building @tailwindcss, teaching Test-Driven Laravel, and hosting @fullstackradio. Still listening to Slayer.",
+    "verified": false,
+  }
 date: 2018-05-02 11:20:46 UTC-07:00
 conference: starter
 description: Microconf 2018 talk recap
@@ -8,13 +19,13 @@ image: https://i.imgur.com/AlS4ozN.png
 isPublic: true
 ---
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1678073645574592%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1678073645574592%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
 Learn how to:
 
-- Nail a launch that makes $115,676 in three days
+- Nail a launch that makes \$115,676 in three days
 - Grow your audience from 800 to 20,000 in 15 months
-- Sell a PDF file for $135
+- Sell a PDF file for \$135
 
 # Who The Hell is Adam Wathan?
 
@@ -26,13 +37,13 @@ Adam's first attempt at a product came from an idea he had for automating code r
 
 ![Refactoring to Collections launch sales #small](https://i.imgur.com/rBf7Rhd.png)
 
-That launch was in November of 2015. Since launching, it's only made $3,650 in sales from 19 customers.
+That launch was in November of 2015. Since launching, it's only made \$3,650 in sales from 19 customers.
 
 Working a full time job, Adam didn't have the resources to grow Nitpick and started looking for another way to make a living with an online product.
 
 The next thing he tried was an infoproduct - Refactoring to Collections (launched in May 2016). Adam spent time researching successful product launches this time so he could get the process right.
 
-In the first three days Refactoring to Collections made $61k - about 17x what Nitpick has ever made.
+In the first three days Refactoring to Collections made \$61k - about 17x what Nitpick has ever made.
 
 <!-- ![Adam's sales in just his first two years of info-product business #small](https://i.imgur.com/0vNvKhC.png) -->
 
@@ -40,9 +51,9 @@ In the first three days Refactoring to Collections made $61k - about 17x what Ni
 
 Two weeks later, Adam felt confident enough in his ability to launch that he quit his job to work on products full time.
 
-His next (and much more ambitious) product was [Test Driven Laravel](https://course.testdrivenlaravel.com/). Adam launched Test Driven Laravel six months after launching Refactoring to Collections to $116k of revenue in the first three days.
+His next (and much more ambitious) product was [Test Driven Laravel](https://course.testdrivenlaravel.com/). Adam launched Test Driven Laravel six months after launching Refactoring to Collections to \$116k of revenue in the first three days.
 
-In two years (May 2016 to April 2018), Adam has made about $650k from launching info products, so he knows what he's talking about.
+In two years (May 2016 to April 2018), Adam has made about \$650k from launching info products, so he knows what he's talking about.
 
 # Info Products
 
@@ -234,7 +245,7 @@ Use price anchoring: make the second tier your real product, with the first tier
 
 - Great for books if you can come up with the bonus content.
 - Makes it easier for users to evaluate your product on its own instead of comparing it to Amazon book or something else.
-- Prices are usually 1x, ~2x, and ~5x (ex: $29, $59, and $135 for Refactoring to Collections).
+- Prices are usually 1x, ~2x, and ~5x (ex: $29, $59, and \$135 for Refactoring to Collections).
 - This will make you a lot more money from a book than just selling the book on its own. Adam's first $29 tier made $7,400, his second $59 tier made $24,800, and his third $135 tier made $29,000. Without the second and third tier, Adam would've left 58% of the money on the table.
 - Adding content to tiers helps people evaluate the product as its own offering instead of just a cheap pdf, even though the bonus content you throw in isn't necessarily as valuable as the book.
 
@@ -242,7 +253,7 @@ Use price anchoring: make the second tier your real product, with the first tier
 
 - Discount it by enough to be appealing, at least 30%.
 - Use stepped discounts. Lower discount on cheaper tiers and better discount on higher tiers will push people up to the better tiers.
-- Reverse engineer the non-discounted price from your planned discounted price. That means don't discount the price you want to charge! Pick the price that you want to charge (ex: $79), make that the "discounted" price, and make the "un-discounted" price your preferred price plus whatever you're taking off with the discount (ex: the original price of a $79 book that's been discounted by 30% is `79/(1-0.3) ≈ 113`, so set the original price at $119).
+- Reverse engineer the non-discounted price from your planned discounted price. That means don't discount the price you want to charge! Pick the price that you want to charge (ex: $79), make that the "discounted" price, and make the "un-discounted" price your preferred price plus whatever you're taking off with the discount (ex: the original price of a $79 book that's been discounted by 30% is `79/(1-0.3) ≈ 113`, so set the original price at \$119).
 
 # Nailing the Launch
 
@@ -330,7 +341,7 @@ Source: [Adam's Github Info Link](https://gist.github.com/adamwathan/30dc4230ac5
 
 - [Recap of my Refactoring to Collections launch](https://adamwathan.me/the-book-launch-that-let-me-quit-my-job/): _includes tons of details, full content for every email sent, etc._
 - ["Authority"](http://nathanbarry.com/authority/): _book by Nathan Barry (best price here: https://gumroad.com/l/authority)_
-- ["An eBook pricing model that resulted in $100,000 in sales"](https://blog.asmartbear.com/selling-ebook.html): _blog post on tiered pricing_
+- ["An eBook pricing model that resulted in \$100,000 in sales"](https://blog.asmartbear.com/selling-ebook.html): _blog post on tiered pricing_
 
 # Question
 

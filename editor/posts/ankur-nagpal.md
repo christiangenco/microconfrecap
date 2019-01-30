@@ -1,6 +1,17 @@
 ---
 title: "From $0 To $10M ARR: The Tactics We Used To Scale Teachable"
-speaker: {"image":"https://i.imgur.com/FIgF0rh.jpg","name":"Ankur Nagpal","title":"CEO, Teachable","bioUrl":"https://www.microconf.com/growth/speakers/ankur-nagpal/","twitter":"ankurnagpal","website":"http://teachable.com","location":"New York, NY","description":"Founder @Teachable. Twenty inch blades on the impala. DMs open if you wanna holla.","verified":true}
+speaker:
+  {
+    "image": "https://i.imgur.com/FIgF0rh.jpg",
+    "name": "Ankur Nagpal",
+    "title": "CEO, Teachable",
+    "bioUrl": "https://www.microconf.com/growth/speakers/ankur-nagpal/",
+    "twitter": "ankurnagpal",
+    "website": "http://teachable.com",
+    "location": "New York, NY",
+    "description": "Founder @Teachable. Twenty inch blades on the impala. DMs open if you wanna holla.",
+    "verified": true,
+  }
 date: 2018-05-01 13:39:03 UTC-07:00
 conference: growth
 description: Microconf 2018 talk recap
@@ -8,12 +19,12 @@ image: https://i.imgur.com/jl5QfLo.png
 isPublic: true
 ---
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1677114439003846%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1677114439003846%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
 You'll learn:
 
 1. How to grow monthly recurring revenue (MRR) 30% every month for 30 months
-2. a
+2. How to hit \$500,000 MRR and beyond
 3. a
 
 # Ankur Nagpal
@@ -40,22 +51,22 @@ It took 64 people to get there.
 
 The growth model Teachable followed was:
 
-* Growth was the priority.
-* How can we leave as little to chance as possible?
-* Let's take advantage of being small enough that we can strong-arm growth by doing things that do not scale.
+- Growth was the priority.
+- How can we leave as little to chance as possible?
+- Let's take advantage of being small enough that we can strong-arm growth by doing things that do not scale.
 
 They waned to account for where every dollar was coming from.
 
 Here's how it played out in August 2015:
 
-* end of July 2015 MRR: $25k
-* Desire month-on-month growth rate: 30%
+- end of July 2015 MRR: \$25k
+- Desire month-on-month growth rate: 30%
 
 ![Calculating needed revenue to hit a target MRR](https://i.imgur.com/36Rd3Yq.png)
 
-`Math math math`, they needed $10,843 to hit 30% growth. Where does that come from?
+`Math math math`, they needed \$10,843 to hit 30% growth. Where does that come from?
 
-If they _did nothing_, expected MRR would be $8k.
+If they _did nothing_, expected MRR would be \$8k.
 
 ![Calculating expected MRR](https://i.imgur.com/pPyzoNO.png)
 
@@ -71,11 +82,11 @@ By targeting such a high number, they had to drive tactics that would have a sho
 
 To find an exrtra **$500-$1k**/month, the strategy could be 1-1 direct sales based on personally sent cold e-mails.
 
-To find an extra **$1k-3k**, the revenue could be found by 1-many sales to our audience by hosting a big webinar every month.
+To find an extra **\$1k-3k**, the revenue could be found by 1-many sales to our audience by hosting a big webinar every month.
 
-The next level up in growth, **$3k-$5k**, could be found by hosting a weekly reoccurring webinar every Thursday driving $1k in new MRR / week.
+The next level up in growth, **$3k-$5k**, could be found by hosting a weekly reoccurring webinar every Thursday driving \$1k in new MRR / week.
 
-A strategy to finding an extra **$5k-$10k**/month could be layering on joint venture webinars with influencers in the space every week with target of $1k in MRR / partner.
+A strategy to finding an extra **$5k-$10k**/month could be layering on joint venture webinars with influencers in the space every week with target of \$1k in MRR / partner.
 
 > At every stage, the necessity of having to discover this revenue was the fuel behind all of our big growth innovations.
 
@@ -97,7 +108,7 @@ Oh hey that worked! $25k in new MRR from the first event, and eventually up to $
 
 **Idea 4**: Change the price of our Basic plan from $29 -> $39 since we added a bunch of functionality to it. We experimented with letting existing users claim it at the old price for a week before the change went into effect.
 
-Oh hey that worked too! Usually in a SaaS, your LTVs will slowly go up over time with a price raise. By letting people get grandfathered into the old price, it drove $20k in new MRR for the duration of the campaign immediately.
+Oh hey that worked too! Usually in a SaaS, your LTVs will slowly go up over time with a price raise. By letting people get grandfathered into the old price, it drove \$20k in new MRR for the duration of the campaign immediately.
 
 > The necessity of "finding revenue" lead to the discovery of some of our best growth strategies.
 
@@ -105,9 +116,9 @@ Being driven by revenue goals helped sanity check projects that sounded great bu
 
 Pulling this crazy growth out of nowhere month after month for 24 months had several secondary benefits:
 
-* Built momentum and morale internally - everyone wants to work on a “winning team”
-* Helped us raise capital at terms we wanted because of “traction”
-* Growth begets growth - the bigger you get, the more your "mini-brand" grows
+- Built momentum and morale internally - everyone wants to work on a “winning team”
+- Helped us raise capital at terms we wanted because of “traction”
+- Growth begets growth - the bigger you get, the more your "mini-brand" grows
 
 If Teachable failed to hit their growth, they could analyze why:
 
@@ -115,21 +126,21 @@ If Teachable failed to hit their growth, they could analyze why:
 
 ## When things come crashing down
 
-After you're at ~$500k MRR, the "found revenue" gets insane:
+After you're at ~\$500k MRR, the "found revenue" gets insane:
 
 ![Where the growth model breaks down](https://i.imgur.com/z7irlfb.png)
 
-Even if you earn $50k in a summit, you're barely making a dent in finding 6 figures a month. **The strong arm method stops working.**
+Even if you earn \$50k in a summit, you're barely making a dent in finding 6 figures a month. **The strong arm method stops working.**
 
 What do you do then? Look back to the product and customer. What if you could make another 5% from each existing customer?
 
 ## Effective Growth 2.0 Strategies
 
-After this $500k MRR inflection point, you have to move one of:
+After this \$500k MRR inflection point, you have to move one of:
 
-* Organic new customers added per day
-* Decreasing churn rate
-* Average revenue per customer.
+- Organic new customers added per day
+- Decreasing churn rate
+- Average revenue per customer.
 
 This method is more about repeatable growth and leveraging existing customers.
 
@@ -139,13 +150,13 @@ What does that look like?
 
 ![Customer metrics for Teachable improved dramatically by focusing on customer success](https://i.imgur.com/xSLEnjM.png)
 
-This also reduced churn. The difference between 5% and 6% churn at $500k MRR over 2 years will cover a payroll for **20-30 customer care agents**. Investing in customer success is worth it at this scale.
+This also reduced churn. The difference between 5% and 6% churn at \$500k MRR over 2 years will cover a payroll for **20-30 customer care agents**. Investing in customer success is worth it at this scale.
 
 **2. Materially improve checkout product**: Since we make money of payment processing, increased revenue per customer without needing new customers.
 
 ![Improving the checkout to this slick single page increased sales from $250k/day to $400k/day](https://i.imgur.com/GanI2QT.png)
 
-**3. Make the $99/month plan more attractive**: average customer revenue per paying customer jumped from $48/customer to $60/customer (today it's $67).
+**3. Make the \$99/month plan more attractive**: average customer revenue per paying customer jumped from $48/customer to $60/customer (today it's \$67).
 
 ![Making the $99/month plan more attractive changed the slope of Teachable's growth rate](https://i.imgur.com/WMtfnBr.png)
 

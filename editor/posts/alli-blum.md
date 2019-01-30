@@ -1,6 +1,18 @@
 ---
 title: "Putting the (Onboarding) Cart Before the (Product) Horse"
-speaker: {"email": "alli@alliblum.com", "image":"https://pbs.twimg.com/profile_images/3248602470/3b84cc1ed8c30e766002a79b5e907ad6.jpeg","name":"Alli Blum","title":"SaaS Onboarding Optimization Consultant","bioUrl":"http://www.microconf.com/starter/speakers/alli-blum/","twitter":"AlliBlum","website":"http://www.alliblum.com","location":"New Jersey","description":"Tweeting mini-lessons on copywriting, onboarding, and customer research. More in-depth info at https://bit.ly/2LrsXkw  Email me at alli@alliblum.com","verified":false}
+speaker:
+  {
+    "email": "alli@alliblum.com",
+    "image": "https://pbs.twimg.com/profile_images/3248602470/3b84cc1ed8c30e766002a79b5e907ad6.jpeg",
+    "name": "Alli Blum",
+    "title": "SaaS Onboarding Optimization Consultant",
+    "bioUrl": "http://www.microconf.com/starter/speakers/alli-blum/",
+    "twitter": "AlliBlum",
+    "website": "http://www.alliblum.com",
+    "location": "New Jersey",
+    "description": "Tweeting mini-lessons on copywriting, onboarding, and customer research. More in-depth info at https://bit.ly/2LrsXkw  Email me at alli@alliblum.com",
+    "verified": false,
+  }
 date: 2018-05-02 13:30:11 UTC-07:00
 conference: starter
 description: "Why (and how) to start thinking about onboarding…even if your product isn't built yet. Is it crazy to think about onboarding before you have something to onboard people onto? Should onboarding be a priority when you're still teeny tiny? We'll talk about how your early stage actually gives you an unfair advantage–and how to use it."
@@ -8,7 +20,7 @@ image: https://i.imgur.com/aj9U5K5.jpg
 isPublic: true
 ---
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1678190282229595%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1678190282229595%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
 You'll learn:
 

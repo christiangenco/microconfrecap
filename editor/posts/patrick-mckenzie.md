@@ -1,6 +1,17 @@
 ---
 title: Your First 60 Days
-speaker: {"image":"https://pbs.twimg.com/profile_images/476049306072276993/s9QMnPC5.jpeg","name":"Patrick McKenzie","title":"Atlas","bioUrl":"http://www.microconf.com/starter/speakers/patrick-mckenzie/","twitter":"patio11","website":"http://www.kalzumeus.com","location":"東京都 Tokyo","description":"I work for the Internet, at @stripe, mostly on Atlas.","verified":false}
+speaker:
+  {
+    "image": "https://pbs.twimg.com/profile_images/476049306072276993/s9QMnPC5.jpeg",
+    "name": "Patrick McKenzie",
+    "title": "Atlas",
+    "bioUrl": "http://www.microconf.com/starter/speakers/patrick-mckenzie/",
+    "twitter": "patio11",
+    "website": "http://www.kalzumeus.com",
+    "location": "東京都 Tokyo",
+    "description": "I work for the Internet, at @stripe, mostly on Atlas.",
+    "verified": false,
+  }
 date: 2018-05-03 10:03:27 UTC-07:00
 conference: starter
 description: Microconf 2018 talk recap
@@ -8,9 +19,9 @@ image:
 isPublic: true
 ---
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679128498802440%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679128498802440%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679137985468158%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" /></div>
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679137985468158%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
 <!-- https://twitter.com/mijustin/status/988986209987842051 -->
 
@@ -251,7 +262,7 @@ _I don't have an emotional hatred of B2C - I don't hate anyone anywhere. Hating 
 
 _Google and Apple have a war chest of hundreds of billions of dollars. You can't beat them at the B2C game._
 
-_If you have to create a B2C, pick a demographic that has some money to pay and is super emotionally invested. Most consumers are pathologically bad at spending money on things. Pro-sumers like skaters who spend $800 on skates or [the guy who sold gaming tables](/chad-deshon) are better._
+_If you have to create a B2C, pick a demographic that has some money to pay and is super emotionally invested. Most consumers are pathologically bad at spending money on things. Pro-sumers like skaters who spend \$800 on skates or [the guy who sold gaming tables](/chad-deshon) are better._
 
 **How do you split time spent talking to customers vs. building your product?**
 
