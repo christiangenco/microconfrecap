@@ -46,11 +46,24 @@ export const Break = () => (
   <div className="clearfix" style={{ breakBefore: "page" }} />
 );
 
-export const Heading = props => {
+export const Heading = ({ level, children }) => {
+  // if (level === 2)
+  //   return (
+  //     <h2
+  //       className="font-sans text-left mt-0 -mb-1"
+  //       style={{ breakInside: "avoid" }}
+  //     >
+  //       {children}
+  //     </h2>
+  //   );
+
   return createElement(
-    `h${props.level}`,
-    { className: "font-sans text-left mt-0", style: { breakInside: "avoid" } },
-    props.children
+    `h${level}`,
+    {
+      className: `font-sans text-left mt-0 ${level === 2 ? "mb-0" : ""}`,
+      style: { breakInside: "avoid" },
+    },
+    children
   );
 };
 
@@ -138,6 +151,8 @@ export const ListItem = props => {
   return <pre>{JSON.stringify(props, null, 2)}</pre>;
 };
 
-export const Paragraph = props => {
-  return <pre>{JSON.stringify(props, null, 2)}</pre>;
+export const Paragraph = ({ children }) => {
+  return <p className="mt-0 mb-4">{children}</p>;
+
+  // return <pre>{JSON.stringify(props, null, 2)}</pre>;
 };

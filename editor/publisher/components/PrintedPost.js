@@ -26,7 +26,7 @@ export default props => {
     link: Link,
     // list: List,
     // listItem: ListItem,
-    // paragraph: Paragraph,
+    paragraph: Paragraph,
     // code
     // definition: props => console.log(props),
     // delete
