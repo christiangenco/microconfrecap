@@ -158,9 +158,9 @@ Success playbooks are templates of how to reliably execute customer success stra
 ![Drip's success playbook #large](https://i.imgur.com/mxNqFV8.png)
 
 1. A lead requests a demo and fills out a demo request with information about what problems they're trying to solve.
-2. If they're a high value lead, an internal team opens a trial account and sets it up based on the demo request and company research.
-3. A Drip representative demos the account to the lead.
-4. If the lead activates the demo account, they get put on a customer success plan.
+2. If they're a high value lead, an internal sales development representative (SDR) opens a trial account and sets it up based on the demo request and company research.
+3. The Drip SDR demos the account to the lead.
+4. If the lead activates the demo account, they get put on a customer success plan managed by a customer success manager (CSM).
 5. If not, the lead gets automated followups that remind them to activate, then `GOTO 4`.
 
 # The Payoff: Renewal Time
