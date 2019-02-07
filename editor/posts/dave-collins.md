@@ -25,9 +25,9 @@ isPublic: true
 
 You'll learn:
 
-1. a
-2. a
-3. a
+1. Why search engine optimization isn't dead.
+2. A reliable strategy for optimizing your pages to rank highly on Google.
+3. How to find topics to write about that your audience is searching for.
 
 # Dave Collins
 
@@ -63,6 +63,10 @@ He'll be covering some fundamentals of SEO, so you may still find it boring.
 
 <!-- People like to point to ads on google search results and say search results are all about paid ads, but most google real estate is actually there for organic results. -->
 
+<!-- ![Repeating the phrase "website design" 14 times on a page is a bad SEO strategy.](https://i.imgur.com/XGTV6xB.png) -->
+
+<!-- How will google feel about bland meaningless copy, like "websites are becoming more and more common every day"? Bleh. -->
+
 # Testing Google's Intelligence
 
 ![Google image searching "black and white jack russell smiling next to a baby" returns only two valid results.](https://i.imgur.com/zaJihRF.jpg)
@@ -85,105 +89,90 @@ The fore fundamentals of SEO haven't changed at all in the last 20 years. Google
 
 # SEO Action Plan
 
-## Task 1: Low Hanging Fruit
+Knowing that SEO isn't dead, and that Google still relies heavily on you to make your web content accessible to it's search engine, let's focus on specific strategies to make your website more attractive to search traffic.
 
-How will google feel about bland meaningless copy, like "websites are becoming more and more common every day"? Bleh.
+<!-- Every once in a while, one of these seeds will fall in the right place and build something amazing. -->
 
-Here's the low hanging fruit.
+![Relevant sections in the old Google Search Console.](https://i.imgur.com/WkocvgV.png)
 
-> "Low hanging fruit," as you Americans like to say. Low hanging fruit? Low hanging fruit.
+## Task 1: Fix the Machine
 
-[Google Search Console](https://search.google.com/search-console) has four important parts you should be checking on a regular basis:
+The low hanging fruit of SEO is to fix the problems Google is telling you are broken on your site in the [Google Search Console](https://search.google.com/search-console).
 
-1.  Crawl Errors: anything google finds that causes a problem, like a 404. This is bad for google and you.
-2.  HTML improvements: massively underestimated. Highlighted in [Google's search engine optimization starter guide](https://support.google.com/webmasters/answer/7451184?hl=en)
-3.  Index Status: select all the boxes and make sure everything makes sense.
-4.  Security issues: should always read "we haven't detected any security issues with your site's content". If not, stop everything and fix it.
+Specifically, you should be checking the following on the Google Search Console on a regular basis:
 
-## Task 2: Keywords
+1.  **Crawl Errors** (Crawl > Crawl Errors in the old console, or Index > Coverage in the new one): make sure that all main pages are error free and minimize your 404 ("page missing") errors.
+2.  **HTML improvements** (Search Appearance > HTML Improvements): Google's [search engine optimization starter guide](https://support.google.com/webmasters/answer/7451184?hl=en) says that page rank is dependent on your "site's user experience and performance." When Google tells you what could be fixed to improve your site's user experience and performance, listen.
+3.  **Index Status** (Google Index > Index Status in the old console, or Index > Coverage in the new one): in the old console, choose the advanced view and make sure there are no surprises in which of your pages are being blocked with a NOINDEX. In the new console, check that the expected number of pages are in the "excluded" section. If there are, fix them.
+4.  **Security issues**: If this doesn't say "No issues detected," fix your site immediately. This is one of the very few stop everything and handle this now warnings.
 
-1.  How would your friend describe your page?
-2.  Run these phrases through google - would your page make sense in this context?
-3.  Use your imagination!
+!["entrepreneurial conference" gets several times more traffic than "entrepreneur conference" and hundreds of times more traffic than "conference for startups" according to ahrefs.com](https://i.imgur.com/E3b4tGW.png)
 
-If you were looking for microconf, would you search for "conference for startups", "entrepreneurial conference", or "entrepreneur conference"?
+<!-- !["seo services" gets 6x more traffic volume than "seo service" according to ahrefs.com](https://i.imgur.com/fZEb8Xr.png)
+ -->
 
-Turns out "entrepreneurial conference" has the highest search volume!
+## Task 2: Invest in Keywords
 
-Here's another example:
+To optimize a page for Google, include words and phrases on that page that are words and phrases people are searching for. This process is known as "keyword optimization."
 
-- seo service (1x)
-- **seo services (6x)**
-- seo training
-- seo is dead
+Let's say you were trying to optimize the Microconf website. A good first step would be to think about how a friend would describe that page. Perhaps "conference for startups," "entrepreneurial conference," or "entrepreneur conference."
 
-You have to use the tools, don't just guess what you think the most popular keywords are.
+Next, try running those phrases through google and see if your page would make sense in the context of the other results there. What shows up when you search for these terms? Your competition, or something else entirely?
 
-> People click on more compelling titles
+Third, and most importantly, test your keywords on a keyword comparison tool like [ahrefs](https://ahrefs.com). Don't just guess what you think might be the best keywords of the ones you've thought up.
+
+Surprisingly, of the above three keywords, "entrepreneurial conference" has the highest search volume, so that's the best phrase to include in the Microconf website.
+
+Finally, make the title and description of your page compelling. "SEO services" may be an excellent search term, but "SEO Services London | SEO Company London | SEO London | SEO" isn't a particularly compelling page title to click on.
+
+![Exported Google Search Console Query data shows clicks, impressions, click-through rates, and search position for queries you're ranking for.](https://i.imgur.com/NFKlfat.png)
 
 ## Task 3: More compelling content
 
-If you have more than 10-15 pages of content, you don't need to write new content purely for SEO. It's more about making better use of what you have.
+If you have more than 10-15 pages of content, you don't need to write new content purely for SEO. Your time optimizing search engine rankings would be best spent making better use of the content you already have.
 
-TODO: see low hanging fruit in spreadsheet?
+To find your pages that are ripe for optimization, export your Performance Query data on the Google Search Console to a spreadsheet (Performance > Queries > "export data" download icon). Look for pages with low clicks and lots of impressions (at least 250). These are the pages that, if made more compelling, would start driving more traffic.
 
-What do people also ask? Reflect these ideas back at google!
+![Google's suggested terms for the query "find my family tree" ](https://i.imgur.com/foA2Lms.png)
 
-![What do people also ask? Reflect these ideas back at google!](https://i.imgur.com/foA2Lms.png)
+If you need more content, look for topic inspiration from what people are already searching for.
 
-See the world as google sees it. You can also use tools like [ahrefs](https://ahrefs.com/).
+You can get more information on what people are searching for on Google by search a term related to your product (ex: "find my family tree") and looking in the "People also ask" box. A guide titled "How do you do a family tree?" would likely rank well in the family tree software space. Additionally, look at the sites that are already ranking and see what their content is focused on, and look at the bottom of the page for "Searches related to `${query}`".
 
-Get into the minds of the people searching. Look at the pain points, ideas, and themes of people searching for your stuff.
+Paid keyword search tools like [ahrefs](https://ahrefs.com) (Collins' tool of choice), [Screamingfrog](https://www.screamingfrog.co.uk/seo-spider/), [Sitebulb](https://sitebulb.com/), and [urlprofiler](https://urlprofiler.com/) provide similar related keyword information. Don't use [Google Adwords Keyword Planner](https://adwords.google.com/home/tools/keyword-planner/#?modal_active=none) - it's useless from an SEO perspective because they misleadingly round up all the figures.
 
-## Task 4: Use the Right Tools Correctly
+![reddit.com/genealogy is a great place to find topics people interested in genealogy are interested in.](https://i.imgur.com/2FnLAP3.png)
 
-- [Keyword Planner](https://adwords.google.com/home/tools/keyword-planner/#?modal_active=none): useless from an SEO perspective because they round up all the figures. It's misleading.
-- [Search Console](https://search.google.com/search-console): more data than most paid SEO tools (this is free)
-- [ahrefs](https://ahrefs.com/): 7-day trial for \$7
-- [Screamingfrog](https://www.screamingfrog.co.uk/seo-spider/): desktop based software for scraping websites
-- [Sitebulb](https://sitebulb.com/):
-- [urlprofiler](https://urlprofiler.com/)
+If you don't know where to start looking for additional keywords, get into the minds of what your audience is searching for. Find online communities (subreddits, fourms, Amazon product comments, etc.) and look for pain points, ideas, themes, and language of what people in your industry are talking about.
 
-These tools wont' do the work for you, though
+Once you've created new content, be patient. SEO results can take _months_ to take effect.
 
-## Task 5: Feed the mobile index
+## Task 4: Feed the mobile index
 
-Google is moving to mobile-first indexing. Your index will be based on the mobile version of your website.
+[Google is moving to mobile-first indexing](https://webmasters.googleblog.com/2018/03/rolling-out-mobile-first-indexing.html), which means their index will be based on the mobile version of your website.
 
-[Rolling out mobile-first indexing](https://webmasters.googleblog.com/2018/03/rolling-out-mobile-first-indexing.html) has quadrouple speak, but basically says Google will care a lot more about mobile indexes.
+Check if your site is mobile friendly with Google's [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) (don't worry about "Page loading issues") and [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) (which gives you specific advice on how to speed up your site). It's usually not enough to make your site responsive - you'll want to put significant effort into making sure your site works great on mobile devices.
 
-Responsive is not mobile-friendly. Check if your site is actually mobile friendly with Google's [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
+![Trying to game the system by repeating the same keyword over and over is a bad SEO strategy](https://i.imgur.com/fHou7lr.png)
 
 ## Bonus Tip
 
-> Golden Rule: Put humans before spiders. Always
+Put humans before spiders. Always. What that means is not trying to game the system by making a page that optimizes for a specific keyword by repeating it over and over.
 
-If you click on a website and get a page with a bunch of SEO nonsense, you're going to bounce, which is a super strong indicator your site sucks.
-
-## 7 Rules of SEO
-
-1.  Don't talk about SEO
-2.  Fix the machine: don't just look good, work well
-3.  Invest time in keywords
-4.  A different approach to content
-5.  Use the right tools
-6.  Embrace mobile first ([check your website](https://search.google.com/test/mobile-friendly)). If you pass, Dave will let you buy him a drink.
-7.  Humans before spiders.
-
-Every once in a while, one of these seeds will fall in the right place and build something amazing.
+If a human clicks on a website and gets a page with a bunch of SEO nonsense, they'll bounce off the page. Bouncing is a strong search engine indicator of a bad site.
 
 # Questions
 
-**When google gets a 404 on one of your page, how do you tell Google it's gone? A redirect?**
+**What's the best way to signal to google that a page was removed?**
 
-_Redirect removed URLs to the closest fit existing page._
+_Redirect removed URLs to the closest existing page._
 
-**?**
+**Should I index pages like release notes?**
 
-_Use a NOINDEX in `robots.txt` to block that URL._
+_Google is pretty good at figuring out useful pages. A NOINDEX in robots.txt just tells Google not to visit a certain part of your website, but google can still find it through links on other pages. Add a NOINDEX metadata tag on pages that you don't want showing up in search results._
 
 **You said to look in the search console and look for keywords with high impressions and low clicks. Why?**
 
-_Those pages are probably showing up in search results, but not being clicked on. Those pages represent the best opportunity for optimization._
+_Those pages are probably showing up in search results, but not being clicked on. Those pages represent the best opportunity for optimization by using the content better._
 
-You can schedule a call with Dave and read his summary of his talk on his website: [Software Promotions: Microconf 2018 Actionable stuff](https://www.softwarepromotions.com/microconf-2018-resources-dave-collins/).
+Schedule a call with Dave Collins at dave@softwarepromotions.com.
