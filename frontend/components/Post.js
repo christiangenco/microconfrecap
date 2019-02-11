@@ -46,7 +46,7 @@ export default ({ title, body, speaker, slug, url, updatedAt }) => {
 
   return (
     <div>
-      <h1 className="font-sans text-5xl mb-6">{title}</h1>
+      <h1 className="font-sans text-5xl mb-6 leading-tight">{title}</h1>
       <Speaker speaker={speaker} />
       <Markdown source={body} renderers={renderers} escapeHtml={false} />
     </div>
