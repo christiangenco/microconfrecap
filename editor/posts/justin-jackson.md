@@ -226,7 +226,7 @@ Noticing trends in the industry that match your hypothesis will also help you kn
 
 Start with a small free offering. If that works, move to a small paid offering. If that works. build a simple product. If that works, put more features in and charge more.
 
-![Rob Walling's Star Step Approach to building a business. #large](https://i.imgur.com/ZWqFAJC.png)
+![Rob Walling's Stair Step Approach to building a business. #large](https://i.imgur.com/ZWqFAJC.png)
 
 ## Transistor.fm case study
 

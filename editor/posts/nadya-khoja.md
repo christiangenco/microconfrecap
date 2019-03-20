@@ -18,9 +18,6 @@ image: https://i.imgur.com/2wYG6Ew.png
 isPublic: true
 ---
 
-<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/nadya-khoja/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
-<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>
-
 You'll learn several repeatable methods of creating engaging and compelling content.
 
 # Nadya Khoja and Venngage
@@ -209,3 +206,6 @@ _We focus most of our time on brainstorming, then 20% of our time putting the id
 _If we see a trend in the market - like Game of Thrones being popular - we focus on what we could do in that trend to get traction._
 
 Contact Nadya Khoja [@NadyaKhoja](https://twitter.com/NadyaKhoja), and check out her [Drunk Entrepreneurs](https://www.drinkwithnadya.com/) YouTube channel.
+
+<iframe sandbox="allow-scripts allow-same-origin" security="restricted" src="https://lan.io/blog/podcast/nadya-khoja/embed/" width="100%" height="700" title="Rob Walling Recap Interview - Lanio" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>
+<script type='text/javascript'>const wp = document.querySelector(".wp-embedded-content"); window.addEventListener("message", ({data, origin}) => {if(origin === "https://lan.io" && data && data.message === "height" && data.value) wp.height = data.value})</script>

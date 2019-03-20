@@ -1,6 +1,15 @@
 ---
 title: "How to Be Funny (Even If You’re Not): Improv-Inspired Copywriting Tips for Software Founders"
-speaker: {"name":"Lianna Patch","twitter":"punchlinecopy","location":"New Orleans, LA","description":"Conversion copy + comedy + cats. Powered by coconut LaCroix + despair. Director @ SNAP (https://snapcopy.co/).  Write funnier copy: https://www.punchlinecopy.com/5-ways-to-be-funnier-in-your-copy/","verified":false,"image":"https://pbs.twimg.com/profile_images/577689936393961473/ggT-UHXp.jpeg","website":"http://www.punchlinecopy.com"}
+speaker:
+  {
+    "name": "Lianna Patch",
+    "twitter": "punchlinecopy",
+    "location": "New Orleans, LA",
+    "description": "Conversion copy + comedy + cats. Powered by coconut LaCroix + despair. Director @ SNAP (https://snapcopy.co/).  Write funnier copy: https://www.punchlinecopy.com/5-ways-to-be-funnier-in-your-copy/",
+    "verified": false,
+    "image": "https://pbs.twimg.com/profile_images/577689936393961473/ggT-UHXp.jpeg",
+    "website": "http://www.punchlinecopy.com",
+  }
 date: 2018-05-01 10:12:22 UTC-07:00
 conference: growth
 description: There are so many principles of improv and humor that can help you shape marketing copy, connect with your users, built loyalty, and increase retention.
@@ -100,10 +109,10 @@ Gifs can be great, but use them sparingly. If they're too long, referencing joke
 
 Using unconventional grammar can increase conversions:
 
-* adsf
-* Including a typo in your subject line (like "moar")
-* using contractions and abbreviations (now "Hot is it going (fellow kids)", but "so I wanna know", "gonna", etc.)
-* chop up your sentences
+- adsf
+- Including a typo in your subject line (like "moar")
+- using contractions and abbreviations (now "Hot is it going (fellow kids)", but "so I wanna know", "gonna", etc.)
+- chop up your sentences
 
 ![Humanizing friendly abbreviations to use in copy](https://i.imgur.com/kitKfXY.png)
 

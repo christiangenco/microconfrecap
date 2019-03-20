@@ -17,7 +17,9 @@ mkdir -p build
 # curl http://localhost:3000/claire-suellentrop > ./build/index.html
 # curl http://localhost:3000/jordan-gal > ./build/index.html
 # curl http://localhost:3000/dave-collins > ./build/index.html
-curl http://localhost:3000/nadya-khoja > ./build/index.html
+# curl http://localhost:3000/nadya-khoja > ./build/index.html
+# curl http://localhost:3000/patrick-collison > ./build/index.html
+curl http://localhost:3000/rob-walling > ./build/index.html
 
 # curl http://localhost:3000/garrett-dimon  > ./build/index.html
 
