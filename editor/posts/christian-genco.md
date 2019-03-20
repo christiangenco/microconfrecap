@@ -1,5 +1,5 @@
 ---
-title: Microconf Talk, dude
+title: Microconf Starter 2018 Recap
 speaker:
   {
     "name": "Christian Genco",
@@ -17,5 +17,5 @@ image:
 isPublic: true
 ---
 
-test dude!!!!
+test dude! wicked cool.
 
