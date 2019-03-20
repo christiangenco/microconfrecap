@@ -20,19 +20,19 @@ class CTA extends Component {
 
   render() {
     const { profile } = this.state;
-    const randomCoverIndex = Math.floor(Math.random() * 16);
+    const randomCoverIndex = Math.floor(Math.random() * 25);
 
     if (profile) {
       return (
         <div className="rounded border border-grey-light mt-6">
           <img
             className="rounded-t"
-            src={`https://microconf.gen.co/static/covers/${randomCoverIndex}.jpg`}
-            alt="Microconf 2018 Recap Book Cover"
+            src={`https://microconf.gen.co/static/covers/${randomCoverIndex}.png`}
+            alt="Microconf Recap Book Cover"
           />
           <div className="p-4">
             <h2 className="text-black font-bold text-3xl mb-2 font-sans">
-              The Microconf 2018 Recap is Yours
+              The Microconf Recap is Yours
             </h2>
 
             <p className="">
@@ -46,7 +46,7 @@ class CTA extends Component {
                   url={`https://microconf.gen.co/?coverIndex=${randomCoverIndex}`}
                   options={{
                     text:
-                      "I just signed up for a free ebook summary of @microconf 2018 at ",
+                      "I just signed up for a free ebook summary of @microconf at ",
                     hashtags: "microconf",
                     via: "cgenco",
                     related: "microconf",
@@ -55,7 +55,7 @@ class CTA extends Component {
               )}
             </p>
             <a
-              href={`https://twitter.com/intent/tweet?hashtags=microconf&amp;original_referer=http%3A%2F%2Flocalhost%3A3000%2Ftest&amp;ref_src=twsrc%5Etfw&amp;related=microconf&amp;text=I%20just%20signed%20up%20for%20a%20free%20ebook%20summary%20of%20%40microconf%202018%20at%20&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fmicroconf.gen.co%2F%3FcoverIndex%3D${randomCoverIndex}&amp;via=cgenco`}
+              href={`https://twitter.com/intent/tweet?hashtags=microconf&amp;original_referer=http%3A%2F%2Flocalhost%3A3000%2Ftest&amp;ref_src=twsrc%5Etfw&amp;related=microconf&amp;text=I%20just%20signed%20up%20for%20a%20free%20ebook%20summary%20of%20%40microconf%20at%20&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fmicroconf.gen.co%2F%3FcoverIndex%3D${randomCoverIndex}&amp;via=cgenco`}
               className="bg-blue hover:bg-blue-dark w-full font-sans text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline no-underline block text-center mt-2"
               target="_blank"
             >

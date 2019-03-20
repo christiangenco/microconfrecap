@@ -55,6 +55,7 @@ const fetchAll = () => {
     });
 };
 
+// warning: this overwrites local changes
 // fetchAll();
 
 const push = filename => {
@@ -81,11 +82,13 @@ const pushAll = () => {
     push(path.basename(filename));
   });
 };
-pushAll();
 
-// console.log("watching...");
-// fs.watch("posts", (event, filename) => {
-//   console.log(`${new Date().toISOString()} updating ${filename}`);
+// warning: this overwrites changes on firebase
+// pushAll();
+
+console.log("watching posts/*...");
+fs.watch("posts", (event, filename) => {
+  console.log(`${new Date().toISOString()} updating ${filename}`);
 
 //   // filename might be null if file was deleted
 //   push(filename);

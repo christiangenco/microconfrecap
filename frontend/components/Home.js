@@ -28,6 +28,14 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
     post => post.conference == "growth"
   );
 
+  const starter2019Posts = Object.values(posts).filter(
+    post => post.conference == "starter2019"
+  );
+
+  const growth2019Posts = Object.values(posts).filter(
+    post => post.conference == "growth2019"
+  );
+
   return (
     <div>
       <Head>
@@ -67,7 +75,11 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
         />
         <meta name="twitter:card" value="summary_large_image" />
       </Head>
-
+      <h2 className="font-sans">Growth 2019</h2>
+      <PostList posts={growth2019Posts} />
+      <h2 className="font-sans">Starter 2019</h2>
+      <PostList posts={starter2019Posts} />
+      <hr style={{ border: "1px solid black" }} />
       <h2 className="font-sans">Starter 2018</h2>
       <PostList posts={starterPosts} />
       <h2 className="mt-6 font-sans">Growth 2018</h2>

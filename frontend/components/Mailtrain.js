@@ -69,12 +69,11 @@ export class Mailtrain extends Component {
       <div className="rounded border border-grey-light sm:flex flex-row justify-between leading-normal p-4 mt-6">
         <div className="">
           <h3 className="text-black font-bold text-xl mb-2 font-sans">
-            Free "Microconf 2018" eBook
+            Free "Microconf Recap" eBook
           </h3>
           <p className="text-grey-darker text-base">
             I'm sending out a beautiful PDF eBook of notes from every MicroConf
-            2018 Starter and Growth talk – both Speaker and Attendee. Want a
-            copy?
+            Starter and Growth talk – both Speaker and Attendee. Want a copy?
           </p>
           <form className="" onSubmit={this.onSubmit} className="">
             <fieldset disabled={isLoading}>

@@ -1,4 +1,7 @@
+#!/usr/bin/env ruby
+
 require 'json'
+require 'erb'
 
 def get_bio(screen_name)
   url = "https://wt-christian-gen-co-0.run.webtask.io/twitterwebtask?screen_name=#{screen_name}"
@@ -24,7 +27,15 @@ def get_bio(screen_name)
   }
 end
 
-puts get_bio(ARGV.first).to_json
+speaker = get_bio(ARGV.first)
+
+filename = speaker["name"].downcase.gsub(" ", "-") + ".md"
+filepath = "./drafts/#{filename}"
+
+renderer = ERB.new(DATA.read)
+File.open(filepath, 'w'){|f| f.puts renderer.result}
+puts filepath
+
 
 # Dir.glob('./drafts/*').each do |path|
 #   draft = File.read(path)
@@ -48,3 +59,13 @@ puts get_bio(ARGV.first).to_json
 #
 #   # exit
 # end
+__END__
+---
+title: Microconf Talk
+speaker: <%= speaker.to_json %>
+date:
+conference: growth2019
+description: Microconf 2019 talk recap
+image:
+isPublic: false
+---
