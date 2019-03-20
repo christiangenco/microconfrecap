@@ -105,12 +105,12 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
       <h2 className="mt-6 font-sans">Past Recaps</h2>
       <ul className="text-lg">
         <li>
-          Kai Davis:{" "}
+          Shai Schechter:{" "}
           <a
-            href="https://kaidavis.com/microconf-2015/"
+            href="https://shai.io/microconf/"
             className="no-underline hover:underline"
           >
-            Microconf Recap 2015
+            Microconf Recap 2017
           </a>
         </li>
         <li>
@@ -122,13 +122,14 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
             Microconf Recap 2016
           </a>
         </li>
+
         <li>
-          Shai Schechter:{" "}
+          Kai Davis:{" "}
           <a
-            href="https://shai.io/microconf/"
+            href="https://kaidavis.com/microconf-2015/"
             className="no-underline hover:underline"
           >
-            Microconf Recap 2017
+            Microconf Recap 2015
           </a>
         </li>
       </ul>
