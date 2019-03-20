@@ -1,11 +1,49 @@
 import Head from "next/head";
 import db from "../firebase";
+import { useState, useEffect } from "react";
 
 import Post from "../components/Post";
 
 const PostPage = props => {
   const { post, query } = props;
-  const { title, date, updatedAt, speaker, description, image, slug } = post;
+
+  const [livepost, setPost] = useState(post);
+
+  // comment this out to turn off live updates
+  useEffect(() => {
+    // return { post: { ...post.data(), body: (body.data() || {}).body } };
+
+    const metadataUnsubscribe = db
+      .collection("posts")
+      .doc(post.id)
+      .onSnapshot(snap => {
+        const newPost = { ...post, ...snap.data() };
+        setPost(newPost);
+      });
+
+    const bodyUnsubscribe = db
+      .collection("bodies")
+      .doc(post.id)
+      .onSnapshot(snap => {
+        const newPost = { ...post, ...snap.data() };
+        setPost(newPost);
+      });
+
+    return () => {
+      metadataUnsubscribe();
+      bodyUnsubscribe();
+    };
+  }, []);
+
+  const {
+    title,
+    date,
+    updatedAt,
+    speaker,
+    description,
+    image,
+    slug,
+  } = livepost;
   const url = `https://microconf.gen.co/${slug}`;
 
   let fullTitle = `${title}`;
@@ -49,7 +87,7 @@ const PostPage = props => {
         <meta property="twitter:image" content={fullImage} />
         <meta name="twitter:card" value="summary_large_image" />
       </Head>
-      <Post {...post} url={"https://microconf.gen.co/" + post.slug} />
+      <Post {...livepost} url={"https://microconf.gen.co/" + livepost.slug} />
     </div>
   );
 };
