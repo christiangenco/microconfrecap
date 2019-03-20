@@ -1,14 +1,18 @@
 .font-sans {
-  font-family: "Lato", system-ui, BlinkMacSystemFont, -apple-system,
-    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  font-family: "Lato", system-ui, BlinkMacSystemFont, -apple-system, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 
 .font-serif {
-  font-family: "Merriweather", Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif
+  font-family: "Merriweather", Constantia, Lucida Bright, Lucidabright,
+    Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif,
+    Georgia, serif;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   margin-bottom: 1rem;
 }
 
@@ -39,4 +43,20 @@ p, ul, ol {
   height: 100%;
   border: 0;
   overflow: hidden;
+}
+
+.pulsing {
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }

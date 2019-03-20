@@ -37,9 +37,9 @@ class CTA extends Component {
 
             <p className="">
               Hey {profile.first || "there"}, you're signed up to get the free
-              eBook of every Starter and Growth talk when it's ready! You should
-              tell your friends about this. They'll probably be like "ahh whoa
-              thank you you're such a good friend and you have such interesting
+              eBook of every Starter and Growth talk when it's ready! I bet if
+              you tweeted this to your friends they'd be like "ahh whoa thank
+              you you're such a good friend and you have such interesting
               tweets!"
               {false && (
                 <Share

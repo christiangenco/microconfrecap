@@ -1,9 +1,16 @@
 import Link from "next/link";
 import Head from "next/head";
 import db from "../firebase";
+import { useState, useEffect } from "react";
+import differenceInMinutes from "date-fns/difference_in_minutes";
 
 const PostItem = ({ post }) => (
   <li className="mb-2 text-lg">
+    {post.updatedAt &&
+      post.updatedAt.toDate &&
+      differenceInMinutes(new Date(), post.updatedAt.toDate()) < 5 && (
+        <span className="pulsing">📡</span>
+      )}
     {post.speaker.name}:{" "}
     <Link href={`/${post.slug}`}>
       <a className="no-underline hover:underline">{post.title}</a>
@@ -20,19 +27,30 @@ const PostList = ({ posts }) => (
 );
 
 const Home = ({ posts = {}, query: { coverIndex } }) => {
-  const starterPosts = Object.values(posts).filter(
+  const [liveposts, setPosts] = useState(posts);
+
+  // comment this out to turn off live updates
+  useEffect(() => {
+    return db.collection("posts").onSnapshot(snap => {
+      const newPosts = {};
+      snap.forEach(doc => (newPosts[doc.id] = doc.data()));
+      setPosts(newPosts);
+    });
+  }, []);
+
+  const starterPosts = Object.values(liveposts).filter(
     post => post.conference == "starter"
   );
 
-  const growthPosts = Object.values(posts).filter(
+  const growthPosts = Object.values(liveposts).filter(
     post => post.conference == "growth"
   );
 
-  const starter2019Posts = Object.values(posts).filter(
+  const starter2019Posts = Object.values(liveposts).filter(
     post => post.conference == "starter2019"
   );
 
-  const growth2019Posts = Object.values(posts).filter(
+  const growth2019Posts = Object.values(liveposts).filter(
     post => post.conference == "growth2019"
   );
 
