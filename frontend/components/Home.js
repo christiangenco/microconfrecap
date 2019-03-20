@@ -12,7 +12,11 @@ const PostItem = ({ post }) => (
 );
 
 const PostList = ({ posts }) => (
-  <ul>{posts.map(post => <PostItem key={post.slug} post={post} />)}</ul>
+  <ul>
+    {posts.map(post => (
+      <PostItem key={post.slug} post={post} />
+    ))}
+  </ul>
 );
 
 const Home = ({ posts = {}, query: { coverIndex } }) => {
@@ -27,15 +31,15 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
   return (
     <div>
       <Head>
-        <meta property="og:title" content="Microconf Recap 2018" />
+        <meta property="og:title" content="Microconf Recap" />
         <meta property="og:type" content="website" />
         <meta
           property="description"
-          content="Microconf 2018 official conference notes by Christian Genco."
+          content="Microconf official conference notes by Christian Genco."
         />
         <meta
           property="og:description"
-          content="Microconf 2018 official conference notes by Christian Genco."
+          content="Microconf official conference notes by Christian Genco."
         />
         <meta property="og:url" content="https://microconf.gen.co/" />
         <meta
@@ -48,10 +52,10 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
         />
         <meta name="twitter:site" value="@microconf" />
         <meta property="twitter:url" content="https://microconf.gen.co/" />
-        <meta property="twitter:title" content="Microconf 2018 Recap" />
+        <meta property="twitter:title" content="Microconf Recap" />
         <meta
           property="twitter:description"
-          content="Microconf 2018 official conference notes by Christian Genco."
+          content="Microconf official conference notes by Christian Genco."
         />
         <meta
           property="twitter:image"
@@ -64,9 +68,9 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
         <meta name="twitter:card" value="summary_large_image" />
       </Head>
 
-      <h2 className="font-sans">Starter</h2>
+      <h2 className="font-sans">Starter 2018</h2>
       <PostList posts={starterPosts} />
-      <h2 className="mt-6 font-sans">Growth</h2>
+      <h2 className="mt-6 font-sans">Growth 2018</h2>
       <PostList posts={growthPosts} />
       <h2 className="mt-6 font-sans">Past Recaps</h2>
       <ul className="text-lg">

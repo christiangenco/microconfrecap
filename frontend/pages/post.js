@@ -11,7 +11,7 @@ const PostPage = props => {
   let fullTitle = `${title}`;
   if (speaker && speaker.name) fullTitle += ` by ${speaker.name}`;
 
-  let fullDescription = description || "Microconf 2018 talk recap";
+  let fullDescription = description || "Microconf talk recap";
 
   let fullImage = image || "https://microconf.gen.co/microconf.jpg";
   if (query && query.img) fullImage = query.img;
@@ -19,7 +19,7 @@ const PostPage = props => {
   return (
     <div>
       <Head>
-        <title>{title} | Microconf Recap 2018</title>
+        <title>{title} | Microconf Recap</title>
         <meta property="og:type" content="article" />
         <meta
           property="article:section"

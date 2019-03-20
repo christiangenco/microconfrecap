@@ -16,7 +16,7 @@ export const Header = props => {
             alt="Microconf Logo"
             className="h-8 mr-2"
           />
-          Microconf Recap 2018
+          Microconf Recap
         </a>
       </Link>
     </h1>
