@@ -83,13 +83,16 @@ const pushAll = () => {
   });
 };
 
-// warning: this overwrites changes on firebase
-// pushAll();
+if (process.argv[2] === "build") {
+  // warning: this overwrites changes on firebase
+  console.log("pushing all posts to firebase");
+  pushAll();
+} else {
+  console.log("watching posts/*");
+  fs.watch("posts", (event, filename) => {
+    console.log(`${new Date().toISOString()} updating ${filename}`);
 
-console.log("watching posts/*");
-fs.watch("posts", (event, filename) => {
-  console.log(`${new Date().toISOString()} updating ${filename}`);
-
-  // filename might be null if file was deleted
-  push(filename);
-});
+    // filename might be null if file was deleted
+    push(filename);
+  });
+}

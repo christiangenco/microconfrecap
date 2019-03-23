@@ -1,6 +1,6 @@
 # push most recent versions of talks to firebase - potentially dangerous?
 pushd ../editor
-x/run.sh
+x/build.sh
 popd
 
 yarn run export && \
