@@ -14,7 +14,7 @@ date:
 conference: growth2019
 description: Microconf 2019 talk recap
 image:
-isPublic: true
+isPublic: false
 ---
 
 test dude! wicked cool.
