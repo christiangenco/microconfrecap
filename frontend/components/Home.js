@@ -47,11 +47,11 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
   );
 
   const starter2019Posts = Object.values(liveposts).filter(
-    post => post.conference == "starter2019"
+    post => post.conference == "starter2019" && post.isPublic
   );
 
   const growth2019Posts = Object.values(liveposts).filter(
-    post => post.conference == "growth2019"
+    post => post.conference == "growth2019" && post.isPublic
   );
 
   return (
