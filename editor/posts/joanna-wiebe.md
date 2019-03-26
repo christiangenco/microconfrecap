@@ -13,9 +13,11 @@ speaker:
 date: 2019-03-25 13:32:43
 conference: growth2019
 description: Microconf 2019 talk recap
-image:
+image: https://pbs.twimg.com/profile_images/822966248833093632/88bVZqGn.jpg
 isPublic: true
 ---
+
+<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcgenco%2Fvideos%2F10156553000454221%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
 
 This talk is very tactical: the actual words you're putting on the page.
 
