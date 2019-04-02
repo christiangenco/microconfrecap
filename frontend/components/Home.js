@@ -38,19 +38,23 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
     });
   }, []);
 
-  const starterPosts = Object.values(liveposts).filter(
+  const sortedLivePosts = Object.values(liveposts); //.sort(
+  // (a, b) => new Date(a.date) - new Date(b.date)
+  // );
+
+  const starterPosts = sortedLivePosts.filter(
     post => post.conference == "starter"
   );
 
-  const growthPosts = Object.values(liveposts).filter(
+  const growthPosts = sortedLivePosts.filter(
     post => post.conference == "growth"
   );
 
-  const starter2019Posts = Object.values(liveposts).filter(
+  const starter2019Posts = sortedLivePosts.filter(
     post => post.conference == "starter2019" && post.isPublic
   );
 
-  const growth2019Posts = Object.values(liveposts).filter(
+  const growth2019Posts = sortedLivePosts.filter(
     post => post.conference == "growth2019" && post.isPublic
   );
 

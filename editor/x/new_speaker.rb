@@ -64,7 +64,7 @@ __END__
 title: Microconf Talk
 speaker: <%= speaker.to_json %>
 date:
-conference: growth2019
+conference: starter2019
 description: Microconf 2019 talk recap
 image:
 isPublic: false

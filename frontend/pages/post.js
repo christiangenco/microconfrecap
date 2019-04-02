@@ -13,13 +13,13 @@ const PostPage = props => {
   useEffect(() => {
     // return { post: { ...post.data(), body: (body.data() || {}).body } };
 
-    const metadataUnsubscribe = db
-      .collection("posts")
-      .doc(post.id)
-      .onSnapshot(snap => {
-        const newPost = { ...post, ...snap.data() };
-        setPost(newPost);
-      });
+    // const metadataUnsubscribe = db
+    //   .collection("posts")
+    //   .doc(post.id)
+    //   .onSnapshot(snap => {
+    //     const newPost = { ...post, ...snap.data() };
+    //     setPost(newPost);
+    //   });
 
     const bodyUnsubscribe = db
       .collection("bodies")
@@ -30,7 +30,7 @@ const PostPage = props => {
       });
 
     return () => {
-      metadataUnsubscribe();
+      // metadataUnsubscribe();
       bodyUnsubscribe();
     };
   }, []);

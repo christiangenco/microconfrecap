@@ -19,9 +19,9 @@ image:
 isPublic: true
 ---
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679128498802440%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
+<!-- <div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679128498802440%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div> -->
 
-<div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679137985468158%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div>
+<!-- <div class="iframe-wrapper"><iframe class="responsive-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fbusiness.facebook.com%2Fteamlanio%2Fvideos%2F1679137985468158%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" ></iframe></div> -->
 
 <!-- https://twitter.com/mijustin/status/988986209987842051 -->
 
