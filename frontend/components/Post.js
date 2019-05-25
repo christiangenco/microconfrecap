@@ -47,7 +47,8 @@ export default ({ title, body, speaker, slug, url, updatedAt }) => {
 
   return (
     <div>
-      {updatedAt &&
+      {false &&
+        updatedAt &&
         updatedAt.toDate &&
         differenceInMinutes(new Date(), updatedAt.toDate()) < 5 && (
           <div className="bg-pink text-white rounded p-3">

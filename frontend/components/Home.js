@@ -29,14 +29,14 @@ const PostList = ({ posts }) => (
 const Home = ({ posts = {}, query: { coverIndex } }) => {
   const [liveposts, setPosts] = useState(posts);
 
-  // comment this out to turn off live updates
-  useEffect(() => {
-    return db.collection("posts").onSnapshot(snap => {
-      const newPosts = {};
-      snap.forEach(doc => (newPosts[doc.id] = doc.data()));
-      setPosts(newPosts);
-    });
-  }, []);
+  // uncomment this out to turn on live updates
+  // useEffect(() => {
+  //   return db.collection("posts").onSnapshot(snap => {
+  //     const newPosts = {};
+  //     snap.forEach(doc => (newPosts[doc.id] = doc.data()));
+  //     setPosts(newPosts);
+  //   });
+  // }, []);
 
   const sortedLivePosts = Object.values(liveposts); //.sort(
   // (a, b) => new Date(a.date) - new Date(b.date)

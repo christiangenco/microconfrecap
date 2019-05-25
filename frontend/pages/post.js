@@ -9,31 +9,31 @@ const PostPage = props => {
 
   const [livepost, setPost] = useState(post);
 
-  // comment this out to turn off live updates
-  useEffect(() => {
-    // return { post: { ...post.data(), body: (body.data() || {}).body } };
+  // uncomment this out to turn on live updates
+  // useEffect(() => {
+  //   // return { post: { ...post.data(), body: (body.data() || {}).body } };
 
-    // const metadataUnsubscribe = db
-    //   .collection("posts")
-    //   .doc(post.id)
-    //   .onSnapshot(snap => {
-    //     const newPost = { ...post, ...snap.data() };
-    //     setPost(newPost);
-    //   });
+  //   // const metadataUnsubscribe = db
+  //   //   .collection("posts")
+  //   //   .doc(post.id)
+  //   //   .onSnapshot(snap => {
+  //   //     const newPost = { ...post, ...snap.data() };
+  //   //     setPost(newPost);
+  //   //   });
 
-    const bodyUnsubscribe = db
-      .collection("bodies")
-      .doc(post.id)
-      .onSnapshot(snap => {
-        const newPost = { ...post, ...snap.data() };
-        setPost(newPost);
-      });
+  //   const bodyUnsubscribe = db
+  //     .collection("bodies")
+  //     .doc(post.id)
+  //     .onSnapshot(snap => {
+  //       const newPost = { ...post, ...snap.data() };
+  //       setPost(newPost);
+  //     });
 
-    return () => {
-      // metadataUnsubscribe();
-      bodyUnsubscribe();
-    };
-  }, []);
+  //   return () => {
+  //     // metadataUnsubscribe();
+  //     bodyUnsubscribe();
+  //   };
+  // }, []);
 
   const {
     title,
