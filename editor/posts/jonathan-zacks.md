@@ -17,6 +17,8 @@ image: https://i.imgur.com/MRsn2oV.png
 isPublic: true
 ---
 
+_Download [Jonathan's slides](https://makeitallwork.com/wp-content/uploads/2019/04/seo-for-startups-slides.pptx) and his [outline of this talk](https://makeitallwork.com/wp-content/uploads/2019/04/seo-for-startups-outline.pdf)._
+
 Here's an easy tactic for getting more organic traffic from search engines.
 
 About half to 2/3rds of sites from Microconf attendees have less than 100 organic links per month. This talk is for them.
@@ -39,5 +41,4 @@ Now it's time to wait and check the results!
 
 As long as your site is clean, it loads fast, and your basic technical SEO aspects are covered, you should succeed in getting more organic traffic.
 
-For questions, [contact Jonathan Zacks on twitter](https://twitter.com/jozacks).
-
+For questions, [contact Jonathan Zacks on twitter](https://twitter.com/jozacks). His SEO agency is [Make It All Work](https://makeitallwork.com/) and his appointment reminder SaaS startup is [GoReminders](https://www.goreminders.com/).
