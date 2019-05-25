@@ -132,7 +132,7 @@ export class Mailtrain extends Component {
 
               <button
                 type="submit"
-                className="bg-blue hover:bg-blue-dark w-full font-sans text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-blue-600 hover:bg-blue-700 w-full font-sans text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 {isLoading ? "k hang on..." : "Get the book"}
               </button>

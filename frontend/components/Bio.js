@@ -6,7 +6,7 @@ export default () => (
       by{" "}
       <a
         href="http://christian.gen.co"
-        className="no-underline hover:underline"
+        className="text-blue-600 hover:underline"
       >
         Christian Genco
       </a>

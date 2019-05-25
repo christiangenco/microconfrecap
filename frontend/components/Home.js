@@ -111,7 +111,7 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
           Shai Schechter:{" "}
           <a
             href="https://shai.io/microconf/"
-            className="no-underline hover:underline"
+            className="text-blue-600 hover:underline"
           >
             Microconf Recap 2017
           </a>
@@ -120,7 +120,7 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
           remarq.io:{" "}
           <a
             href="https://docs.google.com/document/d/1EefLjujm3TW0oL21XvstCx7OuUfwmcJsASvakyhZ2LI/edit#"
-            className="no-underline hover:underline"
+            className="text-blue-600 hover:underline"
           >
             Microconf Recap 2016
           </a>
@@ -130,7 +130,7 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
           Kai Davis:{" "}
           <a
             href="https://kaidavis.com/microconf-2015/"
-            className="no-underline hover:underline"
+            className="text-blue-600 hover:underline"
           >
             Microconf Recap 2015
           </a>
