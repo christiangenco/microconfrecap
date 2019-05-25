@@ -79,11 +79,20 @@ export const Blockquote = ({ speaker, url }) => ({ children }) => {
 export const Break = () => <div className="clearfix" />;
 
 export const Heading = props => {
+  const levelClasses = {
+    1: "text-5xl mt-12 mb-2",
+    2: "text-4xl mt-8 mb-1",
+    3: "text-3xl mt-8 mb-1",
+    4: "text-2xl mt-8 mb-1",
+    5: "text-xl mt-8 mb-1",
+    6: "text-xl mt-8 mb-1",
+  };
   return createElement(
     `h${props.level}`,
     {
-      className:
-        "font-sans text-left " + (props.level === 1 ? "mt-12" : "mt-3"),
+      className: `font-sans text-left leading-tight ${
+        levelClasses[props.level]
+      }`,
     },
     props.children
   );
@@ -161,7 +170,7 @@ export const Link = ({ href, children }) => {
   }
 
   return (
-    <a href={href} className="no-underline hover:underline">
+    <a href={href} className="text-blue-600 hover:underline">
       {children}
     </a>
   );

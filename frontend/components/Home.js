@@ -13,7 +13,7 @@ const PostItem = ({ post }) => (
       )}
     {post.speaker.name}:{" "}
     <Link href={`/${post.slug}`}>
-      <a className="no-underline hover:underline">{post.title}</a>
+      <a className="text-blue-600 hover:underline">{post.title}</a>
     </Link>
   </li>
 );
@@ -97,16 +97,15 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
         />
         <meta name="twitter:card" value="summary_large_image" />
       </Head>
-      <h2 className="font-sans">Growth 2019</h2>
+      <h2 className="font-sans text-3xl mt-6 mb-2">Growth 2019</h2>
       <PostList posts={growth2019Posts} />
-      <h2 className="font-sans">Starter 2019</h2>
+      <h2 className="font-sans text-3xl mt-6 mb-2">Starter 2019</h2>
       <PostList posts={starter2019Posts} />
-      <hr style={{ border: "1px solid black" }} />
-      <h2 className="font-sans">Starter 2018</h2>
+      <h2 className="font-sans text-3xl mt-6 mb-2">Starter 2018</h2>
       <PostList posts={starterPosts} />
-      <h2 className="mt-6 font-sans">Growth 2018</h2>
+      <h2 className="mt-6 font-sans text-3xl mt-6 mb-2">Growth 2018</h2>
       <PostList posts={growthPosts} />
-      <h2 className="mt-6 font-sans">Past Recaps</h2>
+      <h2 className="mt-6 font-sans text-3xl mt-6 mb-2">Past Recaps</h2>
       <ul className="text-lg">
         <li>
           Shai Schechter:{" "}
