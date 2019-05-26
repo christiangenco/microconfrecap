@@ -38,6 +38,8 @@ const Home = ({ posts = {}, query: { coverIndex } }) => {
   //   });
   // }, []);
 
+  // if (typeof window !== "undefined") window.db = db;
+
   const sortedLivePosts = Object.values(liveposts); //.sort(
   // (a, b) => new Date(a.date) - new Date(b.date)
   // );
